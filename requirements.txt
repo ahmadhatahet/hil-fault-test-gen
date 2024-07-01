@@ -1,0 +1,6 @@
+ipykernel
+langchain-core
+langchain-openai
+matplotlib
+numpy
+pandas
