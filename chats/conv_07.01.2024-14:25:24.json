@@ -1,0 +1,23 @@
+{
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a professional engineer working on parsing requirements' texts and producing labels.\nThe requirements are used to specify a fault type which will be injected in a HIL (Hardware in the Loop) simulator. The fault type known by the index of a vector.\nThe victor size must equal to the number of faults the system can handel.\n\nHere are the supported sensors as well as their corresponding vectors:\nAcceleration Pedal (Acc), vector = [1, 0, 0, 0, 0, 0]\nWheel Steering Angle (WSA), vector = [0, 1, 0, 0, 0, 0]\nWheel Speed (WS), vector = [0, 0, 1, 0, 0, 0]\nYaw Rate (YR), vector = [0, 0, 0, 1, 0, 0]\nSteering Torque (ST), vector = [0, 0, 0, 0, 1, 0]\nVehicle Speed (VS), vector = [0, 0, 0, 0, 0, 1]\nAcceleration Pedal and Wheel Steering Angle (Acc and WSA), vector = [1, 1, 0, 0, 0, 0]\nSteering Angle and Wheel Speed (WSA and WS), vector = [0, 1, 1, 0, 0, 0]\n\nMultiple faults in multiple sensors could occur when multiple 1s are present, like the last two sensors.\n\nFollow the below examples to know exactly how the requirement will look like and the vector output:\nRequirement: The pedal assembly must include a mechanical release mechanism that ensures the return of the pedal to the idle position when not actively engaged by the driver\nVector: [1,0,0,0,0,0]\n\nRequirement: In critical situations, the vehicle must enable an emergency steering assist feature to aid the driver in maintaining control of the vehicle\nVector: [0,1,0,0,0,0]\n\nRequirement: Wheel speed data must be provided in real-time to safety systems to enable features such as adaptive cruise control and collision avoidance systems\nVector: [0,0,1,0,0,0]\n\nRequirement: The vehicle's electronic systems must manage weight transfer during dynamic maneuvers to maintain stability\nVector: [0,0,0,1,0,0]\n\nRequirement: The system must enable a manual override allowing the driver to steer without assist in case of system failure\nVector: [0,0,0,0,1,0]\n\nRequirement: The vehicle should offer an optional speed limiter that the driver can activate to prevent exceeding a maximum safe or legal speed\nVector: [0,0,0,0,0,1]\n\nRequirement: The system must synchronize steering angle inputs with accelerator pedal position to optimize vehicle stability and traction during corner entry\nVector: [1,1,0,0,0,0]\n\nRequirement: The wheel speed sensors must accurately reflect changes in wheel rotation speed during tight turns as detected by the steering angle sensor to ensure vehicle stability\nVector: [0,1,1,0,0,0]\n\n\n\nBased on this knowledge, understand the user requirement, analyze it, point out the targeted sensor/sensors, finally answer it exactly like the examples.\nDo not add any unknown information, simply if something is not clear return a vector full of zeros like this one [0, 0, 0, 0, ... etc]."
+        },
+        {
+            "role": "user",
+            "content": "Here is the requirement text:\nDuring lane change execution, the vehicle must smoothly adjust the steering angle and acceleration to maintain a stable transition without abrupt changes in speed or direction\n\nReturn only the vector based on what you learned.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "[1, 1, 0, 0, 0, 0]"
+        }
+    ],
+    "true_solution": "[1,1,0,0,0,0]",
+    "is_correct": true,
+    "token_usage": {
+        "completion_tokens": 18,
+        "prompt_tokens": 782,
+        "total_tokens": 800
+    }
+}
