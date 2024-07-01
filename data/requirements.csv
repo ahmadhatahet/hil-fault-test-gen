@@ -1,0 +1,1003 @@
+﻿Sentence,Label,,,,,
+"The accelerator pedal must provide accurate pedal position data to the throttle control system, reflecting the driver's input without delay or error beyond a defined tolerance",1,0,0,0,0,0
+The gas pedal shall offer consistent tactile feedback to the driver to ensure reliable operation and reduce driver fatigue during prolonged use,1,0,0,0,0,0
+The accelerator pedal assembly must include redundant position sensors to ensure that a failure in one sensor does not result in loss of throttle control,1,0,0,0,0,0
+The vehicle control system must respond to driver input from the accelerator pedal within a specified timeframe to ensure timely throttle actuation,1,0,0,0,0,0
+The foot pedal must maintain its structural integrity and operational characteristics under the repetitive force exerted by the driver over its lifetime,1,0,0,0,0,0
+"In the event of a sensor or system failure, the accelerator pedal system must default to a fail-safe position to prevent unintended acceleration",1,0,0,0,0,0
+The throttle pedal must have the sensitivity to detect and transmit small changes in pedal displacement to allow for fine control of vehicle acceleration,1,0,0,0,0,0
+All components of the accelerator pedal must be resistant to corrosion that could impair functionality or driver input translation,1,0,0,0,0,0
+The sensors that detect the pedal position must remain stable and accurate over a range of operational temperatures and conditions,1,0,0,0,0,0
+The accelerator pedal's electronic components must be immune to EMI to prevent erroneous signals from affecting throttle control,1,0,0,0,0,0
+The system must alert maintenance personnel when the pedal assembly requires servicing or replacement to ensure consistent vehicle control,1,0,0,0,0,0
+The accelerator pedal assembly must tolerate normal vehicle vibration levels without degradation in functionality or driver control,1,0,0,0,0,0
+The vehicle control system shall have the capability to override accelerator pedal inputs in case of an identified fault that risks vehicle safety,1,0,0,0,0,0
+"The gas pedal and its components must endure repetitive use cycles without failure, ensuring long-term throttle control reliability",1,0,0,0,0,0
+The system software shall continually monitor accelerator pedal function and record any instances of abnormal operation,1,0,0,0,0,0
+The calibration of the accelerator pedal's response curve must remain stable throughout the vehicle's operational lifespan,1,0,0,0,0,0
+The accelerator pedal inputs must be fully integrated with vehicle safety systems such as traction control and stability management to enhance overall vehicle safety,1,0,0,0,0,0
+The system must accurately detect and transmit the accelerator pedal position to the throttle control system with a minimal margin of error,1,0,0,0,0,0
+The force required to depress the accelerator pedal should remain consistent and within specified parameters under all operating conditions,1,0,0,0,0,0
+The accelerator pedal must provide tactile feedback to the driver upon press to allow for intuitive control of acceleration,1,0,0,0,0,0
+The system must process acceleration requests through redundant pathways to ensure no single point of failure leads to a loss of throttle control,1,0,0,0,0,0
+"In the event of conflicting signals from the accelerator pedal and the throttle position sensor, the system shall prioritize safety by limiting throttle opening",1,0,0,0,0,0
+"Should the primary control system fail, the accelerator pedal must enter a fail-safe mode, allowing for limited but controlled throttle response",1,0,0,0,0,0
+The accelerator pedal assembly must incorporate an emergency release mechanism to reduce throttle opening immediately when required,1,0,0,0,0,0
+The control system connected to the accelerator pedal must be capable of tolerating faults without leading to sudden or unexpected throttle responses,1,0,0,0,0,0
+The system shall limit the rate at which the accelerator pedal can command an increase in throttle position to prevent unintended rapid acceleration,1,0,0,0,0,0
+The system must continually ensure that the throttle position correlates in real-time with the depressed level of the accelerator pedal,1,0,0,0,0,0
+Continuous monitoring of the accelerator pedal's displacement shall be conducted to detect any discrepancies indicative of potential faults,1,0,0,0,0,0
+The accelerator pedal shall integrate with a haptic warning system to alert the driver of system malfunctions or safety-critical conditions,1,0,0,0,0,0
+The integrity of the communication link between the accelerator pedal sensors and the throttle control system must be ensured at all times,1,0,0,0,0,0
+A system calibration verification process must be performed at regular intervals to ensure the long-term accuracy of the accelerator pedal response,1,0,0,0,0,0
+Signals from the accelerator pedal position sensor shall be encrypted to prevent unauthorized manipulation of throttle commands,1,0,0,0,0,0
+"The accelerator pedal position sensor must provide a high level of accuracy, with sensor signal deviations not exceeding predefined thresholds",1,0,0,0,0,0
+The throttle position sensor readings must correlate with the accelerator pedal position sensor to ensure consistent and predictable throttle response,1,0,0,0,0,0
+The integrity of the sensor signal from both the accelerator pedal position sensor and the throttle position sensor must be maintained under all operating conditions,1,0,0,0,0,0
+Potentiometers used in accelerator pedal sensors must demonstrate high durability and a low failure rate throughout the vehicle's life cycle,1,0,0,0,0,0
+Hall-effect sensors must provide stable outputs without drift over time and temperature variations,1,0,0,0,0,0
+The accelerator pedal system must include redundant sensor inputs to provide a backup in the case of primary sensor failure,1,0,0,0,0,0
+The vehicle control system must include electronic signal filtering to mitigate the effects of electromagnetic interference (EMI) on sensor signals,1,0,0,0,0,0
+The electronic control unit (ECU) must validate sensor input before executing throttle commands to prevent unintended acceleration,1,0,0,0,0,0
+"Upon detection of a sensor failure, the system must reduce engine power and notify the driver through a warning indicator",1,0,0,0,0,0
+The accelerator pedal must have a mechanical return mechanism that ensures the pedal returns to the idle position if the electronic signal is lost,1,0,0,0,0,0
+The accelerator pedal sensor system must include onboard diagnostics to detect and store faults related to the sensor signals,1,0,0,0,0,0
+The system must perform periodic performance checks on the accelerator pedal and throttle position sensors to ensure ongoing reliability,1,0,0,0,0,0
+The output signal range of the sensors must be within the ECU's defined range for accurate interpretation,1,0,0,0,0,0
+The accelerator pedal must provide consistent force feedback to the driver regardless of the electronic signal status,1,0,0,0,0,0
+The electronic throttle control system must include redundant circuits to ensure continued operation if one circuit fails,1,0,0,0,0,0
+The electronic accelerator pedal must employ at least two position sensors working on different principles to ensure fault tolerance,1,0,0,0,0,0
+The drive-by-wire system must be able to identify failure modes and switch to a safe state to prevent uncontrolled acceleration,1,0,0,0,0,0
+The Electronic Control Unit (ECU) must initiate a fail-safe response if discrepancies are detected between pedal input and throttle response,1,0,0,0,0,0
+Continuous signal integrity checks must be conducted between the electronic accelerator pedal and the ECU,1,0,0,0,0,0
+The ECU must perform self-diagnostics to ensure its health and operational integrity at startup and during operation,1,0,0,0,0,0
+The electronic accelerator pedal should provide haptic feedback under specific conditions to alert the driver of potential system issues,1,0,0,0,0,0
+Secure communication protocols must be implemented to prevent unauthorized access or tampering with drive-by-wire signals,1,0,0,0,0,0
+The electronic throttle system components must perform within their designated parameters under extreme environmental conditions,1,0,0,0,0,0
+The electronic accelerator pedal must accurately reflect pedal displacement with a high resolution to ensure precise vehicle speed control,1,0,0,0,0,0
+Regular calibration must ensure the electronic accelerator pedal and throttle system remain aligned over time and use,1,0,0,0,0,0
+The system must monitor its power supply and have a backup to maintain functionality in the event of a power interruption,1,0,0,0,0,0
+There must be a mechanism or procedure for the driver to override the electronic throttle control in case of emergency,1,0,0,0,0,0
+"The drive-by-wire system must ensure the integrity and timeliness of communications between the accelerator pedal, ECU, and other relevant systems",1,0,0,0,0,0
+The accelerator pedal must be equipped with dual position sensors to provide redundancy. The system should default to a fail-safe mode if the sensors produce significantly different readings,1,0,0,0,0,0
+The vehicle's onboard diagnostic system must perform regular checks for the operational integrity of pedal redundancy features during startup and operation,1,0,0,0,0,0
+"In the event of a primary sensor failure, a backup system must be in place to take over pedal position sensing with minimal loss of functionality",1,0,0,0,0,0
+The accelerator pedal must be capable of being disconnected from the throttle control in the event of system failure without impacting the ability to brake,1,0,0,0,0,0
+Continuous monitoring of the accelerator pedal position must be conducted by the engine control unit (ECU) to ensure signals are within expected ranges,1,0,0,0,0,0
+The vehicle must have a throttle override mechanism that prioritizes brake pedal input over the accelerator pedal when both are pressed simultaneously,1,0,0,0,0,0
+"The pedal must maintain consistent travel and resistance throughout its lifespan, with any variations reported to the vehicle's diagnostic system",1,0,0,0,0,0
+"Upon detection of a fault state, the accelerator pedal must not allow an increase in engine speed, and should default to idle if safe to do so",1,0,0,0,0,0
+"In the case of unintended acceleration, the vehicle must have a programmed response such as reducing engine power or engaging safety systems to bring the vehicle to a stop",1,0,0,0,0,0
+The accelerator pedal should provide force feedback or change in resistance to indicate to the driver when the system enters a fault or safety mode,1,0,0,0,0,0
+The signal from the accelerator pedal must be processed with error-checking algorithms to ensure the accuracy of the pedal position data sent to the throttle control system,1,0,0,0,0,0
+The pedal assembly must include a mechanical release mechanism that ensures the return of the pedal to the idle position when not actively engaged by the driver,1,0,0,0,0,0
+The accelerator pedal system must be integrated with the vehicle’s central safety system to ensure coordinated action with other safety features like traction control and electronic stability control,1,0,0,0,0,0
+"There must be a defined protocol for regular testing of the accelerator pedal safety and redundancy systems, conducted through onboard diagnostics and during vehicle servicing",1,0,0,0,0,0
+"All faults detected in the accelerator pedal system must be logged and stored, with critical faults prompting immediate driver notification",1,0,0,0,0,0
+The accelerator pedal system must generate and store a Diagnostic Trouble Code (DTC) when it detects operational anomalies,1,0,0,0,0,0
+The accelerator pedal system must activate the Check Engine Light (CEL) when a malfunction that affects emissions or performance is detected,1,0,0,0,0,0
+The system must continuously monitor the accelerator pedal sensor for failures and respond appropriately when a fault is detected,1,0,0,0,0,0
+The system shall be able to distinguish and report issues specifically related to the throttle control system stemming from accelerator pedal malfunctions,1,0,0,0,0,0
+"Upon vehicle start-up, the accelerator pedal system shall perform a self-calibration check to ensure proper operation",1,0,0,0,0,0
+A redundant sensor shall be employed to provide operational capability in the event of primary sensor failure,1,0,0,0,0,0
+The vehicle's control system must monitor the pedal position in real-time to ensure it matches the expected engine and vehicle speed,1,0,0,0,0,0
+The system must automatically adjust the throttle response if the pedal sensor indicates out-of-range operation,1,0,0,0,0,0
+The accelerator pedal system shall perform periodic self-tests during vehicle operation to confirm functional integrity,1,0,0,0,0,0
+The system must ensure that the displacement of the accelerator pedal is accurately and consistently translated into throttle actuation,1,0,0,0,0,0
+"In case of system failure, the vehicle should enter a fail-safe mode, reducing engine power to a safe level",1,0,0,0,0,0
+The feedback force of the accelerator pedal should remain consistent and within the design specifications throughout its lifespan,1,0,0,0,0,0
+Each accelerator pedal assembly must undergo end-of-line testing to validate functionality before being placed in service,1,0,0,0,0,0
+The system must log data relevant to accelerator pedal operation to assist in troubleshooting and fault analysis,1,0,0,0,0,0
+The system must adapt throttle adjustments based on environmental conditions detected by other vehicle sensors,1,0,0,0,0,0
+The force required to depress the accelerator pedal must remain consistent under varying environmental conditions and over the lifespan of the vehicle,1,0,0,0,0,0
+The accelerator pedal shall respond to driver input without perceptible delay and in a linear fashion to ensure smooth vehicle acceleration,1,0,0,0,0,0
+Vehicle acceleration must be linear and proportional to the displacement of the accelerator pedal to provide a smooth and controlled driving experience,1,0,0,0,0,0
+The accelerator pedal must be designed to minimize vibration and harshness to the driver's foot,1,0,0,0,0,0
+The surface and ergonomics of the accelerator pedal should be designed to avoid discomfort or fatigue during prolonged use,1,0,0,0,0,0
+The system must accurately sense the pedal position to ensure the vehicle's performance matches the driver's expectations,1,0,0,0,0,0
+The ratio of pedal displacement to vehicle acceleration must be consistent across the operational range of the pedal,1,0,0,0,0,0
+The system must detect any malfunction or error in the pedal assembly and mitigate unintended vehicle acceleration,1,0,0,0,0,0
+"In the event of a system failure, the pedal must fail to a safe position, preventing any increase in engine power",1,0,0,0,0,0
+The pedal assembly must be robust enough to withstand expected mechanical stresses without deformation or failure,1,0,0,0,0,0
+The accelerator pedal system should allow for adjustments (either manual or automatic) to accommodate the ergonomic needs of the driver,1,0,0,0,0,0
+Redundant sensors must be used to ensure reliable pedal position signals to the vehicle's control system,1,0,0,0,0,0
+The accelerator pedal system should include a feature to adjust the required pedal force to accommodate driver preference when legally permissible and safe to do so,1,0,0,0,0,0
+The accelerator pedal may include a haptic feedback mechanism to alert the driver of potential safety issues or necessary actions,1,0,0,0,0,0
+"For vehicles with multiple drivers, the accelerator pedal system should have the capability to remember and automatically adjust to pre-set positions based on driver profiles",1,0,0,0,0,0
+The pedal position sensors must provide accurate readings despite variations in the cabin environment such as temperature and humidity,1,0,0,0,0,0
+"Pedal materials must resist corrosion, wear, and degradation due to environmental factors such as moisture, temperature extremes, and chemical exposure",1,0,0,0,0,0
+The pedal design must minimize the risk of foot slippage under wet or muddy conditions,1,0,0,0,0,0
+"The pedal assembly must be compatible with other interior components, allowing for no interference or obstruction under any cabin condition",1,0,0,0,0,0
+"The accelerator pedal design must accommodate a wide range of driver ergonomics, providing comfortable positioning and ease of use for all drivers",1,0,0,0,0,0
+The pedal must maintain operational functionality without significant wear over a defined number of cycles or period,1,0,0,0,0,0
+The pedal assembly must undergo stress testing in simulated environmental conditions to validate its durability,1,0,0,0,0,0
+The pedal must provide consistent force feedback that does not change with temperature variations in the cabin environment,1,0,0,0,0,0
+All pedal materials must be non-toxic and comply with automotive interior air quality standards,1,0,0,0,0,0
+The system must monitor and report any unexpected displacement or behavior of the pedal under extreme environmental conditions,1,0,0,0,0,0
+The pedal must resist deformation that could result from exposure to high footwell temperatures or impact,1,0,0,0,0,0
+Pedal materials must be flame-retardant and resist melting or warping at extreme temperatures,1,0,0,0,0,0
+Surfaces of the pedal must resist degradation from common automotive chemicals and cleaning agents,1,0,0,0,0,0
+"The accelerator pedal must return to the idle position when not engaged, regardless of any cabin environmental factors",1,0,0,0,0,0
+The pedal must remain securely mounted and should not dislodge due to vibrations or impacts that can occur within the cabin environment,1,0,0,0,0,0
+The Accelerator Pedal system must accurately detect and transmit pedal position to the Throttle Control system within a specific tolerance range at all times,1,0,0,0,0,0
+"In the event of a Throttle Position Sensor failure, the system must default to a fail-safe mode that allows for controlled and limited power, ensuring the vehicle can be safely maneuvered to a stop",1,0,0,0,0,0
+Drive-by-Wire systems must have redundant circuits for critical components like the Throttle Position Sensor to maintain functionality in the event of a single-point failure,1,0,0,0,0,0
+The force required to depress the Accelerator Pedal must remain consistent and within design specifications under all operating conditions,1,0,0,0,0,0
+The Throttle Control system must respond to Driver Input through the Accelerator Pedal within a defined time frame to ensure timely acceleration,1,0,0,0,0,0
+The mapping between Pedal Position and Throttle opening must be maintained accurately to ensure the expected vehicle acceleration for given Pedal Displacements,1,0,0,0,0,0
+The Throttle Position Sensor must have measures to detect and compensate for signal interference or degradation to maintain accurate position reporting,1,0,0,0,0,0
+"The vehicle must continuously monitor the Pedal Position Sensor and detect any faults, warning the driver and entering a safe mode if a critical error is detected",1,0,0,0,0,0
+The Throttle Control system must be calibrated to ensure that the vehicle's acceleration corresponds appropriately to the driver's Pedal Position input,1,0,0,0,0,0
+Communication between the Accelerator Pedal sensors and the Throttle Control system must be protected against unauthorized access or tampering,1,0,0,0,0,0
+"The system must be able to distinguish between intentional and unintentional driver inputs, reducing the likelihood of unintended acceleration",1,0,0,0,0,0
+The Accelerator Pedal assembly and associated sensors must withstand environmental stressors such as temperature extremes and humidity without failure,1,0,0,0,0,0
+The system should have the capability for the driver to override electronic Throttle Control with a mechanical or alternative system in case of electronic failure,1,0,0,0,0,0
+The Accelerator Pedal and Throttle Position Sensor must resist operational vibrations and impacts without malfunctioning or altering position sensing,1,0,0,0,0,0
+The Accelerator Pedal must reliably return to the zero or idle position when the driver's foot is removed,1,0,0,0,0,0
+The Accelerator Pedal system must undergo rigorous endurance and lifecycle testing to ensure long-term reliability,1,0,0,0,0,0
+The Accelerator Pedal inputs must be compatible with vehicle dynamics control systems like Traction Control and Electronic Stability Control,1,0,0,0,0,0
+The Accelerator Pedal shall provide haptic feedback to the driver in case of critical system faults that require immediate attention,1,0,0,0,0,0
+The steering angle sensor must provide accurate measurements within a defined tolerance level under all operating conditions,0,1,0,0,0,0
+The steering angle sensor must demonstrate high reliability with a failure rate below a specified threshold throughout its designated lifespan,0,1,0,0,0,0
+A redundant steering angle sensor system must be in place to provide back-up data in case of a primary sensor failure,0,1,0,0,0,0
+The sensor must maintain calibration over time and under variable environmental conditions without the need for frequent re-calibration,0,1,0,0,0,0
+The sensor must report the steering angle within a specified time frame from the actual change in the steering column angle,0,1,0,0,0,0
+The sensor must undergo an end-of-line calibration check during the manufacturing process to ensure initial accuracy,0,1,0,0,0,0
+The sensor must have built-in diagnostics to detect and report any failures or discrepancies in measurement,0,1,0,0,0,0
+The sensor must be subjected to lifecycle testing to simulate real-world operating conditions and verify longevity,0,1,0,0,0,0
+The encoder used for steering angle measurement must have a resolution fine enough to detect minimal changes in steering input,0,1,0,0,0,0
+The sensor signal must maintain integrity under electromagnetic interference (EMI) as per automotive standards,0,1,0,0,0,0
+The sensor must resist temperature extremes and vibrations without loss of functionality or accuracy,0,1,0,0,0,0
+"In case of sensor failure, the system must revert to a fail-safe mode that allows for controlled and safe vehicle operation",0,1,0,0,0,0
+The sensor must provide data at a rate sufficient for real-time analysis and action by the vehicle's control systems,0,1,0,0,0,0
+The sensor system must reject interference and crosstalk from other onboard electronic systems,0,1,0,0,0,0
+The sensor should have the capability to perform a self-check at start-up and report its status to the vehicle's diagnostic system,0,1,0,0,0,0
+The steering wheel must maintain structural integrity under expected operational loads and in the event of a collision,0,1,0,0,0,0
+"In the event of a frontal impact, the steering column must collapse in a controlled manner to minimize injury to the driver",0,1,0,0,0,0
+The steering shaft must transfer the driver's input with minimal torsional deflection to ensure accurate steering input,0,1,0,0,0,0
+Tie rods must withstand operational stress without deformation or failure over the vehicle's service life,0,1,0,0,0,0
+The steering gearbox must provide reliable operation with no uncommanded steering action throughout its designated lifetime,0,1,0,0,0,0
+Steering knuckles must sustain the stresses imposed by road conditions without cracking or bending,0,1,0,0,0,0
+Front wheels must maintain proper alignment under normal driving conditions and after encountering standard road hazards,0,1,0,0,0,0
+Free play in the steering system must not exceed specified tolerances to prevent on-road steering imprecision,0,1,0,0,0,0
+The steering system must provide consistent feedback to the driver under various driving conditions,0,1,0,0,0,0
+All steering components exposed to environmental conditions must be treated or manufactured to resist corrosion,0,1,0,0,0,0
+Steering components must be designed to resist fatigue failure for the expected operational life of the vehicle,0,1,0,0,0,0
+The steering gearbox must maintain its lubrication over specified service intervals without degradation of performance,0,1,0,0,0,0
+The steering system must react within a defined time frame from the driver's input to wheel turn,0,1,0,0,0,0
+"In case of power steering failure, the system should allow for manual steering control with an acceptable increase in effort",0,1,0,0,0,0
+The steering system must include mechanisms to damp excessive vibrations from being transmitted to the steering wheel,0,1,0,0,0,0
+The rack and pinion steering must maintain precise control over the steering angle to within a specific tolerance during normal operation,0,1,0,0,0,0
+Recirculating ball steering systems must provide consistent and predictable responses to steering inputs without undue lag or play,0,1,0,0,0,0
+"Power steering systems must provide the correct level of assist to the driver, adjusting based on vehicle speed and steering angle",0,1,0,0,0,0
+Adequate power assist is necessary to ensure that the vehicle can be steered with appropriate effort under all conditions,0,1,0,0,0,0
+"EPS systems must include fault detection mechanisms that alert the driver to malfunctions and, where possible, provide a fail-operational mode",0,1,0,0,0,0
+"Systems must monitor for hydraulic fluid contamination and deterioration, providing maintenance alerts as needed",0,1,0,0,0,0
+"In the event of power steering failure, the vehicle must still be steerable by manual means, although increased effort may be required",0,1,0,0,0,0
+"Torque sensors in EPS systems must be calibrated to accurately measure driver input, ensuring appropriate steering assist",0,1,0,0,0,0
+Steering angle sensors must accurately report the wheels' angle to the electronic control unit (ECU) with high reliability and low failure rates,0,1,0,0,0,0
+EPS systems must have an emergency mode that provides basic steering functionality in the event of a partial system failure,0,1,0,0,0,0
+"Critical steering system components, especially in EPS, should have redundancy to maintain control in the event of a single-point failure",0,1,0,0,0,0
+"Power steering systems, whether hydraulic or electronic, must operate effectively in a wide range of environmental conditions, including extreme temperatures",0,1,0,0,0,0
+An onboard diagnostic system must monitor for and alert to significant wear or impending failure in steering components,0,1,0,0,0,0
+The steering system must provide tactile feedback to the driver that is proportional to the driving conditions and steering input,0,1,0,0,0,0
+Steering systems must be capable of handling the expected range of loads without failure or excessive play developing over time,0,1,0,0,0,0
+"In the absence of power assist, the manual steering effort required should comply with safety standards to ensure that the vehicle can still be controlled",0,1,0,0,0,0
+The vehicle's steering control system must accurately measure and report the steering angle to within a defined tolerance to ensure precise wheel alignment during maneuvering,0,1,0,0,0,0
+The system must respond to steering input without delay exceeding a specified limit to ensure timely steering response for driver commands,0,1,0,0,0,0
+"The vehicle should maintain consistent cornering behavior under various driving conditions, ensuring that steering angle adjustments result in predictable vehicle paths",0,1,0,0,0,0
+Redundant pathways for signal and power in the steering control system are required to maintain functionality in the event of a single-point failure,0,1,0,0,0,0
+"The vehicle must provide appropriate feedback to the driver through the steering mechanism, allowing for intuitive assessment of road conditions and vehicle behavior",0,1,0,0,0,0
+The vehicle shall incorporate an emergency steering override function to allow manual control in the event of a control system failure,0,1,0,0,0,0
+Implement continuous self-diagnostics to detect and alert of any malfunctions in the steering control system that could affect maneuverability,0,1,0,0,0,0
+"In case of a partial system failure, the vehicle shall maintain limited steering functionality to allow safe deceleration and vehicle stoppage",0,1,0,0,0,0
+"Establish maximum and minimum steering angle limits to prevent oversteering, understeering, or mechanical damage to the steering system",0,1,0,0,0,0
+"Periodic, automated calibration of steering angle sensors is required to ensure ongoing accuracy and to compensate for sensor drift over time",0,1,0,0,0,0
+"The steering angle control must be fully compatible and integrated with other vehicle stability systems, such as Traction Control and Electronic Stability Control",0,1,0,0,0,0
+Record steering input and corresponding steering angle data for use in accident reconstruction and to inform ongoing improvements in steering system safety,0,1,0,0,0,0
+"Cybersecurity measures must be integrated to prevent unauthorized access and control of the vehicle's steering system, especially in drive-by-wire scenarios",0,1,0,0,0,0
+The steering angle sensor and related components must withstand the vehicle's operational life under normal use and environmental conditions,0,1,0,0,0,0
+Power steering assistance should be consistent across different steering angles and not impair the driver's ability to perform smooth cornering maneuvers,0,1,0,0,0,0
+The steering angle sensor must provide accurate readings to the Electronic Stability Control (ESC) with a precision of +/- 1 degree under all operating conditions,0,1,0,0,0,0
+The response time from the steering angle sensor to the Lane Keeping Assist (LKA) system actuation must be within 100 milliseconds,0,1,0,0,0,0
+Steering angle information must be integrated with the Adaptive Cruise Control (ACC) system to facilitate appropriate vehicle spacing in curves,0,1,0,0,0,0
+"Autonomous steering interventions must be limited to a safe angle threshold to prevent oversteering, with real-time feedback to the Electronic Stability Control (ESC) system",0,1,0,0,0,0
+The vehicle must use redundant sensors for capturing the steering angle to ensure continuous availability of data for safety systems,0,1,0,0,0,0
+Steering angle data should be utilized by Collision Avoidance systems to predict and execute necessary steering corrections,0,1,0,0,0,0
+Steering angle sensor data must be compatible with the Anti-lock Braking System (ABS) to optimize braking during steering maneuvers,0,1,0,0,0,0
+The steering angle sensor must possess self-diagnostic capabilities to detect faults and notify the driver through the vehicle's diagnostic system,0,1,0,0,0,0
+Steering input must be limited when the Electronic Stability Control (ESC) system is actively modulating vehicle dynamics,0,1,0,0,0,0
+"The steering system must provide consistent feedback to the driver, regardless of interventions from safety and assistance systems",0,1,0,0,0,0
+"In case of a critical failure in the steering angle sensor, the system must default to a fail-safe mode, limiting vehicle speed and disabling advanced functions if necessary",0,1,0,0,0,0
+The steering angle sensor must be automatically checked for calibration and alignment after every engine start and periodically during vehicle operation,0,1,0,0,0,0
+"The steering angle sensor and related safety system components must be designed to operate correctly in a range of environmental conditions including temperature variations, humidity, and exposure to debris",0,1,0,0,0,0
+Data transmission from the steering angle sensor to various safety and assistance systems must be secured against unauthorized access and corruption,0,1,0,0,0,0
+The steering angle sensor must provide accurate measurements within a specified tolerance to ensure precise feedback on the steering wheel's position,0,1,0,0,0,0
+"The vehicle dynamics control system must integrate steering stability data to actively manage the vehicle's handling characteristics, reducing the risk of oversteer and understeer",0,1,0,0,0,0
+"The steering system should dynamically adjust to optimize cornering behavior, providing a balance between responsiveness and stability",0,1,0,0,0,0
+"In the event of oversteer, the vehicle dynamics control system must initiate corrective actions to stabilize the vehicle without excessive delay",0,1,0,0,0,0
+"The system must detect and mitigate understeer conditions by adjusting steering, braking, or power delivery to maintain the desired trajectory",0,1,0,0,0,0
+Steering controls must work in conjunction with traction control systems to optimize tire grip during maneuvers,0,1,0,0,0,0
+The steering system must provide real-time feedback to the vehicle dynamics control system to facilitate immediate adjustments to handling,0,1,0,0,0,0
+There must be safeguards in place to prevent the steering system from exceeding maximum angle thresholds that could compromise vehicle dynamics,0,1,0,0,0,0
+"The steering system should adapt sensitivity based on vehicle speed, with lower sensitivity at higher speeds for improved steering stability",0,1,0,0,0,0
+The system must perform regular self-checks to identify potential failures in the steering system that may affect vehicle dynamics,0,1,0,0,0,0
+Redundant pathways for steering control signals must be provided to ensure that control is maintained in the event of a single-point failure,0,1,0,0,0,0
+"In critical situations, the vehicle must enable an emergency steering assist feature to aid the driver in maintaining control of the vehicle",0,1,0,0,0,0
+All significant steering interventions by vehicle dynamics control systems must be logged for diagnostic and improvement purposes,0,1,0,0,0,0
+"The steering system must provide appropriate feedback to the driver to reflect the actual vehicle dynamics, especially in scenarios involving vehicle dynamics control intervention",0,1,0,0,0,0
+The Steering Angle Sensor (SAS) must be calibrated to achieve an accuracy within a specified tolerance level post-alignment to ensure precise steering input,0,1,0,0,0,0
+A verification process must confirm the steering angle sensor's calibration after manufacturing and during initial vehicle setup,0,1,0,0,0,0
+The SAS must be recalibrated after any wheel alignment service to ensure that sensor readings are consistent with actual steering geometry,0,1,0,0,0,0
+The vehicle control system shall automatically check for calibration drift or sensor offset at defined intervals and during key vehicle start cycles,0,1,0,0,0,0
+The system must detect any SAS malfunction and report Diagnostic Trouble Codes (DTCs) to the vehicle’s diagnostic system promptly,0,1,0,0,0,0
+The steering system should employ redundant sensors to maintain functionality in the event of a primary sensor failure,0,1,0,0,0,0
+The system must incorporate measures to automatically adjust for any detected sensor offset that could affect steering accuracy,0,1,0,0,0,0
+The calibration procedure for the SAS must be robust against common environmental variables such as temperature fluctuations and vehicle vibrations,0,1,0,0,0,0
+"If calibration issues arise, the system must inform the driver through the vehicle’s user interface immediately",0,1,0,0,0,0
+A final calibration check of the SAS must be conducted at the end of the vehicle production line to confirm sensor accuracy before the vehicle is released,0,1,0,0,0,0
+"In the event of SAS failure, the vehicle control system must default to a safe mode of operation that allows controlled handling of the vehicle",0,1,0,0,0,0
+The SAS must be monitored throughout the vehicle's operational life to detect and alert of performance degradation,0,1,0,0,0,0
+The vehicle system should automatically suggest service check-ups for the SAS based on mileage or operational hours to ensure ongoing reliability,0,1,0,0,0,0
+The system must perform real-time data integrity checks to validate the SAS data before using it for vehicle dynamics control decisions,0,1,0,0,0,0
+"Upon detection of a fault condition, the system shall enter a fail-safe mode, maintaining limited operational capabilities to allow the vehicle to be steered to a safe stop",0,1,0,0,0,0
+The system must detect and report any failures or errors of the steering angle sensor within a specified time frame,0,1,0,0,0,0
+"Upon detection of a steering angle sensor failure, the system must enter a safe state that maintains as much steering control as possible",0,1,0,0,0,0
+The steering angle data must be accurate within a defined tolerance to ensure the vehicle responds correctly to driver inputs,0,1,0,0,0,0
+"The steering angle sensor must be calibrated correctly, and the system should verify alignment periodically or after a specified number of miles",0,1,0,0,0,0
+A secondary redundant steering angle sensor should be used to validate data from the primary sensor,0,1,0,0,0,0
+"In the event of a detected loss of steering control, the system must alert the driver and, if possible, provide corrective assistance",0,1,0,0,0,0
+Any malfunctions within the steering system must activate an indicator to alert the driver immediately,0,1,0,0,0,0
+The vehicle control system should compensate for any detected drift or pull that is not a result of driver input,0,1,0,0,0,0
+"In case of steering system malfunction, an emergency steering control mode should be activated to allow driver control as much as possible",0,1,0,0,0,0
+The steering angle sensor should communicate effectively with other systems such as Electronic Stability Control (ESC) and Anti-lock Braking System (ABS) for integrated vehicle stability management,0,1,0,0,0,0
+"In case of incorrect steering angle detection, the system should adjust power steering assistance to ensure ease of steering and to reduce the possibility of oversteering or understeering",0,1,0,0,0,0
+The system must log all steering angle sensor errors and issues for diagnostics and maintenance purposes,0,1,0,0,0,0
+"The steering system must provide adequate feedback to the driver to convey the status of the steering control, especially in the event of a system degradation",0,1,0,0,0,0
+"After a steering angle sensor error has been resolved, the system shall automatically perform a recalibration routine to ensure accurate sensor functionality",0,1,0,0,0,0
+"The steering angle sensor must provide accurate readings across a variety of road conditions, including wet, icy, and uneven surfaces",0,1,0,0,0,0
+The vehicle's control system must account for feedback on tire grip when determining the appropriate steering angle response,0,1,0,0,0,0
+The steering system must adjust the assistive force based on weather data inputs to ensure driver control during adverse weather conditions,0,1,0,0,0,0
+"The steering system must adapt to various terrains, including gradients and off-road conditions, without compromising on performance",0,1,0,0,0,0
+"The steering mechanism should minimize environmental influences, ensuring consistent performance regardless of temperature, humidity, or altitude",0,1,0,0,0,0
+Implement predictive algorithms within the steering control system to anticipate and adjust to environmental factors before they affect vehicle trajectory,0,1,0,0,0,0
+"The vehicle must provide consistent steering feedback to the driver, irrespective of environmental conditions",0,1,0,0,0,0
+Define and implement limits to the steering angle under extreme environmental conditions to prevent oversteering or understeering,0,1,0,0,0,0
+The steering system should have diagnostic capabilities that consider environmental factors and trigger alerts for potential impact on system performance,0,1,0,0,0,0
+Steering system components must demonstrate durability against environmental stressors such as corrosion from road salt and damage from debris,0,1,0,0,0,0
+"The steering system must adjust its parameters to compensate for changes in tire pressure due to temperature variations, maintaining stable handling",0,1,0,0,0,0
+Increase power steering assistance when sensors detect adverse weather conditions that may impact steering effort or vehicle stability,0,1,0,0,0,0
+The system must continuously calibrate the steering angle sensor to ensure accuracy despite environmental and operational variations,0,1,0,0,0,0
+The steering angle sensor must provide accurate readings within a defined tolerance to ensure precise control in autonomous vehicle steering and driver assistance features,0,1,0,0,0,0
+There must be a reliable feedback loop between the steering angle sensor and the autonomous vehicle steering control system to maintain real-time adjustments,0,1,0,0,0,0
+The vehicle must implement redundant steering angle sensors to maintain functionality if a primary sensor fails,0,1,0,0,0,0
+"In case of a critical failure in the steering system, a fail-safe mode should activate, enabling the vehicle to maintain or safely transition to a minimal-risk state",0,1,0,0,0,0
+The steering control system should limit the steering angle to prevent over-steering during lane centering operations,0,1,0,0,0,0
+"The system should support self-calibration to ensure that steering angle measurements remain accurate over time, accounting for sensor drift and alignment issues",0,1,0,0,0,0
+The autonomous vehicle steering system must be compatible with variable steering ratios to provide precise control at different speeds and maneuvers,0,1,0,0,0,0
+The system must respond to required steering angle changes within a specific time frame during emergency maneuvers,0,1,0,0,0,0
+"When engaged in parking assistance mode, the system must utilize steering angle data to guide the vehicle accurately into the parking space",0,1,0,0,0,0
+"Steering angle control must be fully integrated with other vehicle dynamics systems, such as traction and stability control, to enhance overall vehicle handling",0,1,0,0,0,0
+There must be a mechanism for the driver to manually override the autonomous steering controls when necessary,0,1,0,0,0,0
+"When steering angle is used for lane keeping, the system should provide haptic feedback to the driver under specific conditions to encourage manual steering correction",0,1,0,0,0,0
+The steering components responsible for adjusting the steering angle during autonomous operations must demonstrate durability under continuous use conditions,0,1,0,0,0,0
+"The autonomous steering system, including angle sensors and actuators, must have cybersecurity measures to prevent unauthorized access and control",0,1,0,0,0,0
+"The system must maintain accurate steering control in adverse weather conditions, ensuring that steering angle corrections are not compromised by environmental factors",0,1,0,0,0,0
+The Steering Angle Sensor (SAS) must provide accurate measurements of the steering wheel angle to within a defined tolerance,0,1,0,0,0,0
+The system must detect and report any failures or discrepancies in the steering angle sensor readings,0,1,0,0,0,0
+Steering inputs from the driver must be correctly and timely translated into wheel turning actions,0,1,0,0,0,0
+The vehicle dynamics control system must adjust the vehicle's response based on steering angle data to maintain stability,0,1,0,0,0,0
+"When the steering angle sensor indicates potential loss of control, the ESC must intervene to assist in maintaining vehicle stability",0,1,0,0,0,0
+The system must implement steering angle correction to counteract unintentional drift or misalignment,0,1,0,0,0,0
+"During cornering, the system must use steering angle data to ensure optimal stability and minimize understeer or oversteer",0,1,0,0,0,0
+The steering angle detection system must have redundancy to maintain functionality if one sensor fails,0,1,0,0,0,0
+The steering angle sensor must withstand extreme temperatures and vibrations without performance degradation,0,1,0,0,0,0
+The steering angle sensor system must have the ability to self-calibrate to ensure ongoing accuracy,0,1,0,0,0,0
+"When ESC is activated, the steering control must remain predictable and consistent with the driver's input where safe and practicable",0,1,0,0,0,0
+Data from the steering angle sensor to other vehicle systems must be transmitted with high integrity and protection against corruption,0,1,0,0,0,0
+The system must provide diagnostic functions to identify issues with the steering angle sensor and recommend corrective actions,0,1,0,0,0,0
+The steering system must provide consistent feedback to the driver that correlates with the actual steering angle and vehicle dynamics,0,1,0,0,0,0
+Wheel speed sensors shall provide accurate speed measurements within a specified tolerance level across the vehicle's operating speed range,0,0,1,0,0,0
+The vehicle shall implement redundancy for wheel speed sensors to ensure measurement capability is maintained in the event of a single sensor failure,0,0,1,0,0,0
+The wheel speed sensor system shall perform self-diagnostic checks to detect and communicate sensor malfunctions,0,0,1,0,0,0
+"The speedometer shall display vehicle speed accurately, with a maximum allowable deviation as defined by regulations or manufacturer standards",0,0,1,0,0,0
+The traction control system shall respond correctly to wheel speed sensor inputs under all driving conditions to prevent wheel slip,0,0,1,0,0,0
+Wheel speed sensor signals must be immune to electromagnetic interference (EMI) and cross-talk from other vehicle systems,0,0,1,0,0,0
+"Wheel speed sensors, including magnetic and inductive types, shall maintain functionality across environmental extremes, such as temperature, moisture, and dirt",0,0,1,0,0,0
+The wheel speed sensors shall consistently measure the angular velocity of each wheel and provide accurate RPM data to the ABS and traction control systems,0,0,1,0,0,0
+Encoders used in wheel speed sensors must meet performance standards for resolution and durability over the vehicle's operational life,0,0,1,0,0,0
+An FMEA must be conducted for the wheel speed sensor system to anticipate potential failure modes and their effects on vehicle safety,0,0,1,0,0,0
+The vehicle control system shall include algorithms to validate sensor data from wheel speed sensors before utilizing it for vehicle dynamics control,0,0,1,0,0,0
+Magnetic sensors used for wheel speed detection must be shielded to prevent interference from external magnetic fields,0,0,1,0,0,0
+The vehicle maintenance manual must provide detailed procedures for testing and replacing wheel speed sensors,0,0,1,0,0,0
+The integrity of the data transmission from wheel speed sensors to the control systems must be ensured through checksums or other error-detection techniques,0,0,1,0,0,0
+"In the event of a wheel speed sensor failure, the vehicle control system shall activate a fail-safe mode that ensures the vehicle can be operated safely",0,0,1,0,0,0
+Wheel speed sensors must provide accurate readings within a defined tolerance to the ABS and ESC systems under all operating conditions,0,0,1,0,0,0
+"Data transmission lines from the wheel speed sensors to the ABS, ESC, and Traction Control System must have fault-tolerant communication protocols",0,0,1,0,0,0
+"The ABS and ESC systems must detect a wheel speed sensor failure and activate a fail-safe mode, maintaining as much functionality as possible",0,0,1,0,0,0
+The differential and axle must accommodate and correctly distribute varying wheel speeds under different load conditions without failure,0,0,1,0,0,0
+The hub and wheel assembly must maintain structural integrity and accurately relay wheel speed under expected operational stresses,0,0,1,0,0,0
+The brake system must be compatible with ABS interventions based on wheel speed data to ensure effective deceleration and stability,0,0,1,0,0,0
+The ESC system must utilize wheel speed data to accurately and reliably execute vehicle dynamics corrections,0,0,1,0,0,0
+Traction Control System must respond effectively to wheel speed variations to prevent wheel slip under acceleration and maintain traction,0,0,1,0,0,0
+Wheel speed information must be integrated with other vehicle safety systems to enhance overall dynamic safety features,0,0,1,0,0,0
+Continuous monitoring of the wheel hub assembly's condition should be conducted to predict and prevent failures that may affect wheel speed accuracy,0,0,1,0,0,0
+Redundant systems for the collection and processing of wheel speed data should be in place for the ABS and ESC,0,0,1,0,0,0
+"Wheel speed sensors and related components must withstand environmental stressors such as water, mud, and temperature extremes",0,0,1,0,0,0
+Components related to wheel speed measurement must endure the dynamic loads experienced during aggressive maneuvers without performance degradation,0,0,1,0,0,0
+"The vehicle must maintain stability when differential wheel speeds are present, as managed by the ESC system",0,0,1,0,0,0
+The system must log any discrepancies or faults in wheel speed data and notify the driver through the vehicle’s interface,0,0,1,0,0,0
+"Wheel speed sensors must provide accurate vehicle speed measurements within a specified tolerance level, regardless of environmental conditions",0,0,1,0,0,0
+"Wheel speed sensor signals must maintain integrity and not be affected by electromagnetic interference, ensuring reliable readings for ABS activation and other stability controls",0,0,1,0,0,0
+A redundant sensor system must be in place for detecting wheel speed to provide a backup in case of primary sensor failure,0,0,1,0,0,0
+The system must be capable of detecting sensor malfunctions and notifying the driver or vehicle control system for appropriate actions,0,0,1,0,0,0
+Wheel speed sensors must perform accurately under adverse weather conditions for reliable braking control and slip detection,0,0,1,0,0,0
+"The latency from wheel speed sensor input to control system response (e.g., ABS, traction control) must not exceed a specified threshold",0,0,1,0,0,0
+Wheel speed sensors must meet specified durability and lifespan targets under normal vehicle operation conditions,0,0,1,0,0,0
+Wheel speed sensors must be compatible with other vehicle sensors to support advanced functions like adaptive cruise control and vehicle dynamics control through data fusion,0,0,1,0,0,0
+"Wheel speed sensor output must facilitate precise cornering control, allowing for individual wheel speed adjustments as needed",0,0,1,0,0,0
+Wheel speed sensors should have a self-testing feature that is triggered at startup and periodically during vehicle operation,0,0,1,0,0,0
+Wheel speed sensors must operate accurately across the vehicle's specified temperature range,0,0,1,0,0,0
+Sensors must be resistant to impacts and vibrations to maintain accuracy and functionality,0,0,1,0,0,0
+Wheel speed sensors should be designed for ease of maintenance and service without requiring specialized tools,0,0,1,0,0,0
+Wheel speed sensors must adhere to industry-standard communication protocols for interoperability with other vehicle control systems,0,0,1,0,0,0
+The system shall generate a Diagnostic Trouble Code (DTC) when a wheel speed sensor malfunction is detected,0,0,1,0,0,0
+"Upon vehicle start-up, the Anti-lock Braking System (ABS) shall perform a self-check to verify all wheel speed sensors are operational",0,0,1,0,0,0
+The system must periodically verify the calibration of each wheel speed sensor and recalibrate if necessary,0,0,1,0,0,0
+Continuous monitoring of sensor wiring integrity shall be conducted to detect and report any faults or deteriorations,0,0,1,0,0,0
+The ABS shall monitor for irregular wheel speed variations that could indicate impending wheel lock-up or sensor faults,0,0,1,0,0,0
+The onboard diagnostics shall provide troubleshooting procedures or guidance following the detection of a fault,0,0,1,0,0,0
+The ABS warning light must illuminate when a fault that affects braking performance is detected,0,0,1,0,0,0
+The system shall retain fault information in memory to aid in diagnostics and troubleshooting even after the vehicle is turned off,0,0,1,0,0,0
+"Upon detection of a sensor malfunction, the system shall execute a predefined response protocol to ensure safe vehicle operation",0,0,1,0,0,0
+"The vehicle control system shall counteract any vehicle handling issues due to wheel speed sensor faults, within system limits",0,0,1,0,0,0
+The system must log and time-stamp all wheel speed sensor errors to facilitate a timeline of events for troubleshooting,0,0,1,0,0,0
+The system shall analyze historical wheel speed data to predict potential future sensor or system malfunctions and alert the user,0,0,1,0,0,0
+Critical wheel speed sensors shall have redundancy to allow the system to maintain functionality in the event of a single sensor failure,0,0,1,0,0,0
+Wheel speed sensor data shall be cross-verified with other related vehicle systems to ensure consistency,0,0,1,0,0,0
+Conduct Failure Mode Effects and Analysis (FMEA) for the wheel speed sensor system to anticipate potential failure points and their impact on vehicle safety,0,0,1,0,0,0
+The wheel speed sensors must provide accurate and timely speed data to within a specified tolerance level to ensure reliable input for safety systems,0,0,1,0,0,0
+The braking system must adjust brake force in response to wheel speed sensor data to optimize braking performance and prevent wheel lockup,0,0,1,0,0,0
+Traction control systems must dynamically adjust to wheel speed sensor inputs to maintain optimal traction performance under varying conditions,0,0,1,0,0,0
+Wheel speed data must be accurately integrated into stability control algorithms to maintain vehicle stability in all driving conditions,0,0,1,0,0,0
+The wheel speed system must contribute to anti-skid performance by detecting and adjusting for potential skid conditions promptly,0,0,1,0,0,0
+The system must rapidly process wheel speed information to activate anti-lock braking systems (ABS) and prevent wheel lockup during emergency braking scenarios,0,0,1,0,0,0
+"The wheel speed sensors should provide critical feedback for handling dynamics, enabling adjustments to suspension or steering systems for improved handling",0,0,1,0,0,0
+The wheel speed sensing system should incorporate redundancy to ensure continued functionality in case of a single sensor failure,0,0,1,0,0,0
+Wheel speed data must be provided in real-time to safety systems to enable features such as adaptive cruise control and collision avoidance systems,0,0,1,0,0,0
+The wheel speed system must include self-diagnostic capabilities to detect and report sensor failures or discrepancies,0,0,1,0,0,0
+"Wheel speed sensors must maintain operational integrity in all environmental conditions, including extreme temperatures, moisture, and exposure to road chemicals",0,0,1,0,0,0
+Communication protocols for transmitting wheel speed data to other vehicle systems must be robust and have error-checking capabilities,0,0,1,0,0,0
+"In the event of a wheel speed sensor failure, the system must default to a fail-safe mode that ensures the highest possible level of safety and stability",0,0,1,0,0,0
+The wheel speed system must allow for calibration to ensure sensors are accurately aligned with vehicle dynamics,0,0,1,0,0,0
+The system must alert the driver or maintenance personnel of the need for regular inspections or maintenance of the wheel speed sensing system,0,0,1,0,0,0
+"Wheel speed sensors must provide accurate readings across a variety of road surfaces, including dry, wet, and uneven terrains",0,0,1,0,0,0
+The vehicle control system shall adapt brake and power delivery to maintain optimal tire grip based on surface condition data received from wheel speed sensors,0,0,1,0,0,0
+Wheel speed sensors must maintain functionality and provide reliable data during wet conditions,0,0,1,0,0,0
+The vehicle must detect slippery surfaces through variations in wheel speed and initiate appropriate traction control interventions,0,0,1,0,0,0
+"Sensors must accurately detect and report wheel speed during adverse weather conditions, such as rain, snow, or ice",0,0,1,0,0,0
+The vehicle's control system must adjust braking and acceleration to optimize tire grip during winter driving conditions,0,0,1,0,0,0
+The vehicle stability system shall estimate road friction based on wheel speed sensor data and adjust stability control interventions accordingly,0,0,1,0,0,0
+Wheel speed sensors must remain operational and provide accurate readings despite tire wear over time,0,0,1,0,0,0
+The wheel speed sensing system must compensate for temperature effects to ensure accurate readings across temperature ranges,0,0,1,0,0,0
+The Anti-lock Braking System (ABS) must reliably receive accurate wheel speed information under all environmental conditions,0,0,1,0,0,0
+The Traction Control System (TCS) must integrate wheel speed data to manage power delivery and maintain vehicle stability,0,0,1,0,0,0
+The vehicle shall include a system to warn the driver of reduced road friction conditions as indicated by wheel speed variations,0,0,1,0,0,0
+Wheel speed sensors must have self-diagnostic capabilities to ensure continuous operation and identify faults that may impact functionality,0,0,1,0,0,0
+"A redundancy system shall be in place for wheel speed sensing to maintain functionality if one sensor fails, especially in critical conditions",0,0,1,0,0,0
+The vehicle must alert the driver when maintenance is required on components related to wheel speed sensing to prevent malfunctions due to environmental wear and tear,0,0,1,0,0,0
+Wheel speed sensors must provide accurate speed measurements with a tolerance defined by industry standards for effective ABS and traction control function,0,0,1,0,0,0
+The speed signal from each wheel speed sensor must be free from electromagnetic interference (EMI) to ensure accurate transmission of wheel rotation speed,0,0,1,0,0,0
+The system must be able to detect a failure or malfunction in any wheel speed sensor and notify the driver via the dashboard warning indicators,0,0,1,0,0,0
+Wheel speed readings from all sensors must be synchronized to within a specified threshold to ensure cohesive data analysis for vehicle speed determination,0,0,1,0,0,0
+Each wheel hub sensor should have redundancy in its circuitry to maintain functionality even if one signal path fails,0,0,1,0,0,0
+"The wheel speed sensors, in conjunction with the ABS and traction control systems, must adapt to wheel slip conditions by adjusting braking pressure and engine torque",0,0,1,0,0,0
+"Wheel speed sensors must be robust against environmental factors such as water, dust, dirt, and temperature extremes without performance degradation",0,0,1,0,0,0
+Wheel speed sensors should perform self-tests at startup and during operation to ensure ongoing reliability,0,0,1,0,0,0
+Wheel speed sensors must have a response time quick enough to allow real-time traction control and ABS intervention,0,0,1,0,0,0
+The wheel speed sensor outputs must be compatible with the vehicle speed monitoring systems to ensure an accurate vehicle speed readout,0,0,1,0,0,0
+The system must continuously monitor the alignment and mounting status of each wheel speed sensor to ensure accurate readings,0,0,1,0,0,0
+"ABS and traction control systems must be fully integrated with the wheel speed sensors, ensuring that sensor data is used effectively for vehicle stability interventions",0,0,1,0,0,0
+The system must log historical wheel speed data to assist in fault diagnosis and predictive maintenance,0,0,1,0,0,0
+"Wheel speed sensors must maintain functionality under the dynamic loads encountered during aggressive driving maneuvers, including hard braking and sharp turns",0,0,1,0,0,0
+The resolution of the wheel speed data must be sufficient to detect minor variations in wheel rotation that could indicate early stages of wheel slip or loss of traction,0,0,1,0,0,0
+The yaw rate sensor must measure angular velocity with a precision of ±[specific value] degrees per second to ensure accurate vehicle dynamics feedback,0,0,0,1,0,0
+Sensor data must be updated and transmitted to the vehicle dynamics control systems at a minimum frequency of [specific value] times per second to ensure real-time responsiveness,0,0,0,1,0,0
+"The system must continuously monitor the yaw rate sensor and detect any failures within [specific time] milliseconds, initiating a predefined safe state operation",0,0,0,1,0,0
+Yaw rate sensor must maintain data integrity and accuracy across the full range of vehicle speeds,0,0,0,1,0,0
+"The system shall calculate turn rate consistently using gyroscopic and inertial measurement data, ensuring correlation with actual vehicle behavior",0,0,0,1,0,0
+The yaw rate measurements must correlate accurately with steering input to within [specific value] percent to ensure coherent vehicle behavior,0,0,0,1,0,0
+The yaw rate sensing system must perform within specified operational parameters under extreme temperature ranges and environmental conditions,0,0,0,1,0,0
+The vehicle shall implement redundant rate of turn sensors to provide continuous yaw data in the event of a single sensor failure,0,0,0,1,0,0
+The system’s response to changes in rotation rate around the vertical axis must not exceed [specific value] milliseconds to ensure timely adjustments to vehicle stability,0,0,0,1,0,0
+The system must alert the driver and engage stability control measures if angular velocity exceeds safe operational limits as defined by vehicle dynamics parameters,0,0,0,1,0,0
+Monitor and log degrees per minute/hour to detect long-term trends that may indicate sensor drift or mechanical degradation,0,0,0,1,0,0
+The IMU must have comprehensive self-diagnostic capabilities to ensure ongoing operational integrity for yaw rate measurement,0,0,0,1,0,0
+Yaw rate sensor data must be effectively fused with other sensor inputs in the vehicle control system to provide a comprehensive picture of vehicle dynamics,0,0,0,1,0,0
+The yaw rate sensors must be calibrated periodically to maintain measurement accuracy within the manufacturer's specified tolerances,0,0,0,1,0,0
+"In the event of yaw rate sensor failure, the vehicle shall automatically transition to a safe state, minimizing the risk of loss of control",0,0,0,1,0,0
+The vehicle control system must accurately monitor the yaw rate to ensure responsiveness to vehicle dynamics under various driving conditions,0,0,0,1,0,0
+The electronic stability control (ESC) must detect and appropriately respond to oversteer conditions to maintain vehicle stability,0,0,0,1,0,0
+"In the event of understeer, the system must adjust power distribution and braking to aid in returning to the intended path",0,0,0,1,0,0
+The vehicle shall employ measures to prevent skidding or provide controlled skid recovery using traction control systems,0,0,0,1,0,0
+"The vehicle shall maintain stability during lateral movements, especially during sudden maneuvers, by activating appropriate stability controls",0,0,0,1,0,0
+Stability control systems must be responsive during cornering to counteract any excessive torsional force that may upset vehicle balance,0,0,0,1,0,0
+Traction control systems must adapt to varying road surfaces to maintain tire grip and vehicle control,0,0,0,1,0,0
+The vehicle's electronic systems must manage weight transfer during dynamic maneuvers to maintain stability,0,0,0,1,0,0
+The vehicle must remain maneuverable under conditions of torsional stress such as rapid turns or evasive actions,0,0,0,1,0,0
+The vehicle control system shall predict and preemptively adjust to changes in vehicle handling due to changes in center of gravity or dynamic behavior,0,0,0,1,0,0
+The vehicle's onboard systems must continuously analyze dynamic behavior and adjust stability and traction controls accordingly,0,0,0,1,0,0
+"During cornering, the vehicle shall distribute forces in a manner that maximizes tire grip and minimizes the risk of skidding or sliding",0,0,0,1,0,0
+The thresholds for stability control activation must be set based on the vehicle's specific behavior and dynamics profiles,0,0,0,1,0,0
+"In emergency maneuvers, the vehicle must engage stability and traction controls to assist the driver in maintaining control",0,0,0,1,0,0
+The vehicle must monitor tire grip levels and adjust vehicle dynamics to prevent loss of traction,0,0,0,1,0,0
+The yaw rate sensor must provide accurate measurements within a defined tolerance under all operational conditions,0,0,0,1,0,0
+The yaw rate sensing system must incorporate fault-tolerant design to ensure continued operation in the event of a sensor failure,0,0,0,1,0,0
+Vehicle control systems must process yaw rate data in real-time to enable immediate corrective actions,0,0,0,1,0,0
+Yaw rate control must be fully integrated with vehicle stability control systems to manage understeer or oversteer situations,0,0,0,1,0,0
+Yaw rate control systems must interact seamlessly with driver assistance systems such as lane keeping assist and predictive steering,0,0,0,1,0,0
+Yaw rate control systems must be robust against variations in environmental conditions such as temperature and humidity,0,0,0,1,0,0
+Yaw rate readings must be effectively used by roll stability control systems to prevent vehicle rollover in high center-of-gravity vehicles,0,0,0,1,0,0
+Yaw rate data must be used to synchronize with emergency braking systems to enhance the precision of emergency maneuvers,0,0,0,1,0,0
+Yaw rate control systems must provide steering correction assistance to maintain the intended path during a loss of traction,0,0,0,1,0,0
+The vehicle must perform regular diagnostics on the yaw rate sensor to detect and report faults,0,0,0,1,0,0
+Yaw rate control must be effectively integrated into autonomous driving systems for accurate vehicle orientation and control,0,0,0,1,0,0
+Yaw rate information should be utilized by collision avoidance systems to predict and react to potential lateral instability incidents,0,0,0,1,0,0
+"The vehicle control system must adapt yaw rate control responses based on driving conditions such as road surface, speed, and vehicle load",0,0,0,1,0,0
+Lane keeping assist systems must be calibrated to account for yaw rate sensor data to ensure accurate lane positioning,0,0,0,1,0,0
+Yaw rate control must be synchronized with the anti-lock braking system (ABS) and electronic brake-force distribution (EBD) to optimize directional stability under braking,0,0,0,1,0,0
+The system must detect yaw rate with high fidelity to ensure effective input for vehicle dynamics control systems,0,0,0,1,0,0
+"In racing and motorsport applications, the yaw rate sensor must provide real-time data integration with the vehicle's control systems",0,0,0,1,0,0
+Yaw rate sensors used within ADAS must have proven robustness and reliability to function under diverse driving conditions,0,0,0,1,0,0
+Autonomous vehicle systems must incorporate redundancy in yaw rate sensing to maintain functionality if one sensor fails,0,0,0,1,0,0
+Yaw rate sensors used for vehicle testing must exhibit high accuracy to validate vehicle dynamics models,0,0,0,1,0,0
+Vehicle design must incorporate the capability to utilize yaw rate data for dynamic analysis and safety feature design,0,0,0,1,0,0
+Safety systems must continuously monitor yaw rate to identify potential loss of control or rollover risks,0,0,0,1,0,0
+The system must implement yaw rate thresholds to trigger accident avoidance maneuvers when necessary,0,0,0,1,0,0
+Drift control systems must adaptively use yaw rate feedback to optimize vehicle control during high-performance driving scenarios,0,0,0,1,0,0
+"The system must use yaw rate input to support the execution of emergency maneuvers, enhancing evasive capabilities",0,0,0,1,0,0
+"Vehicle suspension and steering systems must utilize yaw rate data to enhance road handling, especially in adverse conditions",0,0,0,1,0,0
+The system must allow for performance tuning based on yaw rate feedback to optimize for high-performance driving conditions,0,0,0,1,0,0
+Simulations used in vehicle dynamics analysis must accurately incorporate yaw rate data to replicate real-world conditions,0,0,0,1,0,0
+The system must employ predictive analysis using yaw rate trends to anticipate and correct potential stability issues,0,0,0,1,0,0
+"Yaw rate sensors must provide consistent data output under extreme temperatures, vibrations, and electromagnetic interference",0,0,0,1,0,0
+Yaw rate sensors must maintain accuracy within manufacturer specifications throughout the operational life of the vehicle,0,0,0,1,0,0
+Gyroscopes within the yaw rate sensors must provide stable output even under high dynamic load and vibration conditions,0,0,0,1,0,0
+Accelerometers must be integrated with yaw rate sensors to enhance detection accuracy of vehicle rotation around the vertical axis,0,0,0,1,0,0
+The IMU must have redundancy to ensure that failure of one component does not lead to loss of vehicle stability control,0,0,0,1,0,0
+Data from yaw rate sensors must be fused with other sensor data to create a robust model of vehicle dynamics for the control systems,0,0,0,1,0,0
+"Yaw rate events that trigger stability control interventions must be logged with timestamp, severity, and outcome for post-event analysis",0,0,0,1,0,0
+"In the event of a critical stability control event, relevant yaw data should be transmitted via telematics for remote diagnostics and analysis",0,0,0,1,0,0
+Collected yaw rate data must be analyzed periodically to identify potential improvements in vehicle stability systems,0,0,0,1,0,0
+The data acquisition systems used for capturing yaw rate sensor data must demonstrate high reliability under automotive testing standards,0,0,0,1,0,0
+Onboard instrumentation must include diagnostic capabilities to detect and report sensor malfunctions or data inconsistencies,0,0,0,1,0,0
+Onboard yaw rate sensors must perform self-tests at start-up and periodically during vehicle operation to ensure ongoing functionality,0,0,0,1,0,0
+Vehicle telemetry systems must incorporate yaw rate sensor data to support advanced driver assistance systems (ADAS) and automated driving functions,0,0,0,1,0,0
+The data processing for yaw rate and associated sensor inputs must occur within a timeframe that supports real-time stability control interventions,0,0,0,1,0,0
+Conduct FMEA for the yaw rate sensor system to anticipate potential failure modes and their effects on vehicle stability,0,0,0,1,0,0
+The yaw rate sensor must provide measurement accuracy within a specified degree per second (°/s) range under nominal operating conditions,0,0,0,1,0,0
+The vehicle system must automatically calibrate the yaw rate sensor at defined intervals or under specific conditions to maintain measurement accuracy,0,0,0,1,0,0
+The yaw rate system must incorporate measures to detect and compensate for sensor drift over time and usage,0,0,0,1,0,0
+"Implement signal processing techniques to filter out noise from the yaw rate sensor data, ensuring signal integrity",0,0,0,1,0,0
+The vehicle control system must effectively integrate yaw rate data with other vehicle dynamic data for accurate vehicle stability control,0,0,0,1,0,0
+The yaw rate sensor must be placed in a location on the vehicle that minimizes environmental impact and maximizes measurement accuracy,0,0,0,1,0,0
+The yaw rate sensor system must adapt its operation dynamically to compensate for changes in environmental factors such as temperature and humidity,0,0,0,1,0,0
+The system must account for tire variability and wear when interpreting yaw rate sensor data to ensure consistent vehicle stability control,0,0,0,1,0,0
+Ensure the vehicle’s onboard computational resources are capable of processing yaw rate sensor data in real-time for immediate stability control adjustments,0,0,0,1,0,0
+"The yaw rate sensor must meet defined reliability standards, proven through extensive durability and performance testing",0,0,0,1,0,0
+Implement redundant yaw rate sensors to ensure system functionality in the event of a sensor failure,0,0,0,1,0,0
+Optimize sensor fusion algorithms to accurately combine yaw rate sensor data with other sensor inputs for cohesive vehicle dynamics assessment,0,0,0,1,0,0
+Utilize advanced signal processing to maintain the integrity of yaw rate data under various operational scenarios,0,0,0,1,0,0
+The vehicle control system must have sufficient computational capacity to handle the demands of processing and integrating yaw rate data,0,0,0,1,0,0
+"Define a clear response strategy for the vehicle control system in the event of yaw rate sensor faults, including safe mode operations and driver notifications",0,0,0,1,0,0
+Ensure that the yaw rate sensor performs within specified accuracy limits across the vehicle’s operating temperature and speed range,0,0,0,1,0,0
+Implement diagnostic capabilities to routinely check the status of the yaw rate sensor and report any identified issues,0,0,0,1,0,0
+"Before utilizing yaw rate data for vehicle dynamics control, the system must validate the data against predefined criteria to ensure its trustworthiness",0,0,0,1,0,0
+The yaw rate sensor must measure vehicle yaw with an accuracy within specified limits under all operating conditions,0,0,0,1,0,0
+The yaw rate sensor must provide data updates at intervals that allow real-time assessment and response by vehicle control systems,0,0,0,1,0,0
+A redundancy system for the yaw rate sensor should be in place to ensure continuous functionality in the event of a sensor failure,0,0,0,1,0,0
+The system must detect potential rollover conditions and initiate preventive measures within a time frame that effectively mitigates rollover risk,0,0,0,1,0,0
+Yaw rate data must be integrated with the ESP to adjust vehicle dynamics for improved stability,0,0,0,1,0,0
+Yaw control systems must compensate for vehicle yaw during adverse driving conditions such as understeer or oversteer,0,0,0,1,0,0
+The vehicle's control system must maintain operation under a single-point failure within the yaw rate sensing system,0,0,0,1,0,0
+The vehicle must perform self-diagnostic tests on the yaw rate sensor and report faults in accordance with onboard diagnostic standards,0,0,0,1,0,0
+Yaw rate sensors must perform reliably within their specifications under environmental extremes such as temperature and humidity,0,0,0,1,0,0
+The driver must be alerted immediately via the vehicle's dashboard indicators if the yaw rate sensor fails or operates outside normal parameters,0,0,0,1,0,0
+The vehicle dynamics control system must adjust to compensate for discrepancies between actual and expected vehicle yaw rates,0,0,0,1,0,0
+Yaw rate sensor data must be coherently integrated with inputs from other sensors to create a comprehensive stability control response,0,0,0,1,0,0
+The yaw rate sensor must have a secure and uninterrupted power supply with appropriate fail-safes in place,0,0,0,1,0,0
+Regular calibration and alignment checks of the yaw rate sensor must be part of the vehicle's service protocol,0,0,0,1,0,0
+"Vehicle control systems must respond to yaw rate sensor inputs by adjusting braking, throttle, and steering as necessary to maintain intended vehicle path and stability",0,0,0,1,0,0
+The steering torque sensor must accurately measure torque input in newton-meters (Nm) and kilogram-force meters (kgf·m) with a defined precision under all operating conditions,0,0,0,0,1,0
+The steering system must perform automatic calibration and self-testing at startup to ensure the torque sensors are operating within specified parameters,0,0,0,0,1,0
+"The vehicle's steering response must be consistent with the driver's torque input on the steering wheel, with no uncommanded delays or discrepancies",0,0,0,0,1,0
+"The system must provide consistent steering effort feedback to the driver, reflecting actual turning force requirements based on vehicle speed and driving conditions",0,0,0,0,1,0
+The steering system must continuously monitor for faults in torque measurement and provide immediate notification to the driver through the vehicle's diagnostic system,0,0,0,0,1,0
+The integrity of the torque signal must be maintained under various electromagnetic conditions to avoid signal degradation or interference,0,0,0,0,1,0
+The system must protect against excessive torque applied to the steering wheel that could lead to mechanical or structural damage,0,0,0,0,1,0
+"In the event of power steering assist failure, the system must ensure that manual steering effort remains within safe limits of torque application for the driver to maintain control",0,0,0,0,1,0
+Critical components of the steering torque system must have redundancy to allow for fail-operational capability,0,0,0,0,1,0
+"Components measuring and transmitting steering torque must be robust against environmental factors such as temperature extremes, vibrations, and moisture",0,0,0,0,1,0
+"The system must detect and respond appropriately to torque inputs outside normal operational thresholds, either by alerting the driver or by taking corrective action",0,0,0,0,1,0
+All steering components transmitting torque must be able to withstand the lifecycle's expected loads without failure,0,0,0,0,1,0
+Power steering assistance must be limited to prevent the application of torque that would cause loss of vehicle control,0,0,0,0,1,0
+The vehicle must record steering torque data for use in event data recorders (EDRs) to aid in accident reconstruction,0,0,0,0,1,0
+The steering system must adjust the torque assist based on the vehicle's speed to ensure appropriate steering feedback and control,0,0,0,0,1,0
+The system must monitor tire grip levels and adjust steering torque to compensate for changes in grip,0,0,0,0,1,0
+"The steering system must adapt the torque levels in response to detected road surface conditions (e.g., ice, water, gravel)",0,0,0,0,1,0
+The design of the steering system must maintain its integrity and functionality under the expected range of vehicle weights and loading conditions,0,0,0,0,1,0
+The steering torque system must be compatible with the range of tire sizes and types specified for the vehicle,0,0,0,0,1,0
+"The system must include a failure mode analysis feature that initiates a safe mode operation, minimizing steering torque to a safe level in the event of system failure",0,0,0,0,1,0
+The steering torque must provide precise feedback to the driver to accurately reflect the steering effort required in real-time conditions,0,0,0,0,1,0
+"The steering system must perform consistently across a range of environmental conditions, including temperature extremes and humidity",0,0,0,0,1,0
+Critical steering system components must have redundancy to ensure steering control is maintained in the event of a single-point failure,0,0,0,0,1,0
+The system must continuously perform self-diagnostics and report any issues to the driver or onboard diagnostic system,0,0,0,0,1,0
+There must be defined maximum and minimum steering torque limits to prevent driver fatigue and ensure steering can be maintained in emergency situations,0,0,0,0,1,0
+The steering torque system must include an automated calibration feature that adjusts to maintain optimal performance over time and use,0,0,0,0,1,0
+"The system must alert the driver to safety-critical conditions related to steering torque, such as malfunctions or deviations from expected performance",0,0,0,0,1,0
+"In the event of power steering failure, the system must provide emergency support to allow manual steering with increased effort",0,0,0,0,1,0
+The system must dynamically compensate for changes in vehicle load that could affect steering torque,0,0,0,0,1,0
+The power steering system must provide consistent torque feedback to the driver that corresponds to the actual steering conditions,0,0,0,0,1,0
+"The steering system should adapt the steering feel according to the driving mode selected (e.g., comfort vs. sporty)",0,0,0,0,1,0
+"The system must adjust steering sensitivity in real-time based on vehicle speed, steering angle, and driver input",0,0,0,0,1,0
+Steering response must be precise and proportional to the input from the steering wheel within a defined tolerance,0,0,0,0,1,0
+"In the event of a power steering system failure, the system must still provide adequate feedback to the driver to safely control the vehicle",0,0,0,0,1,0
+The power steering system must vary the steering torque to facilitate maneuverability at low speeds and stability at high speeds,0,0,0,0,1,0
+The vehicle must detect and alert the driver of any power steering system malfunctions promptly,0,0,0,0,1,0
+"During emergency maneuvers, the system must increase steering feedback to enhance driver control",0,0,0,0,1,0
+The steering system must have a redundant mechanism to maintain steering control in the event of a single point of failure,0,0,0,0,1,0
+"The steering system must maintain optimal feedback and performance under various environmental conditions, including temperature and humidity extremes",0,0,0,0,1,0
+The steering system should be capable of providing haptic feedback to alert the driver of potential hazards or system states,0,0,0,0,1,0
+Steering feedback should be calibrated to account for varying load conditions in the vehicle,0,0,0,0,1,0
+Transitions between different levels of power steering assistance must be smooth and seamless to the driver,0,0,0,0,1,0
+The system must include error correction algorithms to minimize any discrepancy in the steering feedback provided to the driver,0,0,0,0,1,0
+"The power steering system should allow drivers to customize steering feedback settings according to personal preference, within safety limits",0,0,0,0,1,0
+The hydraulic power steering system must maintain its integrity and not leak hydraulic fluid under nominal operating conditions,0,0,0,0,1,0
+The EPS motor should deliver consistent performance over a wide range of temperatures and operating conditions,0,0,0,0,1,0
+"The variable assist power steering should adjust the level of steering assistance based on vehicle speed, steering angle, and driver input promptly and accurately",0,0,0,0,1,0
+The power steering pump must operate reliably without failure for its designated service life,0,0,0,0,1,0
+The EPS motor must have built-in overload protection to prevent damage during extreme operating conditions,0,0,0,0,1,0
+"The system must accurately convey force feedback to the driver, reflecting actual driving conditions",0,0,0,0,1,0
+The PSCU should include self-diagnostic capabilities to detect and report faults in the power steering system,0,0,0,0,1,0
+"In the event of a power steering failure, the system must ensure that manual steering is still possible, although with increased effort",0,0,0,0,1,0
+The PSCU must maintain constant communication with other vehicle safety systems (like ABS and ESC) to ensure integrated vehicle control,0,0,0,0,1,0
+The system must monitor the temperature of the power steering fluid and take corrective action if temperatures exceed safe operating limits,0,0,0,0,1,0
+The electric power steering system must have a redundancy plan for critical components to maintain steering assistance in the event of partial system failure,0,0,0,0,1,0
+The power steering system should provide consistent haptic feedback that does not deteriorate over time or with system aging,0,0,0,0,1,0
+The software governing the PSCU must be updatable with secure measures in place to prevent unauthorized access or tampering,0,0,0,0,1,0
+"Noise generated by the power steering system, including the pump and EPS motor, must not exceed defined levels to avoid distraction or discomfort to vehicle occupants",0,0,0,0,1,0
+All power steering components must be tested and confirmed to endure the maximum expected load during the vehicle's lifetime,0,0,0,0,1,0
+Steering torque sensors must provide accurate measurements within a defined tolerance range to ensure precise input to safety and control systems,0,0,0,0,1,0
+The vehicle must employ redundant steering torque sensors to maintain functionality in the event of a single sensor failure,0,0,0,0,1,0
+The system must continuously monitor steering torque sensors for faults and report any detected issues to the Driver Assistance Systems for prompt alerting of the driver,0,0,0,0,1,0
+Steering torque sensor signals must remain stable and resist electromagnetic interference that could impact system performance,0,0,0,0,1,0
+The response of the steering system to sensor input must not exceed a specified time limit to ensure timely intervention by ESC and Lane Keeping Assist systems,0,0,0,0,1,0
+Steering torque systems should have the ability to self-calibrate to compensate for sensor drift or degradation over time,0,0,0,0,1,0
+Steering torque sensors and related control systems must maintain operational integrity under adverse weather conditions,0,0,0,0,1,0
+"ESC systems must use steering torque data to effectively compensate for oversteer or understeer, enhancing vehicle stability",0,0,0,0,1,0
+Communication between steering torque sensors and safety control systems must maintain high integrity with minimal latency,0,0,0,0,1,0
+The driver must be able to override electronic steering inputs from Driver Assistance Systems immediately with manual steering input when necessary,0,0,0,0,1,0
+"Adaptive Steering systems must provide consistent feedback through the steering mechanism to the driver, even when adjusting steering effort",0,0,0,0,1,0
+Conduct FMEA for the steering torque system to identify potential failure modes and their effects on Electronic Stability Control (ESC) and Autonomous Driving functions,0,0,0,0,1,0
+"In the event of steering torque sensor failure, the vehicle control system must default to a safe mode that prioritizes driver control",0,0,0,0,1,0
+Software managing steering torque input to various systems must have secure update mechanisms to enhance functionality and fix vulnerabilities,0,0,0,0,1,0
+The steering torque sensor must be calibrated to accurately reflect the driver's input within specified tolerances,0,0,0,0,1,0
+The steering column must be inspected for structural integrity and the absence of excessive play at specified service intervals,0,0,0,0,1,0
+Steering linkages must maintain functional integrity under operational stress for a defined vehicle lifespan or distance traveled,0,0,0,0,1,0
+Wheel alignment must be checked and adjusted as necessary during regular maintenance intervals to ensure consistent steering torque feedback,0,0,0,0,1,0
+A comprehensive steering system inspection protocol must be established and followed during each scheduled maintenance service,0,0,0,0,1,0
+Implement an automated diagnostic routine to assess the health of the steering torque sensor and provide early warnings of potential failures,0,0,0,0,1,0
+A lubrication schedule for the steering system must be strictly followed to ensure the longevity and smooth operation of moving components,0,0,0,0,1,0
+The steering system must remain operable within safe limits in the event of a torque sensor failure,0,0,0,0,1,0
+A redundant torque sensing system should be implemented to provide backup in case the primary sensor fails,0,0,0,0,1,0
+"In case of steering system electronic failures, the system must ensure the retention of emergency manual steering control",0,0,0,0,1,0
+The steering system must provide consistent torque feedback to the driver under varying driving conditions,0,0,0,0,1,0
+The vehicle's onboard diagnostic system must alert the driver or technician to any wear or imminent failure of steering components,0,0,0,0,1,0
+The system should record steering performance data to aid in troubleshooting and predictive maintenance,0,0,0,0,1,0
+The steering system must automatically compensate for temperature-induced variations in steering torque,0,0,0,0,1,0
+Implement periodic vibration analysis for steering components to identify early signs of wear or misalignment,0,0,0,0,1,0
+The steering torque system shall provide consistent feedback through the steering wheel that accurately reflects the vehicle's dynamic state,0,0,0,0,1,0
+The steering wheel design shall comply with ergonomic standards for the majority of driver anthropometrics to ensure accessibility and control,0,0,0,0,1,0
+The steering wheel shall be made of materials and textures that promote comfort during prolonged periods of use,0,0,0,0,1,0
+The material used for the steering wheel grip shall maintain its integrity and properties under prolonged use and environmental exposure,0,0,0,0,1,0
+Steering effort shall remain consistent under varying temperature and humidity conditions,0,0,0,0,1,0
+The system shall provide immediate and proportional response to driver input through the steering wheel,0,0,0,0,1,0
+The steering wheel shall minimize transmission of excessive vibration to the driver during normal vehicle operation,0,0,0,0,1,0
+The steering wheel shall include a system to communicate safety-critical alerts to the driver through tactile or visual signals,0,0,0,0,1,0
+"The steering wheel shall offer a range of adjustability to accommodate different driver preferences and sizes, maintaining ergonomic positioning",0,0,0,0,1,0
+"In the event of system failure, the steering torque system shall default to a safe mode that allows manual steering control",0,0,0,0,1,0
+Steering torque sensors shall be calibrated to ensure accurate readings over the life of the vehicle,0,0,0,0,1,0
+The steering wheel and associated components shall be designed to be easily cleanable and maintainable without degrading functionality or comfort,0,0,0,0,1,0
+The steering torque system shall provide heightened feedback during emergency maneuvers to inform the driver of vehicle limits and conditions,0,0,0,0,1,0
+The steering wheel surface shall not exceed specific temperature thresholds under normal operating conditions to prevent discomfort or harm to the driver,0,0,0,0,1,0
+Steering system electronics shall be shielded against EMI to prevent erratic steering wheel feedback or torque,0,0,0,0,1,0
+The steering torque sensor must accurately measure the driver's input torque with a specified precision at all times,0,0,0,0,1,0
+The system must incorporate redundancy for the steering torque sensor to ensure continued functionality in the event of a fault,0,0,0,0,1,0
+The steering system must provide consistent and predictable torque feedback to the driver under all driving conditions,0,0,0,0,1,0
+The power steering system must perform reliably over the vehicle's operational lifetime without degradation that impacts safety or control,0,0,0,0,1,0
+"In case of partial system failure, the steering assist must either maintain operation at a reduced level or fail-safe",0,0,0,0,1,0
+EPS must function correctly within the full range of operational temperatures and conditions specified by the manufacturer,0,0,0,0,1,0
+The system must limit the steering effort required by the driver to a specified maximum under normal operating conditions,0,0,0,0,1,0
+"During emergency maneuvers, the system must increase force feedback to inform the driver of potential loss of vehicle control",0,0,0,0,1,0
+The system must adapt the steering force required in response to vehicle speed and driving conditions,0,0,0,0,1,0
+The steering system must respond to driver input within a specified timeframe to ensure timely steering assist,0,0,0,0,1,0
+Implement a monitoring system to continually assess steering performance and report any degradation or failure in real-time,0,0,0,0,1,0
+The steering system must include comprehensive diagnostic capabilities to detect and signal any malfunction,0,0,0,0,1,0
+The system must enable a manual override allowing the driver to steer without assist in case of system failure,0,0,0,0,1,0
+The system must be able to identify a fault in the steering torque sensor and transition to a safe state without compromising vehicle control,0,0,0,0,1,0
+The steering torque sensor must maintain calibration over the vehicle’s operational lifetime or re-calibrate automatically without driver intervention,0,0,0,0,1,0
+The speedometer shall display the vehicle speed with an accuracy of +/- 2% of the actual speed over the full range of vehicle operation,0,0,0,0,0,1
+The odometer shall record the vehicle's mileage with a precision that does not exceed a deviation of 1% over the lifetime of the vehicle,0,0,0,0,0,1
+"The vehicle must use multiple speed sensors to provide redundancy, ensuring reliable speed measurement in the event of a single sensor failure",0,0,0,0,0,1
+The vehicle speed as measured by onboard sensors shall be cross-verified with GPS speed data to ensure accuracy,0,0,0,0,0,1
+Speed readings shall be updated and displayed to the driver at intervals not exceeding 1 second,0,0,0,0,0,1
+"The digital speed display shall be clearly visible under all lighting conditions, with automatic brightness adjustment",0,0,0,0,0,1
+"The vehicle shall display speed consistently in either MPH or KPH, as per the regulatory requirements of the country of operation, with the ability to switch between units where legally permitted",0,0,0,0,0,1
+The speed displayed to the driver must reflect real-time vehicle speed without perceptible delay,0,0,0,0,0,1
+Speed sensors must maintain functional accuracy within specified limits under extreme temperature ranges and weather conditions,0,0,0,0,0,1
+"In the event of speed monitoring system failure, the vehicle shall enter a fail-safe mode with clear driver notifications",0,0,0,0,0,1
+The vehicle shall log any discrepancies between the different speed measurement systems and alert technicians during maintenance,0,0,0,0,0,1
+The vehicle shall be capable of restricting the maximum speed to comply with legal and manufacturer limitations,0,0,0,0,0,1
+The vehicle speed measurement systems shall perform self-calibration and self-test routines upon vehicle startup,0,0,0,0,0,1
+The vehicle shall provide audible and/or visual alerts to the driver if the vehicle exceeds a speed threshold set by the driver,0,0,0,0,0,1
+The vehicle's speed measurement systems shall detect and alert against any interference or tampering,0,0,0,0,0,1
+The cruise control system must maintain the set speed within a tolerance of +/- X% under steady state driving conditions,0,0,0,0,0,1
+The vehicle must not exceed programmable speed limits without explicit driver override,0,0,0,0,0,1
+The vehicle must not exceed programmable speed limits without explicit driver override,0,0,0,0,0,1
+The vehicle must respond to deceleration commands from the braking system without delay and within defined performance parameters,0,0,0,0,0,1
+Throttle adjustments to achieve desired vehicle speed must be smooth and predictable,0,0,0,0,0,1
+Activation of the brake pedal must immediately disengage cruise control and allow for manual speed regulation,0,0,0,0,0,1
+The vehicle control system must regulate speed effectively under diverse environmental and load conditions,0,0,0,0,0,1
+"The vehicle must adjust its speed setting dynamically in response to road inclines, declines, and curves",0,0,0,0,0,1
+The vehicle shall automatically adjust speed in response to recognized safety hazards or road conditions,0,0,0,0,0,1
+The speed control system must be able to store and recall the last set speed after disengagement,0,0,0,0,0,1
+The vehicle shall provide haptic feedback to the driver when speed adjustments are initiated,0,0,0,0,0,1
+The vehicle speed control system must continuously perform self-diagnostics to detect and report faults,0,0,0,0,0,1
+"In the event of a critical system failure, the vehicle must enter a fail-safe mode that prioritizes bringing the vehicle to a stop safely",0,0,0,0,0,1
+The driver must be able to manually override speed control systems at any time with clear and simple actions,0,0,0,0,0,1
+The vehicle shall provide clear visual and audible indicators when speed control modes are engaged or disengaged,0,0,0,0,0,1
+The vehicle control system shall automatically comply with speed limitations as per regulatory requirements to prevent speeding,0,0,0,0,0,1
+Vehicles must be equipped with a dynamic speed monitoring system that provides real-time speed data to the driver and relevant vehicle systems,0,0,0,0,0,1
+"The vehicle shall have the capability to integrate with external speed enforcement databases, where legally permissible, to adjust speed in restricted zones",0,0,0,0,0,1
+The vehicle shall alert the driver when approaching a speed restriction zone and when exceeding the speed limit,0,0,0,0,0,1
+Vehicles must be equipped with automated speed control devices that can adjust the vehicle's speed to conform with speed restrictions,0,0,0,0,0,1
+A speed governor shall be implemented to prevent the vehicle from exceeding maximum regulatory or manufacturer-set speed limits,0,0,0,0,0,1
+The vehicle system shall be capable of logging speeding tickets or violations detected by onboard systems for review and action by the driver or authorities,0,0,0,0,0,1
+The vehicle shall incorporate speed limit sign recognition technology to automatically detect and adapt to changing speed restrictions,0,0,0,0,0,1
+"In the event of speeding, relevant data such as vehicle speed, location, and time must be recorded for potential legal and safety analysis",0,0,0,0,0,1
+"The vehicle shall allow the creation of speed profiles suited for different driving environments (urban, highway, etc.) and automatically apply the appropriate profile based on GPS data",0,0,0,0,0,1
+"Vehicles shall include a system override function for emergency services use, allowing speed restrictions to be bypassed when necessary",0,0,0,0,0,1
+The vehicle shall provide haptic feedback to the driver when a pre-set speed threshold is exceeded,0,0,0,0,0,1
+The vehicle shall provide haptic feedback to the driver when a pre-set speed threshold is exceeded,0,0,0,0,0,1
+"Implement adaptive speed assistance systems that adjust vehicle speed in response to traffic flow, road conditions, and speed limits",0,0,0,0,0,1
+he vehicle must maintain stability and control during high-speed operations at speeds up to the maximum rated speed,0,0,0,0,0,1
+"The vehicle must demonstrate responsive control during low-speed maneuvers, including parking and traffic navigation",0,0,0,0,0,1
+The engine management system must limit the maximum engine speed to prevent mechanical damage and ensure safe operation,0,0,0,0,0,1
+The vehicle must manage the speed-to-power ratio to maximize acceleration performance while maintaining fuel efficiency,0,0,0,0,0,1
+The vehicle should optimize its speed-to-efficiency ratio across various driving conditions to achieve the best fuel economy,0,0,0,0,0,1
+The vehicle's control system must regulate operation so as not to exceed the maximum safe speed as defined by the manufacturer,0,0,0,0,0,1
+The vehicle must be able to identify and suggest optimal speeds for various conditions to enhance performance and efficiency,0,0,0,0,0,1
+The vehicle shall adapt its speed profile in response to environmental and road conditions to maintain safety and efficiency,0,0,0,0,0,1
+The vehicle shall continuously monitor its speed and provide real-time feedback to the driver and vehicle systems,0,0,0,0,0,1
+"The vehicle shall provide systems to assist the driver in complying with speed limits, including alerts and, where permissible, automatic speed adjustments",0,0,0,0,0,1
+The vehicle shall dynamically adjust its speed relative to the vehicle load to optimize performance and safety,0,0,0,0,0,1
+"In the event of critical system failures, the vehicle shall automatically reduce speed to a safe level",0,0,0,0,0,1
+"When in autonomous or semi-autonomous mode, the vehicle shall adapt its speed in real-time to traffic flow and road conditions",0,0,0,0,0,1
+The vehicle speed sensing system must have fault tolerance capabilities to ensure speed is accurately detected and reported even in the case of a sensor failure,0,0,0,0,0,1
+The vehicle must record speed data to aid in diagnostics and post-incident analysis,0,0,0,0,0,1
+"The vehicle must maintain directional stability under varying speed dynamics, including acceleration and deceleration phases",0,0,0,0,0,1
+The handling characteristics of the vehicle must adapt to the current speed to provide optimal control,0,0,0,0,0,1
+The vehicle must automatically adjust torque and braking power during cornering at high speeds to prevent oversteer or understeer,0,0,0,0,0,1
+The vehicle must continuously monitor stability at high speeds and engage stability control systems when necessary,0,0,0,0,0,1
+The vehicle should provide feedback to the driver when handling characteristics change at high speeds,0,0,0,0,0,1
+The vehicle must employ predictive algorithms to anticipate and mitigate speed-related handling issues,0,0,0,0,0,1
+The vehicle design must incorporate features that enhance aerodynamic stability at higher speeds,0,0,0,0,0,1
+Traction control systems must adjust in real-time to speed variations to prevent wheel slip,0,0,0,0,0,1
+Suspension systems should automatically adjust damping based on vehicle speed to maintain optimal handling,0,0,0,0,0,1
+Steering systems must provide a dynamic response that is tuned for the vehicle's speed to ensure precise handling,0,0,0,0,0,1
+The vehicle must enforce a dynamic speed limit based on handling feedback and stability data,0,0,0,0,0,1
+The ESP must adjust its intervention thresholds in accordance with the vehicle's speed to prevent loss of control,0,0,0,0,0,1
+Implement active yaw control that specifically manages the vehicle's rotational movements around the vertical axis at high speeds,0,0,0,0,0,1
+The vehicle must account for load (passengers and cargo) when adjusting handling dynamics with speed changes,0,0,0,0,0,1
+The vehicle should provide cornering assistance by coordinating power distribution and braking to support stable cornering at variable speeds,0,0,0,0,0,1
+"The speed gauge shall be designed to ensure clear readability under various lighting conditions, including direct sunlight and nighttime driving",0,0,0,0,0,1
+"If the vehicle uses a mechanical speedometer cable, the cable must demonstrate high durability and a low failure rate under lifetime operational tests",0,0,0,0,0,1
+he speedometer must be calibrated and verified against a standardized test speed to ensure accuracy within allowable tolerances,0,0,0,0,0,1
+The speedometer must maintain specified accuracy levels under extreme temperature ranges and environmental conditions,0,0,0,0,0,1
+The speed display must show changes in vehicle speed within a time frame that does not hinder the driver's ability to respond to speed changes,0,0,0,0,0,1
+The speedometer sensor must include fault detection capabilities that alert the driver to malfunctions via the vehicle's diagnostic system,0,0,0,0,0,1
+Digital speedometer displays must be free from defects that cause misinterpretation of the displayed speed,0,0,0,0,0,1
+The analog speedometer needle must indicate the vehicle's speed with high precision and without sticking or lagging,0,0,0,0,0,1
+Vehicles should incorporate a redundant speed measurement system to provide a backup in case the primary speedometer system fails,0,0,0,0,0,1
+The integrity of the speed sensor signal must be maintained to prevent erroneous speed data caused by electromagnetic interference or signal degradation,0,0,0,0,0,1
+The speedometer display shall include a dimming feature that adjusts to ambient light conditions to reduce glare and distraction,0,0,0,0,0,1
+The vehicle shall have a system to warn the driver when exceeding a programmable speed limit,0,0,0,0,0,1
+The speedometer system must be tested and certified by an authorized body to meet all regional and international standards for automotive instrumentation,0,0,0,0,0,1
+The vehicle must log speedometer data to aid in fault diagnosis and maintenance checks,0,0,0,0,0,1
+Conduct a thorough FMEA for the speedometer system to ensure all potential failure modes have been identified and addressed,0,0,0,0,0,1
+The vehicle must provide a speedometer display that accurately reflects the vehicle's speed within a tolerance defined by regulatory standards to ensure the driver's accurate perception of speed,0,0,0,0,0,1
+"The vehicle shall be equipped with a system that alerts the driver when exceeding speed limits, leveraging real-time traffic sign recognition or GPS-based speed limit data",0,0,0,0,0,1
+Adaptive Cruise Control (ACC) systems must adjust the vehicle speed in response to traffic conditions while maintaining driver-set preferences and limits,0,0,0,0,0,1
+The vehicle must respond to manual speed adjustments made by the driver without undue delay and within safety parameters,0,0,0,0,0,1
+Vehicles equipped with telematics systems shall analyze driver speed behavior and provide feedback that encourages safe driving practices,0,0,0,0,0,1
+"Vehicle speed control systems, such as traction control, must adapt to changing road conditions (e.g., wet, icy, uneven surfaces) to maintain vehicle stability",0,0,0,0,0,1
+"The vehicle shall notify the driver of the need to adjust speed based on navigation data (e.g., upcoming sharp turns, school zones, or road work)",0,0,0,0,0,1
+Vehicles shall incorporate an ISA system to assist drivers in maintaining appropriate speeds with the ability to override the system when necessary,0,0,0,0,0,1
+"The vehicle must provide haptic, visual, or auditory feedback to the driver when a pre-set speed threshold is exceeded",0,0,0,0,0,1
+"The vehicle's safety systems must be capable of automatically reducing speed in critical situations, such as when approaching a stopped vehicle or pedestrian crossing, with clear communication to the driver",0,0,0,0,0,1
+The vehicle should offer an optional speed limiter that the driver can activate to prevent exceeding a maximum safe or legal speed,0,0,0,0,0,1
+"In vehicles with advanced driver assistance systems (ADAS), incorporate training features that help drivers understand how to adjust and set speed controls effectively",0,0,0,0,0,1
+"In the event of speed control system failure, the vehicle must default to a safe state that allows manual speed control by the driver without abrupt changes",0,0,0,0,0,1
+The system must synchronize steering angle inputs with accelerator pedal position to optimize vehicle stability and traction during corner entry,1,1,0,0,0,0
+The vehicle control system must dynamically adjust the steering angle in response to accelerator pedal inputs during curve negotiation to maintain the desired cornering line,1,1,0,0,0,0
+Steering assistance must vary proportionally to the vehicle's cornering speed as influenced by the accelerator pedal position to provide optimal driver feedback and control,1,1,0,0,0,0
+"Upon corner exit, the system must manage the interplay between the steering angle and the acceleration pedal to ensure smooth power delivery and vehicle stability",1,1,0,0,0,0
+The system must predict the apex of a turn based on steering angle input and modulate the acceleration accordingly for balanced cornering dynamics,1,1,0,0,0,0
+"There must be a limitation on the steering angle at high cornering speeds, which is influenced by the rate of acceleration, to prevent loss of control",1,1,0,0,0,0
+Implement a feedback mechanism that alerts the driver of optimal steering angle and acceleration rates during cornering maneuvers,1,1,0,0,0,0
+The system should learn and adapt to recurring track curves to preemptively adjust steering and acceleration for improved cornering performance,1,1,0,0,0,0
+Steering response must adapt to changes in acceleration pedal position during bends to maintain optimal handling characteristics,1,1,0,0,0,0
+"The system must regulate cornering speed by coordinating steering and acceleration inputs, ensuring safe turn speeds according to road conditions",1,1,0,0,0,0
+"In emergency maneuvers, the system must be capable of overriding the driver's steering and acceleration inputs to prevent skidding or loss of control",1,1,0,0,0,0
+The system must compensate for crosswinds by adjusting steering angle and acceleration inputs to maintain the intended cornering path,1,1,0,0,0,0
+The vehicle must maintain precise control of steering angle and accelerator pedal input within tolerances suitable for high-performance driving and racing,1,1,0,0,0,0
+"The steering and acceleration systems must provide integrated support for controlled drifting, allowing the driver to maintain a specified drift angle with appropriate throttle inputs",1,1,0,0,0,0
+The steering system must adapt its response based on the vehicle speed and accelerator pedal input to cater to the demands of track racing,1,1,0,0,0,0
+Ensure stability during high-speed maneuvers by coordinating the steering angle with the acceleration pedal input to prevent loss of control,1,1,0,0,0,0
+"Acquire and process real-time data on steering angle and accelerator pedal position for precision driving, allowing for immediate adjustments to improve racing techniques",1,1,0,0,0,0
+Implement redundant sensors for both the steering angle and accelerator pedal to ensure continuous performance data during racing conditions,1,1,0,0,0,0
+Steering and acceleration systems must dynamically adjust to optimize the vehicle's racing line on varied track conditions,1,1,0,0,0,0
+Provide customizable steering angle sensitivity and throttle maps to accommodate different racing techniques and driver preferences,1,1,0,0,0,0
+Steering and accelerator components must be designed for high durability to withstand the stresses of motorsports without failure,1,1,0,0,0,0
+Safety interlocks must be in place to prevent sudden changes in steering angle or acceleration that could be hazardous at racing speeds,1,1,0,0,0,0
+The system must feature an emergency override capability that allows the driver to regain manual control over the steering and accelerator pedal in the event of system failure,1,1,0,0,0,0
+All components of the steering and acceleration systems must resist deformation or failure due to heat during prolonged high-performance driving or racing,1,1,0,0,0,0
+"The vehicle control system must coordinate the steering angle sensor and acceleration pedal sensor to allow for stable trail braking, minimizing understeer or oversteer",1,1,0,0,0,0
+The interface between the acceleration pedal and steering system must facilitate heel-and-toe downshifting without compromising vehicle stability,1,1,0,0,0,0
+The control system must detect and mitigate power oversteer by adjusting the steering angle and acceleration pedal inputs to maintain vehicle control,1,1,0,0,0,0
+"Upon detection of lift-off oversteer, the system shall adjust the steering angle input and modulate the acceleration pedal to regain control and prevent spin-out",1,1,0,0,0,0
+"Throttle pedal sensors must provide sensitive input for throttle lift actions to allow for fine control of vehicle dynamics, particularly in steering response",1,1,0,0,0,0
+The vehicle control system must provide feedback for brake modulation through the acceleration pedal to assist with precise steering inputs,1,1,0,0,0,0
+The system shall monitor and control weight transfer through coordinated steering and acceleration inputs to avoid abrupt vehicle behavior,1,1,0,0,0,0
+"The transition between steering input and acceleration must be smooth to prevent unsettling the vehicle, especially during apex technique execution",1,1,0,0,0,0
+"The vehicle's control systems must recognize and respond to progressive inputs from both the steering and acceleration pedals, mirroring the driver's gradual adjustments",1,1,0,0,0,0
+Steering and acceleration systems must be fine-tuned to enable the driver to hit the apex consistently through coordinated inputs,1,1,0,0,0,0
+The interaction between the steering angle and acceleration pedal should support the driver in maintaining the optimal racing line,1,1,0,0,0,0
+The vehicle shall dynamically adjust steering and acceleration inputs in response to real-time data for executing advanced driving techniques,1,1,0,0,0,0
+The vehicle shall incorporate safety overrides that can intervene if advanced driving techniques like power oversteer or lift-off oversteer compromise vehicle stability,1,1,0,0,0,0
+"The vehicle system must continually check for errors in the coordination logic between steering and acceleration inputs, especially during high-performance driving",1,1,0,0,0,0
+The vehicle's steering response and acceleration must be consistently proportional to the driver's input to accurately reflect the driver's intent,1,1,0,0,0,0
+The vehicle control systems must include adaptive modes that adjust the sensitivity of the steering and acceleration in response to the assessed skill level of the driver,1,1,0,0,0,0
+"The steering and throttle systems must allow for precise control inputs, enabling the driver to make fine adjustments as needed for vehicle maneuvering",1,1,0,0,0,0
+The vehicle must provide feedback to the driver on steering and acceleration technique that could enhance safe driving practices,1,1,0,0,0,0
+"The vehicle's control systems must be responsive to the driver's reactions, with minimal latency between input at the steering wheel and acceleration pedal and vehicle reaction",1,1,0,0,0,0
+The steering angle sensor and acceleration pedal must be calibrated to ensure the precision of the driver's inputs is accurately captured and transmitted to the vehicle control systems,1,1,0,0,0,0
+"The vehicle must synchronize inputs from both the steering angle and acceleration pedal to ensure smooth vehicle dynamics, reflecting the driver's coordination",1,1,0,0,0,0
+"The vehicle's stability control system must maintain stability in response to steering inputs, adjusting throttle output as necessary to match the driver's steering actions",1,1,0,0,0,0
+The vehicle control system must impose safety limits on acceleration based on steering angle input to prevent unsafe maneuvers beyond the driver's throttle intention,1,1,0,0,0,0
+The vehicle must have a controlled response system that modulates both the steering and the throttle inputs if the driver's actions are detected as erratic or sudden,1,1,0,0,0,0
+"The vehicle control systems must have the ability to mitigate the effects of erroneous steering and acceleration inputs by the driver, either through system intervention or by providing corrective feedback to the driver",1,1,0,0,0,0
+The physical characteristics and responsiveness of the steering wheel and acceleration pedal must be harmonized to ensure consistent and predictable inputs from the driver translate into the desired vehicle behavior,1,1,0,0,0,0
+"The vehicle control system must ensure smooth coordination between the steering angle sensor and the acceleration pedal during lane change maneuvers, without abrupt throttle lift-off or jerky steering movements",1,1,0,0,0,0
+"In the event of a critical situation detected during a lane change, the system must prioritize safety by adjusting steering and throttle inputs to maintain controlled vehicle behavior",1,1,0,0,0,0
+The system must manage throttle application in coordination with steering angle changes to prevent understeer or oversteer conditions during lane changes,1,1,0,0,0,0
+"The vehicle must synchronize throttle and steering actions to execute a proper lane change technique, as defined by the vehicle's dynamic handling characteristics",1,1,0,0,0,0
+"Provide the driver with haptic, visual, or auditory feedback if the coordination between acceleration and steering deviates from safe lane change parameters",1,1,0,0,0,0
+"Upon throttle lift-off during a lane change, the vehicle control system must adapt steering assistance to maintain a safe trajectory",1,1,0,0,0,0
+The vehicle control system must fuse data from steering angle sensors and acceleration pedal position to execute a controlled lane change maneuver effectively,1,1,0,0,0,0
+Implement predictive algorithms that adjust throttle and steering inputs preemptively during anticipated lane change actions,1,1,0,0,0,0
+"After a lane change maneuver, the system must safely manage the transition back to normal throttle application without compromising vehicle control or stability",1,1,0,0,0,0
+The system should impose steering angle limitations when aggressive acceleration is detected to prevent loss of control during lane changes,1,1,0,0,0,0
+The control system must have the capability to perform real-time adjustments to both steering and throttle during lane change maneuvers to maintain balance and vehicle poise,1,1,0,0,0,0
+"A diagnostic protocol must be in place to detect and report faults in the integration of steering and throttle systems, especially during lane changes",1,1,0,0,0,0
+The throttle control system must modulate power delivery based on steering input to facilitate smooth and safe lane changes,1,1,0,0,0,0
+he Lane Keeping Assist system must correlate inputs from both the steering angle sensor and the acceleration pedal to maintain the vehicle's lane position within the road markings without driver input,1,1,0,0,0,0
+The Lane Change Assist system should activate based on a specific steering angle indicative of an intended lane change and moderated acceleration pedal use to ensure smooth and safe lane transitions,1,1,0,0,0,0
+"In the event of imminent collision risk, the system must override acceleration pedal inputs and employ the steering angle to maneuver away from potential threats if a safe lane is available",1,1,0,0,0,0
+Blind Spot Monitoring alerts must synchronize with the steering angle sensor to provide targeted warnings when the acceleration pedal is engaged and a lane change is detected,1,1,0,0,0,0
+Adaptive Cruise Control (ACC) must adjust the vehicle's speed based on both the steering angle and acceleration pedal position when a lane change is initiated,1,1,0,0,0,0
+Lane Change Warning systems must consider abrupt changes in acceleration pedal position in conjunction with steering angle deviations to warn the driver of unsafe lane-changing maneuvers,1,1,0,0,0,0
+The vehicle’s Driver Assistance Systems must utilize real-time data from both the steering angle and acceleration pedal to provide accurate assistance features during lane changes,1,1,0,0,0,0
+"When multiple driver assistance systems are active, priority should be given to the Lane Change Assist system when the steering angle and acceleration pedal input patterns indicate an intentional lane change",1,1,0,0,0,0
+"The sensitivity of steering angle input should be adjustable when Adaptive Cruise Control is active to prevent overcorrection during assisted driving, taking into account the current acceleration pedal position",1,1,0,0,0,0
+Lane Change Assistance Technologies must adjust their alerts and interventions based on both gradual and sudden changes in acceleration pedal input coupled with steering angle changes,1,1,0,0,0,0
+Lane Change Safety Features should be dynamically influenced by steering angle and acceleration pedal inputs to ensure that safety measures are in harmony with the driver's actions,1,1,0,0,0,0
+"Haptic feedback on the steering wheel or acceleration pedal should be coordinated when the Lane Change Assistant detects potential hazards, providing a tactile alert to the driver",1,1,0,0,0,0
+The vehicle's steering control system must synchronize with the acceleration pedal input to reflect the driver's lane change timing accurately,1,1,0,0,0,0
+The vehicle must recognize lane change signals and adjust the steering angle sensitivity and acceleration pedal response accordingly to support the driver's lane change decision,1,1,0,0,0,0
+"Provide adaptive feedback through the steering system and acceleration pedal based on the urgency and speed of lane change signaling indication, to help guide the driver's lane change execution",1,1,0,0,0,0
+"In cases where lane change signals are activated but not followed by a lane change gesture within a specific timeframe, the system must maintain current steering angle and acceleration levels to prevent unintended lane changes",1,1,0,0,0,0
+The vehicle shall utilize predictive algorithms to assist in lane change preparation by analyzing steering angle patterns and acceleration pedal usage to determine the driver's lane change reflex,1,1,0,0,0,0
+"In the event of an erratic lane change gesture detected by abrupt steering angle changes and inconsistent acceleration pedal inputs, the system must initiate a safety override to guide the vehicle back into the original lane while alerting the driver",1,1,0,0,0,0
+"If the lane change signal indication system fails, the integration between the steering angle and acceleration pedal must ensure that control remains predictable and consistent for the driver",1,1,0,0,0,0
+"During lane change execution, the vehicle must smoothly adjust the steering angle and acceleration to maintain a stable transition without abrupt changes in speed or direction",1,1,0,0,0,0
+"The vehicle should provide real-time feedback to the driver through the steering angle and acceleration pedal during lane change preparation and execution, enhancing the lane change decision-making process",1,1,0,0,0,0
+The vehicle's control systems must compensate for crosswinds during lane changes by adjusting the steering angle and acceleration pedal sensitivity to assist the driver's lane change execution,1,1,0,0,0,0
+The vehicle shall adapt its steering angle sensitivity and acceleration pedal response based on the learned driver behavior patterns during lane change execution to provide a tailored driving experience,1,1,0,0,0,0
+Implement haptic feedback through the steering mechanism during lane change signals to alert the driver of optimal lane change timing and execution,1,1,0,0,0,0
+"The steering system must adjust feedback and responsiveness based on real-time traffic conditions data, enhancing control during lane changes in congested areas",1,1,0,0,0,0
+"The sensitivity and responsiveness of the acceleration pedal shall automatically adjust to suit varying road conditions, such as wet or slippery surfaces",1,1,0,0,0,0
+"The lane-keeping assist system must take into account lane congestion to provide appropriate steering assistance, reducing driver fatigue and enhancing safety",1,1,0,0,0,0
+The system should limit the steering angle during high-speed lane changes on highways to prevent oversteering and loss of control,1,1,0,0,0,0
+"The acceleration control system must use predictive algorithms to smooth out acceleration and deceleration in heavy traffic, reducing the risk of rear-end collisions",1,1,0,0,0,0
+The vehicle control system shall automatically decelerate when a lane change in heavy traffic is detected without safe distances,1,1,0,0,0,0
+The steering system should provide haptic feedback to the driver when lane availability is inadequate for a lane change,1,1,0,0,0,0
+The vehicle control system shall synchronize steering and acceleration behaviors during lane changes to ensure a stable and predictable vehicle trajectory,1,1,0,0,0,0
+"In congested urban environments, the vehicle must allow for emergency steering override to navigate unexpected obstacles",1,1,0,0,0,0
+"The vehicle's software shall modulate the acceleration pedal response when frequent lane changes are detected, aiming to maintain a consistent speed and smooth driving behavior",1,1,0,0,0,0
+"Provide incremental steering assistance for safer lane change maneuvers on multilane roads, prioritizing minimal disruption to surrounding traffic",1,1,0,0,0,0
+The vehicle's onboard systems must log steering and acceleration patterns during various traffic scenarios to inform future safety enhancements,1,1,0,0,0,0
+"The steering system should automatically compensate for crosswind forces during lane changes, especially on highways, to maintain the intended path",1,1,0,0,0,0
+"The system must provide precise and immediate steering angle responses correlating with acceleration pedal inputs, facilitating advanced racing techniques such as overtaking and navigating through qualifying laps",1,1,0,0,0,0
+"The steering system sensitivity must adapt during high-speed conditions, such as time attack or track days, to ensure stable vehicle handling in conjunction with acceleration inputs",1,1,0,0,0,0
+Implement predictive algorithms that adjust the steering angle and acceleration based on telemetry data to enhance racecraft and consistency on racing circuits,1,1,0,0,0,0
+"In the event of an emergency, such as a need for sudden pit stops, the system should have the ability to override the driver's steering and acceleration inputs to ensure safety",1,1,0,0,0,0
+The system must be able to limit the steering angle in response to aggressive acceleration scenarios to support defensive driving techniques,1,1,0,0,0,0
+"The vehicle must provide feedback on steering and acceleration patterns, which can be used for driver coaching and improving racecraft",1,1,0,0,0,0
+"The system should support maintaining consistent steering and acceleration behavior throughout racing laps, crucial for race simulation and strategy planning",1,1,0,0,0,0
+The system should enable fine-tuned control of steering and acceleration to maximize grid position during the start of a race,1,1,0,0,0,0
+The system must facilitate enhanced steering control when the acceleration pedal is modulated for overtaking maneuvers on autocross and circuit tracks,1,1,0,0,0,0
+The steering and acceleration systems should integrate with simulation software to provide a platform for race simulation and training to develop racing skills,1,1,0,0,0,0
+Implement fail-safe modes that ensure the vehicle maintains directional control and reduces acceleration smoothly in the event of system failure,1,1,0,0,0,0
+Utilize telemetry data to adaptively adjust steering and acceleration parameters in alignment with racing strategy and track conditions,1,1,0,0,0,0
+"The vehicle control system must ensure a coordinated response between the accelerator pedal input and the steering angle to maintain balance and vehicle stability during all driving conditions, including precision driving and tight space maneuvers",1,1,0,0,0,0
+"The steering system sensitivity should adapt based on the position of the accelerator pedal to support smooth control and maneuverability, especially during parking challenges and low-speed control scenarios",1,1,0,0,0,0
+The vehicle's control systems must calibrate the accelerator pedal and steering inputs to facilitate precise parking techniques and close proximity maneuvers without compromising safety,1,1,0,0,0,0
+"The interplay between the steering angle and accelerator pedal must allow for precision control during complex driving maneuvers, ensuring vehicle stability and safety in close quarters",1,1,0,0,0,0
+"The vehicle stability systems must be capable of overriding errant steering and pedal inputs to maintain balance and prevent loss of control, especially in tight spaces and during precision driving",1,1,0,0,0,0
+"Transitions between steering angle adjustments and accelerator pedal inputs must be smooth to prevent abrupt vehicle movements, enhancing control during low-speed maneuvers and in parking challenges",1,1,0,0,0,0
+"The integration of control systems for the steering and accelerator pedal must ensure a balanced power delivery and directional control, supporting safety and maneuverability in close proximity driving",1,1,0,0,0,0
+"The vehicle control system should predictively adjust steering and pedal inputs to maintain vehicle stability during maneuvers in parking techniques, particularly in unpredictable or tight spaces",1,1,0,0,0,0
+"At low speeds, the coordination between the steering system and accelerator pedal must be finely tuned for controlled maneuverability, allowing for precise adjustments during parking maneuvers",1,1,0,0,0,0
+"Appropriate feedback mechanisms must be in place to inform the driver of the balance between steering inputs and accelerator pedal usage, ensuring smooth control and precision in tight spaces",1,1,0,0,0,0
+"Safety limits must be established to restrict the range of steering angles in direct response to accelerator pedal positions, especially during high-speed maneuvers, to maintain stability and control",1,1,0,0,0,0
+"An automated parking assistance system must utilize coordinated steering angle and accelerator pedal inputs to navigate parking challenges effectively, promoting safety and reducing driver strain",1,1,0,0,0,0
+"During emergency maneuvers, the coordination between steering input and accelerator pedal must prioritize vehicle stability and occupant safety, swiftly responding to avoid hazards in close proximity",1,1,0,0,0,0
+Continuous data logging for steering angle and accelerator pedal inputs should be implemented to monitor vehicle control performance during parking techniques and precision driving,1,1,0,0,0,0
+"The systems responsible for coordinating steering angle and accelerator pedal inputs must have fault tolerance mechanisms to maintain control and safety even when system components fail, particularly in close quarters and parking maneuvers",1,1,0,0,0,0
+"The steering angle sensor must provide high-resolution data to facilitate accurate parking maneuvers, including parallel and perpendicular parking",1,1,0,0,0,0
+"The acceleration pedal must provide fine control for low-speed maneuvers such as garage parking and docking, allowing for incremental changes in vehicle speed",1,1,0,0,0,0
+The vehicle's control system should integrate steering angle and acceleration data to support efficient K-turns without undue sensor delay or actuator lag,1,1,0,0,0,0
+"In the event of a sensor or actuator fault during the use of parking aids, the system must default to a fail-safe mode that minimizes risk during backing in or forward parking",1,1,0,0,0,0
+"Redundant systems for steering and acceleration must ensure there is no loss of control during angle parking, particularly in systems aiding the maneuver",1,1,0,0,0,0
+"The steering angle and acceleration control systems must maintain performance across a range of environmental conditions (e.g., weather, road surface) during curb parking",1,1,0,0,0,0
+The system shall allow sensitivity adjustment for the steering angle and acceleration inputs to facilitate maneuvers in tight parking lot spaces,1,1,0,0,0,0
+The vehicle's control system must integrate steering angle and acceleration data to assist with the smooth execution of U-turns,1,1,0,0,0,0
+"The system must continuously diagnose the operational status of steering angle and acceleration sensors and alert the driver to any faults, particularly during precision maneuvers like three-point turns",1,1,0,0,0,0
+Provide real-time tactile or visual feedback to the driver regarding steering and acceleration inputs during low-speed parking maneuvers,1,1,0,0,0,0
+The steering angle sensor and acceleration pedal must maintain calibration over time to ensure consistent maneuvering in scenarios like parallel parking,1,1,0,0,0,0
+Implement an emergency intervention system that can override or adjust the steering angle and acceleration in case of imminent collision during maneuvers such as backing in or forward parking,1,1,0,0,0,0
+Collision avoidance systems should seamlessly integrate with steering angle and acceleration control for dynamic adjustment during parking maneuvers to prevent impact,1,1,0,0,0,0
+"Allow for customizable steering and acceleration profiles to suit different driver preferences and parking techniques, such as tight spot maneuvering",1,1,0,0,0,0
+"For vehicles equipped with automated parking systems, ensure that steering and acceleration controls are executed with precision and in accordance with the selected parking maneuver, like perpendicular or angle parking",1,1,0,0,0,0
+The wheel speed sensors must accurately reflect changes in wheel rotation speed during tight turns as detected by the steering angle sensor to ensure vehicle stability,0,1,1,0,0,0
+"In narrow spaces, the system must provide precise feedback on the steering angle to the driver, with corresponding wheel speed data to facilitate fine control",0,1,1,0,0,0
+Wheel speed sensors must maintain high sensitivity and accuracy at low speeds to correspond with minor adjustments in steering angle during parallel parking,0,1,1,0,0,0
+"The system must detect and communicate the limits of the steering angle during U-turns to prevent over-rotation, informed by wheel speed variations",0,1,1,0,0,0
+Provide predictive steering assistance during 90-degree turns based on real-time wheel speed sensor data to enhance maneuverability,0,1,1,0,0,0
+"Regulate individual wheel speed during low-speed maneuvers to match the steering angle, preventing wheel slip and maintaining traction",0,1,1,0,0,0
+"Ensure high-resolution data from the steering angle sensor to allow for precise steering inputs in close quarters, with wheel speed sensors adjusting braking and propulsion accordingly",0,1,1,0,0,0
+Adjust wheel speed in real-time in response to steering angle changes to aid in obstacle avoidance without compromising vehicle stability,0,1,1,0,0,0
+Provide consistent feedback from both steering angle and wheel speed sensors to the vehicle control system during precision maneuvering,0,1,1,0,0,0
+The vehicle control system must adapt steering assistance based on the variance in wheel speeds during tight maneuvering to prevent skidding,0,1,1,0,0,0
+Adjust steering input recommendations based on crosswind detection and corresponding wheel speed variations to ensure straight-line stability in narrow spaces,0,1,1,0,0,0
+Integrate steering angle data with wheel speed inputs to facilitate automated parking assistance in tight maneuvering scenarios,0,1,1,0,0,0
+Ensure a high-fidelity correlation between steering angle and wheel speed data for advanced vehicle dynamics control systems during tight maneuvering,0,1,1,0,0,0
+The steering system must adapt the steering angle response in relation to vehicle speed to facilitate maneuverability during low-speed urban driving and gridlock conditions,0,1,1,0,0,0
+The vehicle control system must continuously monitor and compare individual wheel speeds to detect and respond to wheel slip scenarios commonly encountered in urban road conditions,0,1,1,0,0,0
+Implement a steering angle limitation system that prevents over-steering at higher speeds to maintain vehicle stability during sudden maneuvers in downtown driving scenarios,0,1,1,0,0,0
+Develop a system that provides real-time adjustment of steering angle and braking force distribution to individual wheels during gridlock situations to avoid unnecessary wear and ensure safety,0,1,1,0,0,0
+The power steering system must provide enhanced feedback that correlates with real-time wheel speed variations to alert drivers to potential grip issues in urban environments,0,1,1,0,0,0
+Integrate a predictive steering assistance feature that adjusts the steering angle input based on wheel speed data to help drivers anticipate and navigate through tight city streets more effectively,0,1,1,0,0,0
+"Ensure that the steering and wheel speed systems are synchronized to provide a cohesive response to dynamic urban road conditions, such as potholes and debris",0,1,1,0,0,0
+"Equip each wheel with redundant speed sensors to ensure reliable wheel speed data for the steering control system, even if one sensor fails during metropolitan driving",0,1,1,0,0,0
+The steering system must be capable of entering a safe mode that enables basic steering functionality in the event of wheel speed sensor failure during urban navigation,0,1,1,0,0,0
+Implement variable steering damping that adjusts based on wheel speed and steering angle input to improve driver comfort and control during city driving,0,1,1,0,0,0
+ADAS features such as lane keeping and adaptive cruise control must integrate steering angle and wheel speed data to function optimally in urban driving conditions,0,1,1,0,0,0
+The vehicle stability control system must adapt the wheel speed on a per-wheel basis in response to the steering angle to tackle urban challenges such as tight corners and rapid directional changes,0,1,1,0,0,0
+"The steering system must adjust the steering angle response according to the vehicle size, with particular calibration for compact vehicles, small cars, subcompact cars, mini cars, and micro cars to ensure consistent maneuverability",0,1,1,0,0,0
+"Each wheel's speed sensor must provide feedback that correlates with the steering angle to facilitate accurate vehicle dynamics control, tailored to the vehicle's dimensions",0,1,1,0,0,0
+"The steering control system must limit the steering angle based on the turning diameter associated with the vehicle's length and width to prevent rollover risks during tight turns, especially in smaller vehicles",0,1,1,0,0,0
+Dynamic adjustments to steering angles must be made in real-time based on wheel speed variations to accommodate the handling characteristics of different sized vehicles from micro to compact,0,1,1,0,0,0
+"Steering angle should be limited based on vehicle dimensions to prevent instability at high wheel speeds, particularly in vehicles with shorter wheelbases like mini and micro cars",0,1,1,0,0,0
+"Steering sensitivity must be adjusted based on the vehicle's speed and size, ensuring that smaller vehicles with potentially tighter turning radii do not oversteer at high speeds",0,1,1,0,0,0
+"Implement an integrated control system that simultaneously manages steering angle and wheel speed to maintain vehicle stability during emergency maneuvers, accounting for vehicle size and handling characteristics",0,1,1,0,0,0
+"Develop and implement custom steering maps for each category of vehicle size, ensuring that steering input translates to appropriate vehicle trajectory based on the specific dimensions of the vehicle",0,1,1,0,0,0
+The algorithm controlling the relationship between wheel speed and vehicle dynamics must be adjusted for the specific dimensions of the vehicle to ensure accurate stability and traction control,0,1,1,0,0,0
+"Steering feedback must be consistent and predictable across different vehicle sizes, ensuring that the driver experiences a proportional response regardless of vehicle dimensions",0,1,1,0,0,0
+"Implement a variable steering ratio that adapts to the vehicle's width, providing a tighter steering ratio for narrow vehicles and a more gradual ratio for wider vehicles, enhancing handling and safety",0,1,1,0,0,0
+"The wheel speed control system must include compensation mechanisms for the effects of vehicle size and dimensions on dynamic wheel speed, especially when navigating curves and turns",0,1,1,0,0,0
+"Adaptive steering damping should be implemented to adjust the steering feel and stability based on the vehicle's size, providing a suitable level of damping force for different vehicle dimensions",0,1,1,0,0,0
+"The steering system must adapt the steering angle in response to the detected wheel speed changes on rough terrain, ensuring vehicle stability and control",0,1,1,0,0,0
+Each wheel's speed sensor must provide accurate readings on uneven ground to facilitate appropriate steering corrections and maintain traction,0,1,1,0,0,0
+Steering control systems must adjust feedback when encountering mud to maintain driver control and prevent oversteering or understeering due to wheel speed discrepancies,0,1,1,0,0,0
+"When driving on sand, the vehicle must automatically engage a differential lock if a significant wheel speed disparity is detected, to adjust the steering angle for improved traction",0,1,1,0,0,0
+The system must be able to limit wheel speed and precisely control the steering angle during rock crawling to navigate safely over rocks without loss of control,0,1,1,0,0,0
+"On gravel, the steering system should engage damping controls to mitigate rapid steering angle changes due to wheel speed variations",0,1,1,0,0,0
+Enhance steering precision on dirt trails by correlating steering angle adjustments with real-time wheel speed data to ensure accurate vehicle path tracking,0,1,1,0,0,0
+"Implement a hill descent control system that manages both steering angle and wheel speed to maintain steady descent on hills without skiThe steering system must ensure stability and maintain a steady steering angle during stream crossings, accounting for possible wheel speed changes due to water resistancedding or sliding",0,1,1,0,0,0
+"The steering system must ensure stability and maintain a steady steering angle during stream crossings, accounting for possible wheel speed changes due to water resistance",0,1,1,0,0,0
+"Steering control systems must be adaptable to varying wheel speeds encountered during cross-country travel, ensuring consistent vehicle direction and stability",0,1,1,0,0,0
+"In desert driving conditions, synchronize wheel speeds to prevent wheel slip, automatically adjusting the steering angle to accommodate the terrain variability",0,1,1,0,0,0
+Enhance the sensitivity of the steering system and wheel speed sensors on forest trails to ensure immediate response to obstacles and changes in terrain,0,1,1,0,0,0
+Collect and analyze high-resolution data on steering angle and wheel speed to predict and react to potential loss of traction on off-roading surfaces,0,1,1,0,0,0
+The system must continuously compare steering angle input with individual wheel speed data to maintain directional stability and control,0,1,1,0,0,0
+"Based on steering angle data, the system must adaptively control wheel slip across individual wheels to prevent loss of control",0,1,1,0,0,0
+The braking control system should adjust braking pressure on individual wheels corresponding to steering angle to optimize braking performance,0,1,1,0,0,0
+"Throttle management should consider the steering angle to modulate power delivery to each wheel, preventing wheel spin during sharp turns or rapid changes in direction",0,1,1,0,0,0
+"The ABS system should use steering angle data to refine its control over wheel lock-up, ensuring the wheels maintain traction based on the directional control input",0,1,1,0,0,0
+The system must precisely control the speed of each wheel based on the steering input to facilitate accurate vehicle trajectory,0,1,1,0,0,0
+The ESC system must take steering angle into account when regulating wheel speeds to maintain vehicle stability during evasive maneuvers,0,1,1,0,0,0
+Implement an advanced braking technique that utilizes steering angle data to dynamically distribute braking force to each wheel,0,1,1,0,0,0
+The system should proactively manage brake pressure to prevent wheel lock-up based on current steering angle and predicted path,0,1,1,0,0,0
+"Wheel spin control should dynamically adjust to steering inputs, allowing for controlled wheel spin that is in harmony with the driver's steering",0,1,1,0,0,0
+The system must detect and alert of any anomalies between steering angle and wheel speed that could indicate potential issues with traction or stability control systems,0,1,1,0,0,0
+"In the event of traction loss, the system must integrate steering angle data with acceleration control to apply differential wheel speeds for regaining control",0,1,1,0,0,0
+"After a steering correction is made, the system must synchronize wheel speeds to match the new trajectory promptly",0,1,1,0,0,0
+The steering system must adapt the steering angle input sensitivity based on detected wheel speed variances that indicate challenging terrains such as soft sand or muddy puddles,0,1,1,0,0,0
+The vehicle control system should provide enhanced feedback to the driver through the steering mechanism when low wheel speed is detected along with substantial steering angles on surfaces like mud bogging and sand dunes,0,1,1,0,0,0
+"The steering system must maintain precise control and feedback, while the wheel speed control system should automatically adjust torque distribution during hill climbs and descents to avoid wheel slip",0,1,1,0,0,0
+The wheel speed sensors must accurately detect rapid changes in wheel speed indicative of traversing obstacles like boulders or tree roots and adjust steering assistance as necessary,0,1,1,0,0,0
+"The stability control system shall engage when significant differences between steering angle and individual wheel speeds are detected, such as when traversing ruts or maneuvering over boulders",0,1,1,0,0,0
+The steering system should limit the maximum steering angle when wheel speeds indicate the presence of soft terrains like soft sand to prevent bogging down,0,1,1,0,0,0
+"Post water crossings, the wheel speed detection system must clear any temporary faults caused by water ingress to ensure accurate speed readings and corresponding steering control",0,1,1,0,0,0
+The traction control system must modulate power distribution based on steering angle and wheel speed inputs to maintain traction on surfaces such as mud bogging or rock crawling,0,1,1,0,0,0
+Steering systems should make real-time adjustments to account for the unpredictable wheel speeds experienced in sand dunes to maintain vehicle stability and trajectory,0,1,1,0,0,0
+"The vehicle shall automatically correct the steering angle in response to crosswinds detected by disproportionate wheel speeds on either side of the vehicle, common in open areas such as sand dunes and water crossings",0,1,1,0,0,0
+"When differential wheel speed is detected due to terrain irregularities like ruts or obstacles, the steering system should aid the driver in maintaining the intended path with adjusted steering feedback",0,1,1,0,0,0
+"The system must provide variable steering assist to help maneuver around or over obstacles, modulated by the input from wheel speed sensors indicating abrupt deceleration",0,1,1,0,0,0
+The safety system shall continuously integrate data from the steering angle sensor and wheel speed sensors to adjust vehicle dynamics for optimal stability,0,1,1,0,0,0
+The vehicle stability system shall utilize real-time steering angle and individual wheel speed data to detect and mitigate skid conditions,0,1,1,0,0,0
+Traction control systems must adjust braking and power distribution based on steering angle inputs and wheel speed variation to prevent loss of traction,0,1,1,0,0,0
+The stability enhancement system shall dynamically adjust vehicle responses using the discrepancy between the desired steering angle and actual wheel speeds,0,1,1,0,0,0
+"In emergency braking scenarios, the system shall consider the current steering angle and wheel speed to optimize brake force distribution",0,1,1,0,0,0
+The collision avoidance system must evaluate steering angle and wheel speed data to predict and execute necessary maneuvers to prevent imminent collisions,0,1,1,0,0,0
+The steering control system must adapt steering responsiveness based on wheel speed feedback to improve handling and vehicle dynamics,0,1,1,0,0,0
+The safety system shall detect slippery road conditions by analyzing discrepancies between the steering angle and actual path (inferred from wheel speeds) and activate stability control measures,0,1,1,0,0,0
+"On curves, the vehicle control system shall utilize steering angle data combined with wheel speed information to prevent slip and maintain the intended path",0,1,1,0,0,0
+"During quick maneuvering, the vehicle control system shall synchronize steering inputs with wheel speed adjustments to maintain stability",0,1,1,0,0,0
+"The stability control system shall activate when there is a significant mismatch between steering input and wheel speed data, indicative of potential loss of control",0,1,1,0,0,0
+"In the event of sensor failure (steering angle or wheel speed), the safety system shall enter a fail-safe mode to maintain a minimum level of vehicle control and safety",0,1,1,0,0,0
+The vehicle control system shall use historical and real-time steering angle and wheel speed data to predictively adjust vehicle dynamics for enhanced control,0,1,1,0,0,0
+The system shall have redundancy in sensing steering angle and wheel speed to ensure reliable input for the safety systems under all conditions,0,1,1,0,0,0
+"Upon ABS engagement, steering corrections must be synchronized with individual wheel speed adjustments to maintain directional stability",0,1,1,0,0,0
+"Steering assistance systems shall adjust the level of power assistance in real-time based on wheel speed feedback, ensuring consistent steering feel and control during varying wheel speed conditions",0,1,1,0,0,0
+The vehicle control system must integrate steering control with wheel speed monitoring to enhance stability during rapid steering maneuvers,0,1,1,0,0,0
+The system must monitor steering wheel movement and provide prompt correction if wheel speed anomalies suggest potential loss of traction or stability,0,1,1,0,0,0
+"Steering system and ABS must collaborate to optimize braking efficiency, modulating brake pressure in response to steering angle and wheel speed to reduce stopping distances without compromising control",0,1,1,0,0,0
+"The steering system must provide adaptive feedback to the driver that aligns with variances in wheel speed, particularly during ABS intervention",0,1,1,0,0,0
+"Steering stability control systems must proactively engage upon detection of significant wheel speed fluctuations, maintaining vehicle directional stability",0,1,1,0,0,0
+Steering inputs must influence wheel speed regulation by the ABS to tailor braking forces during cornering for optimized vehicle handling,0,1,1,0,0,0
+Implement cross-system diagnostics that detect and report failures in the interaction between steering angle sensors and wheel speed sensors,0,1,1,0,0,0
+Steering control systems must dynamically adjust based on real-time wheel speed inputs to ensure optimal steering response across different driving conditions,0,1,1,0,0,0
+"Steering systems should employ contextual correction strategies using wheel speed data to ensure accurate vehicle path following, especially under ABS operation",0,1,1,0,0,0
+"Harmonize steering-brake interactions to ensure that maneuverability is maintained across a range of speeds and driving conditions, including during ABS engagement",0,1,1,0,0,0
+"The vehicle control system must synchronize steering angle data with individual wheel speed measurements to achieve coordinated wheel-specific control, ensuring stable handling in all driving conditions",0,1,1,0,0,0
+Each wheel's control unit must independently manage wheel-specific traction based on steering angle inputs to prevent understeer or oversteer scenarios,0,1,1,0,0,0
+The system shall use steering angle information to adjust wheel-specific throttle control to maintain optimal traction and reduce slippage,0,1,1,0,0,0
+"The coordinated control system must provide steering-aided traction control to adjust braking force on individual wheels during turning maneuvers, based on wheel speed sensors' data",0,1,1,0,0,0
+The vehicle must implement combined traction control strategies using steering angle and individual wheel speeds to improve acceleration performance on various surfaces,0,1,1,0,0,0
+"During emergency maneuvers, the system must prioritize individual wheel control strategies that leverage both steering angle and wheel speed to mitigate skidding or rollover risks",0,1,1,0,0,0
+The vehicle's software must process inputs from the steering angle sensor and wheel speed sensors to deliver a unified wheel-specific response in real-time,0,1,1,0,0,0
+"In the event of conflicting data between steering angle sensors and wheel speed sensors, the system must default to a fail-safe mode that ensures controlled deceleration and steering",0,1,1,0,0,0
+"Wheel-specific throttle control, influenced by steering angle data, must not exceed the traction capabilities of each individual wheel to prevent oversteer or understeer",0,1,1,0,0,0
+"The diagnostics system must monitor and flag discrepancies between steering angle commands and individual wheel speeds, suggesting potential issues in the coordinated control system",0,1,1,0,0,0
+The vehicle must maintain accurate steering angle and wheel speed data logs for post-incident analysis to continually refine the coordinated control strategies,0,1,1,0,0,0
+"Steering-aided traction control interventions based on wheel speed readings must be smooth and gradual to avoid abrupt changes in vehicle dynamics, maintaining passenger comfort and safety",0,1,1,0,0,0
+"The vehicle's Human-Machine Interface (HMI) must inform the driver of the operational status of the coordinated control systems, particularly in adverse conditions where wheel-specific adjustments are critical",0,1,1,0,0,0
+"In case of a critical failure in the steering angle sensor, the vehicle must default to a conservative wheel-specific traction management mode that prioritizes safety",0,1,1,0,0,0
+"When Adaptive Cruise Control (ACC) is active, the correlation between the steering angle and each wheel speed must be consistent to maintain the intended path and speed without driver intervention",0,1,1,0,0,0
+"Lane Keeping Assist (LKA) system should adjust the steering angle in response to deviations detected by wheel speed variations, ensuring the vehicle remains within the detected lane",0,1,1,0,0,0
+"Lane Centering must dynamically adjust the steering angle in conjunction with individual wheel speeds to maintain the vehicle's centered position within the lane, even during curve negotiation",0,1,1,0,0,0
+Lane Departure Warning (LDW) system should factor in the wheel speed discrepancies when initiating steering corrections to alert or avert potential lane departures,0,1,1,0,0,0
+"During an automated lane change, the system must synchronize the steering angle with the wheel speed of each wheel to execute smooth and safe lane transitioning",0,1,1,0,0,0
+Traffic Jam Assist must coordinate steering input with each wheel's speed to facilitate precise low-speed maneuvering and lane-keeping in traffic congestion,0,1,1,0,0,0
+Automated Emergency Braking (AEB) should consider sudden changes in steering angle and wheel speed as potential indicators of emergency situations to activate braking,0,1,1,0,0,0
+Systems responsible for Pedestrian and Cyclist Detection must use steering angle and wheel speed data to adjust the vehicle's trajectory and speed during potential collision scenarios,0,1,1,0,0,0
+Blind-spot monitoring (BSM) should use variations in steering angle and wheel speed to calculate the relative motion of adjacent vehicles and alert the driver accordingly,0,1,1,0,0,0
+Cross-Traffic Alert (CTA) functionality must be sensitive to the current steering angle and wheel speed to accurately assess the risk of crossing traffic when the vehicle is in motion,0,1,1,0,0,0
+The Collision Avoidance System must integrate real-time data from steering angle and wheel speed sensors to orchestrate avoidance maneuvers,0,1,1,0,0,0
+"Intersection Assist must use steering angle and wheel speed data to make intersection navigation decisions, considering the turning radius and the speed required to execute safe turns",0,1,1,0,0,0
+Parking Assistance systems should rely on precise steering angle inputs and controlled wheel speed to automate parking maneuvers accurately,0,1,1,0,0,0
+"Automated Driving systems, including semi-autonomous and autonomous driving functionalities, must continuously adapt to feedback from the steering angle and wheel speed to navigate safely",0,1,1,0,0,0
+Vehicle-to-Everything (V2X) Communication systems must incorporate steering angle and wheel speed data to enhance communication effectiveness regarding the vehicle's state and intentions,0,1,1,0,0,0
