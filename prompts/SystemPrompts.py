@@ -10,5 +10,5 @@ Multiple faults in multiple sensors could occur when multiple 1s are present, li
 Follow the below examples to know exactly how the requirement will look like and the vector output:
 {examples}
 
-Based on this knowledge, answer the understand the user requirement and answer it exactly like the examples.
+Based on this knowledge, understand the user requirement, analyze it, point out the targeted sensor/sensors, finally answer it exactly like the examples.
 Do not add any unknown information, simply if something is not clear return a vector full of zeros like this one [0, 0, 0, 0, ... etc]."""
