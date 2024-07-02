@@ -1,0 +1,57 @@
+{
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a professional engineer working on parsing requirements' texts and producing labels.\nThe requirements are used to specify a fault type which will be injected in a HIL (Hardware in the Loop) simulator. The fault type known by the index of a vector.\nThe victor size must equal to the number of faults the system can handel.\n\nHere are the supported sensors as well as their corresponding vectors:\nAcceleration Pedal (Acc), vector = [1, 0, 0, 0, 0, 0]\nWheel Steering Angle (WSA), vector = [0, 1, 0, 0, 0, 0]\nWheel Speed (WS), vector = [0, 0, 1, 0, 0, 0]\nYaw Rate (YR), vector = [0, 0, 0, 1, 0, 0]\nSteering Torque (ST), vector = [0, 0, 0, 0, 1, 0]\nVehicle Speed (VS), vector = [0, 0, 0, 0, 0, 1]\nAcceleration Pedal and Wheel Steering Angle (Acc and WSA), vector = [1, 1, 0, 0, 0, 0]\nSteering Angle and Wheel Speed (WSA and WS), vector = [0, 1, 1, 0, 0, 0]\n\nMultiple faults in multiple sensors could occur when multiple 1s are present, like the last two sensors.\n\nFollow the below examples to know exactly how the requirement will look like and the vector output:\nRequirement: Continuous monitoring of the accelerator pedal position must be conducted by the engine control unit (ECU) to ensure signals are within expected ranges\nVector: [1,0,0,0,0,0]\n\nRequirement: Autonomous steering interventions must be limited to a safe angle threshold to prevent oversteering, with real-time feedback to the Electronic Stability Control (ESC) system\nVector: [0,1,0,0,0,0]\n\nRequirement: Wheel speed sensors must operate accurately across the vehicle's specified temperature range\nVector: [0,0,1,0,0,0]\n\nRequirement: During cornering, the vehicle shall distribute forces in a manner that maximizes tire grip and minimizes the risk of skidding or sliding\nVector: [0,0,0,1,0,0]\n\nRequirement: The steering system must remain operable within safe limits in the event of a torque sensor failure\nVector: [0,0,0,0,1,0]\n\nRequirement: The vehicle shall provide haptic feedback to the driver when a pre-set speed threshold is exceeded\nVector: [0,0,0,0,0,1]\n\nRequirement: The system must synchronize steering angle inputs with accelerator pedal position to optimize vehicle stability and traction during corner entry\nVector: [1,1,0,0,0,0]\n\nRequirement: The wheel speed sensors must accurately reflect changes in wheel rotation speed during tight turns as detected by the steering angle sensor to ensure vehicle stability\nVector: [0,1,1,0,0,0]\n\n\n\nBased on this knowledge, understand the user requirement, analyze it, point out the targeted sensor/sensors, finally answer it exactly like the examples.\nDo not add any unknown information, simply if something is not clear return a vector full of zeros like this one [0, 0, 0, 0, ... etc]."
+        },
+        {
+            "role": "user",
+            "content": "Here is the requirement texts:\nRequirement 0: For vehicles equipped with automated parking systems, ensure that steering and acceleration controls are executed with precision and in accordance with the selected parking maneuver, like perpendicular or angle parking.\nRequirement 1: In case of steering system electronic failures, the system must ensure the retention of emergency manual steering control.\nRequirement 2: Critical steering system components must have redundancy to ensure steering control is maintained in the event of a single-point failure.\nRequirement 3: For vehicles with multiple drivers, the accelerator pedal system should have the capability to remember and automatically adjust to pre-set positions based on driver profiles.\nRequirement 4: The steering system should have diagnostic capabilities that consider environmental factors and trigger alerts for potential impact on system performance.\n\n\nReturn only the vector based on what you learned and each vector following the id number of the requirement it solves.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Requirement 0: [1, 1, 0, 0, 0, 0]\nRequirement 1: [0, 0, 0, 0, 1, 0]\nRequirement 2: [0, 1, 0, 0, 1, 0]\nRequirement 3: [1, 0, 0, 0, 0, 0]\nRequirement 4: [0, 1, 0, 0, 0, 0]"
+        }
+    ],
+    "true_solution": [
+        "[1,1,0,0,0,0]",
+        "[0,0,0,0,1,0]",
+        "[0,0,0,0,1,0]",
+        "[1,0,0,0,0,0]",
+        "[0,1,0,0,0,0]"
+    ],
+    "correct_ids": [
+        863,
+        586,
+        103,
+        262
+    ],
+    "incorrect_ids": [
+        527
+    ],
+    "number_of_requirements": 5,
+    "accuracy": 0.8,
+    "examples_ids": [
+        64,
+        202,
+        338,
+        428,
+        589,
+        669,
+        729,
+        871
+    ],
+    "number_of_examples": 8,
+    "target_id": [
+        863,
+        586,
+        527,
+        103,
+        262
+    ],
+    "token_usage": {
+        "completion_tokens": 110,
+        "prompt_tokens": 911,
+        "total_tokens": 1021
+    }
+}
