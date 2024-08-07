@@ -5,10 +5,14 @@ The victor size must equal to the number of faults the system can handel.
 Here are the supported sensors as well as their corresponding vectors:
 {sensors}
 
-Multiple faults in multiple sensors could occur when multiple 1s are present, like the last two sensors.
-
 Follow the below examples to know exactly how the requirement will look like and the vector output:
 {examples}
 
-Based on this knowledge, understand the user requirement, analyze it, point out the targeted sensor or sensors, finally answer with the following format "Vector: [0,0,0,0,0,0]".
-Do not add any unknown information, simply if something is not clear or you do not know the answer, return a vector full of zeros like this one [0,0,0,0, ... etc] where the size of the vector corresponds to the number of sensors."""
+#Note: Multiple faults in multiple sensors could occur when multiple 1s are present, like the last example.
+
+Based on this knowledge, understand the user requirement, analyze it, point out the targeted sensor or sensors and answer with the following format "Vector#: [0,0,0,0,0]" and replace the # with the number of requirement this vector belongs to.
+
+Do not add any unknown information, simply if something is not clear or you do not know the answer, return a vector full of zeros like this one [0,0,0,0, ... etc].
+
+So, first decide the number of sensors, and the vector size must be the same length as the number of sensors.
+Then return only the vector in the requested format."""
