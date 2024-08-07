@@ -4,3 +4,4 @@ langchain-openai
 matplotlib
 numpy
 pandas
+openpyxl
