@@ -1,3 +1,5 @@
+import numpy as np
+
 def get_examples_from_df(df, n_examples):
 
 	# collect used examples to exclude from test dataset
@@ -30,5 +32,7 @@ def get_examples_from_df(df, n_examples):
 		
 	# add both single and multiple into one place
 	examples.update(examples_multiple)
+ 
+	indexes_to_drop = np.array(indexes_to_drop).flatten()
 
 	return indexes_to_drop, examples
