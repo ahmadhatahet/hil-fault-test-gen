@@ -1,22 +1,22 @@
 {
-    "accuracy": 0.8660287081339713,
-    "number_of_reqs": 209,
-    "total_tokens": 241435,
-    "total_completion_tokens": 2717,
-    "avg_token_per_req": 1155.1913875598086,
-    "avg_completion_token_per_req": 13.0,
+    "accuracy": 0.8387096774193549,
+    "number_of_reqs": 217,
+    "total_tokens": 245920,
+    "total_completion_tokens": 2844,
+    "avg_token_per_req": 1133.2718894009217,
+    "avg_completion_token_per_req": 13.105990783410139,
     "responses": [
         {
             "idx": 0,
             "requirement": "The vehicle control system must respond to driver input from the accelerator pedal within a specified timeframe to ensure timely throttle actuation",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "completion_tokens": 14,
+                "prompt_tokens": 1121,
+                "total_tokens": 1135
             }
         },
         {
@@ -28,21 +28,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
-            }
-        },
-        {
-            "idx": 2,
-            "requirement": "The vehicle control system shall have the capability to override accelerator pedal inputs in case of an identified fault that risks vehicle safety",
-            "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
-            "pred_vector": "[1,0,0,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -54,8 +41,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
+            }
+        },
+        {
+            "idx": 4,
+            "requirement": "The system must accurately detect and transmit the accelerator pedal position to the throttle control system with a minimal margin of error",
+            "true_vector": "[1,0,0,0,0]",
+            "ai_response": "Vector#: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -67,8 +67,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -80,8 +80,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -93,21 +93,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
             "idx": 8,
             "requirement": "The control system connected to the accelerator pedal must be capable of tolerating faults without leading to sudden or unexpected throttle responses",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "completion_tokens": 14,
+                "prompt_tokens": 1121,
+                "total_tokens": 1135
             }
         },
         {
@@ -119,21 +119,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
-            "idx": 11,
-            "requirement": "Continuous monitoring of the accelerator pedal's displacement shall be conducted to detect any discrepancies indicative of potential faults",
+            "idx": 10,
+            "requirement": "The system must continually ensure that the throttle position correlates in real-time with the depressed level of the accelerator pedal",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "completion_tokens": 14,
+                "prompt_tokens": 1119,
+                "total_tokens": 1133
             }
         },
         {
@@ -145,8 +145,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -158,34 +158,47 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
             "idx": 14,
             "requirement": "The electronic control unit (ECU) must validate sensor input before executing throttle commands to prevent unintended acceleration",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "completion_tokens": 14,
+                "prompt_tokens": 1118,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 15,
             "requirement": "Upon detection of a sensor failure, the system must reduce engine power and notify the driver through a warning indicator",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
-            "pred_vector": "[0,0,1,0,0]",
-            "accuracy": false,
+            "ai_response": "Vector#: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
+            }
+        },
+        {
+            "idx": 16,
+            "requirement": "The system must perform periodic performance checks on the accelerator pedal and throttle position sensors to ensure ongoing reliability",
+            "true_vector": "[1,0,0,0,0]",
+            "ai_response": "Vector#: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -197,47 +210,47 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
             "idx": 18,
             "requirement": "The drive-by-wire system must be able to identify failure modes and switch to a safe state to prevent uncontrolled acceleration",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
-            }
-        },
-        {
-            "idx": 19,
-            "requirement": "The Electronic Control Unit (ECU) must initiate a fail-safe response if discrepancies are detected between pedal input and throttle response",
-            "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
-            "pred_vector": "[1,0,0,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "completion_tokens": 14,
+                "prompt_tokens": 1122,
+                "total_tokens": 1136
             }
         },
         {
             "idx": 20,
             "requirement": "Continuous signal integrity checks must be conducted between the electronic accelerator pedal and the ECU",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "completion_tokens": 14,
+                "prompt_tokens": 1114,
+                "total_tokens": 1128
+            }
+        },
+        {
+            "idx": 21,
+            "requirement": "The drive-by-wire system must ensure the integrity and timeliness of communications between the accelerator pedal, ECU, and other relevant systems",
+            "true_vector": "[1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 14,
+                "prompt_tokens": 1125,
+                "total_tokens": 1139
             }
         },
         {
@@ -249,8 +262,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -262,21 +275,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
             "idx": 24,
             "requirement": "The vehicle must have a throttle override mechanism that prioritizes brake pedal input over the accelerator pedal when both are pressed simultaneously",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "completion_tokens": 14,
+                "prompt_tokens": 1121,
+                "total_tokens": 1135
             }
         },
         {
@@ -288,8 +301,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1150,
-                "total_tokens": 1163
+                "prompt_tokens": 1128,
+                "total_tokens": 1141
             }
         },
         {
@@ -301,8 +314,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -314,8 +327,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -327,21 +340,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
             "idx": 29,
             "requirement": "The system must automatically adjust the throttle response if the pedal sensor indicates out-of-range operation",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "completion_tokens": 14,
+                "prompt_tokens": 1115,
+                "total_tokens": 1129
             }
         },
         {
@@ -353,8 +366,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
@@ -366,8 +379,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1135,
-                "total_tokens": 1148
+                "prompt_tokens": 1113,
+                "total_tokens": 1126
             }
         },
         {
@@ -379,8 +392,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -392,8 +405,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -405,8 +418,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -418,21 +431,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
-            }
-        },
-        {
-            "idx": 36,
-            "requirement": "The steering system must transfer the driver's input with minimal torsional deflection to ensure accurate steering angle",
-            "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,1]",
-            "pred_vector": "[0,1,0,0,1]",
-            "accuracy": false,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -444,34 +444,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
             "idx": 38,
             "requirement": "The steering system must react within a defined time frame from the driver's input to wheel turn",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,0]",
+            "ai_response": "Vector1: [0,1,0,0,0]",
             "pred_vector": "[0,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "completion_tokens": 14,
+                "prompt_tokens": 1116,
+                "total_tokens": 1130
             }
         },
         {
             "idx": 39,
             "requirement": "Recirculating ball steering systems must provide consistent and predictable responses to steering inputs without undue lag or play",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -483,8 +483,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -496,21 +496,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
-            }
-        },
-        {
-            "idx": 42,
-            "requirement": "In the event of steering torque sensor failure, the vehicle must still be steerable by manual means, although increased effort may be required",
-            "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
@@ -522,34 +509,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
             "idx": 44,
             "requirement": "EPS systems must have an emergency mode that provides basic steering functionality in the event of a partial system failure",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
             "idx": 45,
             "requirement": "Power steering systems, whether hydraulic or electronic, must operate effectively in a wide range of environmental conditions, including extreme temperatures",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,0,0,0,0]",
+            "pred_vector": "[0,0,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -561,21 +548,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
+            }
+        },
+        {
+            "idx": 47,
+            "requirement": "The steering system must provide tactile feedback to the driver that is proportional to the driving conditions and steering angle input",
+            "true_vector": "[0,1,0,0,0]",
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 48,
             "requirement": "Steering systems must be capable of handling the expected range of loads without failure or excessive play developing over time",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -587,21 +587,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
             "idx": 50,
             "requirement": "The vehicle's steering control system must accurately measure and report the steering angle to within a defined tolerance to ensure precise wheel alignment during maneuvering",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,0]",
+            "ai_response": "Vector1: [0,1,0,0,0]",
             "pred_vector": "[0,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "completion_tokens": 14,
+                "prompt_tokens": 1125,
+                "total_tokens": 1139
             }
         },
         {
@@ -613,47 +613,47 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
-            "idx": 53,
-            "requirement": "In case of a partial system failure, the vehicle shall maintain limited steering functionality to allow safe deceleration and vehicle stoppage",
+            "idx": 52,
+            "requirement": "The vehicle should maintain consistent cornering behavior under various driving conditions, ensuring that steering angle adjustments result in predictable vehicle paths",
             "true_vector": "[0,1,0,0,0]",
             "ai_response": "Vector#: [0,1,0,0,0]",
             "pred_vector": "[0,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
-            }
-        },
-        {
-            "idx": 54,
-            "requirement": "The steering angle control must be fully compatible and integrated with other vehicle stability systems, such as Traction Control and Electronic Stability Control",
-            "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,0]",
-            "pred_vector": "[0,1,0,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
             "idx": 55,
             "requirement": "steering system assistance should be consistent across different steering angles and not impair the driver's ability to perform smooth cornering maneuvers",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,1]",
-            "pred_vector": "[0,1,0,0,1]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
+            }
+        },
+        {
+            "idx": 56,
+            "requirement": "In case of a critical failure in the steering angle sensor, the system must default to a fail-safe mode, limiting vehicle speed and disabling advanced functions if necessary",
+            "true_vector": "[0,1,0,0,0]",
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1129,
+                "total_tokens": 1142
             }
         },
         {
@@ -665,34 +665,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 58,
             "requirement": "The vehicle dynamics control system must integrate steering stability data to actively manage the vehicle's handling characteristics, reducing the risk of oversteer and understeer",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
-            "pred_vector": "[0,0,0,1,0]",
+            "ai_response": "Vector#: [0,1,0,1,0]",
+            "pred_vector": "[0,1,0,1,0]",
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1150,
-                "total_tokens": 1163
+                "prompt_tokens": 1128,
+                "total_tokens": 1141
             }
         },
         {
             "idx": 59,
             "requirement": "The steering system should dynamically adjust to optimize cornering behavior, providing a balance between responsiveness and stability",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,1]",
-            "pred_vector": "[0,1,0,0,1]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -704,47 +704,60 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
             "idx": 61,
             "requirement": "The system must detect and mitigate understeer conditions by adjusting steering, braking, or power delivery to maintain the desired trajectory",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
-            "pred_vector": "[0,0,0,1,0]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
             "idx": 62,
             "requirement": "Steering controls must work in conjunction with traction control systems to optimize tire grip during maneuvers",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,1]",
-            "pred_vector": "[0,0,1,0,1]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
             "idx": 63,
             "requirement": "The steering system must provide real-time feedback to the vehicle dynamics control system to facilitate immediate adjustments to handling",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,1,0]",
-            "pred_vector": "[0,1,0,1,0]",
+            "ai_response": "Vector1: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 14,
+                "prompt_tokens": 1118,
+                "total_tokens": 1132
+            }
+        },
+        {
+            "idx": 64,
+            "requirement": "The steering system should adapt sensitivity based on vehicle speed, with lower sensitivity at higher speeds for improved steering stability",
+            "true_vector": "[0,1,1,0,0]",
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -756,8 +769,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -769,8 +782,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -782,8 +795,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
@@ -795,8 +808,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
@@ -808,21 +821,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1152,
-                "total_tokens": 1165
+                "prompt_tokens": 1130,
+                "total_tokens": 1143
             }
         },
         {
             "idx": 70,
             "requirement": "The system must detect and report any failures or errors of the steering angle sensor within a specified time frame",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,0]",
+            "ai_response": "Vector1: [0,1,0,0,0]",
             "pred_vector": "[0,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "completion_tokens": 14,
+                "prompt_tokens": 1118,
+                "total_tokens": 1132
             }
         },
         {
@@ -834,8 +847,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -847,21 +860,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
             }
         },
         {
             "idx": 73,
             "requirement": "The system must continuously calibrate the steering angle sensor to ensure accuracy despite environmental and operational variations",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,0]",
+            "ai_response": "Vector1: [0,1,0,0,0]",
             "pred_vector": "[0,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "completion_tokens": 14,
+                "prompt_tokens": 1116,
+                "total_tokens": 1130
             }
         },
         {
@@ -873,8 +886,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
+            }
+        },
+        {
+            "idx": 75,
+            "requirement": "The system must provide diagnostic functions to identify issues with the steering angle sensor and recommend corrective actions",
+            "true_vector": "[0,1,0,0,0]",
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
@@ -886,21 +912,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
             "idx": 77,
             "requirement": "The vehicle control system shall include algorithms to validate sensor data from wheel speed sensors before utilizing it for vehicle dynamics control",
             "true_vector": "[0,0,1,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
+            "ai_response": "Vector1: [0,0,1,0,0]",
             "pred_vector": "[0,0,1,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "completion_tokens": 14,
+                "prompt_tokens": 1120,
+                "total_tokens": 1134
             }
         },
         {
@@ -912,8 +938,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1148,
-                "total_tokens": 1161
+                "prompt_tokens": 1126,
+                "total_tokens": 1139
+            }
+        },
+        {
+            "idx": 79,
+            "requirement": "The ABS and ESC systems must detect a wheel speed sensor failure and activate a fail-safe mode, maintaining as much functionality as possible",
+            "true_vector": "[0,0,1,0,0]",
+            "ai_response": "Vector#: [0,0,1,0,0]",
+            "pred_vector": "[0,0,1,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -925,8 +964,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -938,8 +977,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
             }
         },
         {
@@ -951,34 +990,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
             "idx": 83,
             "requirement": "The system must log any discrepancies or faults in wheel speed data and notify the driver through the vehicle\u2019s interface",
             "true_vector": "[0,0,1,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
+            "ai_response": "Vector1: [0,0,1,0,0]",
             "pred_vector": "[0,0,1,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "completion_tokens": 14,
+                "prompt_tokens": 1119,
+                "total_tokens": 1133
             }
         },
         {
             "idx": 84,
             "requirement": "The system shall generate a Diagnostic Trouble Code (DTC) when a wheel speed sensor malfunction is detected",
             "true_vector": "[0,0,1,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
+            "ai_response": "Vector1: [0,0,1,0,0]",
             "pred_vector": "[0,0,1,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "completion_tokens": 14,
+                "prompt_tokens": 1118,
+                "total_tokens": 1132
             }
         },
         {
@@ -990,8 +1029,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
@@ -1003,21 +1042,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
             "idx": 87,
             "requirement": "The ABS warning light must illuminate when a fault that affects braking performance is detected",
             "true_vector": "[0,0,1,0,0]",
+            "ai_response": "Vector1: [0,0,1,0,0]",
+            "pred_vector": "[0,0,1,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 14,
+                "prompt_tokens": 1113,
+                "total_tokens": 1127
+            }
+        },
+        {
+            "idx": 88,
+            "requirement": "The vehicle control system shall counteract any vehicle handling issues due to wheel speed sensor faults, within system limits",
+            "true_vector": "[0,0,1,0,0]",
             "ai_response": "Vector#: [0,0,1,0,0]",
             "pred_vector": "[0,0,1,0,0]",
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1135,
-                "total_tokens": 1148
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1029,8 +1081,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1042,8 +1094,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1055,8 +1107,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -1068,8 +1120,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -1081,8 +1133,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
@@ -1094,8 +1146,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -1107,21 +1159,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1149,
-                "total_tokens": 1162
+                "prompt_tokens": 1127,
+                "total_tokens": 1140
+            }
+        },
+        {
+            "idx": 96,
+            "requirement": "The vehicle control system shall adapt brake and power delivery to maintain optimal tire grip based on surface condition data received from wheel speed sensors",
+            "true_vector": "[0,0,1,0,0]",
+            "ai_response": "Vector#: [0,0,1,0,0]",
+            "pred_vector": "[0,0,1,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
             "idx": 97,
             "requirement": "The vehicle's control system must adjust braking and acceleration to optimize tire grip during winter driving conditions",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
-            "pred_vector": "[0,0,1,0,0]",
-            "accuracy": false,
+            "ai_response": "Vector#: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
@@ -1133,8 +1198,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
+            }
+        },
+        {
+            "idx": 99,
+            "requirement": "The Anti-lock Braking System (ABS) must reliably receive accurate wheel speed information under all environmental conditions",
+            "true_vector": "[0,0,1,0,0]",
+            "ai_response": "Vector#: [0,0,1,0,0]",
+            "pred_vector": "[0,0,1,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -1146,34 +1224,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
-            }
-        },
-        {
-            "idx": 101,
-            "requirement": "The system must be able to detect a failure or malfunction in any wheel speed sensor and notify the driver via the dashboard warning indicators",
-            "true_vector": "[0,0,1,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
-            "pred_vector": "[0,0,1,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
-            }
-        },
-        {
-            "idx": 102,
-            "requirement": "The system must continuously monitor the alignment and mounting status of each wheel speed sensor to ensure accurate readings",
-            "true_vector": "[0,0,1,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
-            "pred_vector": "[0,0,1,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -1185,21 +1237,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
-            }
-        },
-        {
-            "idx": 104,
-            "requirement": "The system must log historical wheel speed data to assist in fault diagnosis and predictive maintenance",
-            "true_vector": "[0,0,1,0,0]",
-            "ai_response": "Vector#: [0,0,1,0,0]",
-            "pred_vector": "[0,0,1,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
@@ -1211,8 +1250,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
@@ -1224,8 +1263,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -1237,8 +1276,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1148,
-                "total_tokens": 1161
+                "prompt_tokens": 1126,
+                "total_tokens": 1139
             }
         },
         {
@@ -1250,8 +1289,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
+            }
+        },
+        {
+            "idx": 109,
+            "requirement": "The IMU must have comprehensive self-diagnostic capabilities to ensure ongoing operational integrity for yaw rate measurement",
+            "true_vector": "[0,0,0,1,0]",
+            "ai_response": "Vector#: [0,0,0,1,0]",
+            "pred_vector": "[0,0,0,1,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1263,34 +1315,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
-            }
-        },
-        {
-            "idx": 111,
-            "requirement": "The vehicle control system must accurately monitor the yaw rate to ensure responsiveness to vehicle dynamics under various driving conditions",
-            "true_vector": "[0,0,0,1,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
-            "pred_vector": "[0,0,0,1,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
             "idx": 112,
             "requirement": "The electronic stability control (ESC) must detect and appropriately respond to oversteer conditions to maintain vehicle stability",
             "true_vector": "[0,0,0,1,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
-            "pred_vector": "[0,0,0,1,0]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,0,0,0,1]",
+            "pred_vector": "[0,0,0,0,1]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1302,8 +1341,8 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -1315,21 +1354,34 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
             "idx": 115,
             "requirement": "The vehicle's electronic systems must manage weight transfer during dynamic maneuvers to maintain stability",
             "true_vector": "[0,0,0,1,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
-            "pred_vector": "[0,0,0,1,0]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,0,0,0,0]",
+            "pred_vector": "[0,0,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1135,
-                "total_tokens": 1148
+                "prompt_tokens": 1113,
+                "total_tokens": 1126
+            }
+        },
+        {
+            "idx": 116,
+            "requirement": "The vehicle control system shall predict and preemptively adjust to changes in vehicle handling due to changes in center of gravity or dynamic behavior",
+            "true_vector": "[0,0,0,1,0]",
+            "ai_response": "Vector#: [0,0,0,0,0]",
+            "pred_vector": "[0,0,0,0,0]",
+            "accuracy": false,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -1341,8 +1393,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
             }
         },
         {
@@ -1354,21 +1406,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
-            }
-        },
-        {
-            "idx": 119,
-            "requirement": "Yaw rate control systems must interact seamlessly with driver assistance systems such as lane keeping assist and predictive steering",
-            "true_vector": "[0,0,0,1,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
-            "pred_vector": "[0,0,0,1,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -1380,8 +1419,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
@@ -1393,8 +1432,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1406,8 +1445,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
@@ -1419,8 +1458,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
@@ -1432,8 +1471,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
+            }
+        },
+        {
+            "idx": 125,
+            "requirement": "The system must detect yaw rate with high fidelity to ensure effective input for vehicle dynamics control systems",
+            "true_vector": "[0,0,0,1,0]",
+            "ai_response": "Vector#: [0,0,0,1,0]",
+            "pred_vector": "[0,0,0,1,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
@@ -1445,8 +1497,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
@@ -1458,8 +1510,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1134,
-                "total_tokens": 1147
+                "prompt_tokens": 1112,
+                "total_tokens": 1125
             }
         },
         {
@@ -1471,8 +1523,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -1484,8 +1536,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1497,21 +1549,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
-            }
-        },
-        {
-            "idx": 131,
-            "requirement": "The IMU must have redundancy to ensure that failure of one component does not lead to loss of vehicle stability control",
-            "true_vector": "[0,0,0,1,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
-            "pred_vector": "[0,0,0,1,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1523,21 +1562,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
             "idx": 133,
             "requirement": "The vehicle control system must have sufficient computational capacity to handle the demands of processing and integrating yaw rate data",
             "true_vector": "[0,0,0,1,0]",
-            "ai_response": "Vector#: [0,0,0,1,0]",
+            "ai_response": "Vector1: [0,0,0,1,0]",
             "pred_vector": "[0,0,0,1,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "completion_tokens": 14,
+                "prompt_tokens": 1118,
+                "total_tokens": 1132
             }
         },
         {
@@ -1549,8 +1588,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -1562,8 +1601,21 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
+            }
+        },
+        {
+            "idx": 136,
+            "requirement": "Yaw control systems must compensate for vehicle yaw during adverse driving conditions such as understeer or oversteer",
+            "true_vector": "[0,0,0,1,0]",
+            "ai_response": "Vector#: [0,0,0,1,0]",
+            "pred_vector": "[0,0,0,1,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1575,8 +1627,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1588,8 +1640,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
@@ -1601,34 +1653,47 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
+            }
+        },
+        {
+            "idx": 140,
+            "requirement": "The steering system must perform automatic calibration and self-testing at startup to ensure the torque sensors are operating within specified parameters",
+            "true_vector": "[0,0,0,0,1]",
+            "ai_response": "Vector#: [0,0,0,0,1]",
+            "pred_vector": "[0,0,0,0,1]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
             "idx": 141,
             "requirement": "The vehicle's steering response must be consistent with the driver's torque input on the steering wheel, with no uncommanded delays or discrepancies",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
             "idx": 142,
             "requirement": "The system must provide consistent steering effort feedback to the driver, reflecting actual turning force requirements based on vehicle speed and driving conditions",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
@@ -1640,8 +1705,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
@@ -1653,8 +1718,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -1666,8 +1731,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1150,
-                "total_tokens": 1163
+                "prompt_tokens": 1128,
+                "total_tokens": 1141
             }
         },
         {
@@ -1679,21 +1744,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
             "idx": 147,
             "requirement": "Power steering assistance must be limited to prevent the application of torque that would cause loss of vehicle control",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1705,21 +1770,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
-            }
-        },
-        {
-            "idx": 149,
-            "requirement": "The system must monitor and adjust steering torque to compensate for changes in grip",
-            "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1134,
-                "total_tokens": 1147
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
             }
         },
         {
@@ -1731,8 +1783,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
+            }
+        },
+        {
+            "idx": 151,
+            "requirement": "The steering torque system must be compatible with the range of tire sizes and types specified for the vehicle",
+            "true_vector": "[0,0,0,0,1]",
+            "ai_response": "Vector#: [0,0,0,0,1]",
+            "pred_vector": "[0,0,0,0,1]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1744,8 +1809,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1150,
-                "total_tokens": 1163
+                "prompt_tokens": 1128,
+                "total_tokens": 1141
             }
         },
         {
@@ -1757,8 +1822,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -1770,8 +1835,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -1783,8 +1848,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
+            }
+        },
+        {
+            "idx": 156,
+            "requirement": "The power steering system must provide consistent torque feedback to the driver that corresponds to the actual steering conditions",
+            "true_vector": "[0,0,0,0,1]",
+            "ai_response": "Vector#: [0,0,0,0,1]",
+            "pred_vector": "[0,0,0,0,1]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -1796,8 +1874,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -1809,21 +1887,21 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
             }
         },
         {
             "idx": 159,
             "requirement": "In the event of a power steering system failure, the system must still provide adequate feedback to the driver to safely control the vehicle",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -1835,8 +1913,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1848,8 +1926,8 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1134,
-                "total_tokens": 1147
+                "prompt_tokens": 1112,
+                "total_tokens": 1125
             }
         },
         {
@@ -1861,8 +1939,8 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1874,8 +1952,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1887,73 +1965,73 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
             "idx": 165,
             "requirement": "The power steering system should allow drivers to customize steering feedback settings according to personal preference, within safety limits",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
             "idx": 166,
             "requirement": "The hydraulic power steering system must maintain its integrity and not leak hydraulic fluid under nominal operating conditions",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
             "idx": 167,
             "requirement": "The system must monitor the temperature of the power steering fluid and take corrective action if temperatures exceed safe operating limits",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,0,0,0,0]",
+            "pred_vector": "[0,0,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 168,
             "requirement": "The electric power steering system must have a redundancy plan for critical components to maintain steering assistance in the event of partial system failure",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
             "idx": 169,
             "requirement": "The power steering system should provide consistent haptic feedback that does not deteriorate over time or with system aging",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -1965,8 +2043,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
@@ -1978,8 +2056,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1149,
-                "total_tokens": 1162
+                "prompt_tokens": 1127,
+                "total_tokens": 1140
             }
         },
         {
@@ -1991,21 +2069,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 173,
             "requirement": "ESC systems must use steering torque data to effectively compensate for oversteer or understeer, enhancing vehicle stability",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,1,1]",
-            "pred_vector": "[0,0,0,1,1]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,0,0,0,1]",
+            "pred_vector": "[0,0,0,0,1]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -2017,8 +2095,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
@@ -2030,8 +2108,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1138,
-                "total_tokens": 1151
+                "prompt_tokens": 1116,
+                "total_tokens": 1129
             }
         },
         {
@@ -2043,8 +2121,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1135,
-                "total_tokens": 1148
+                "prompt_tokens": 1113,
+                "total_tokens": 1126
             }
         },
         {
@@ -2056,21 +2134,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 178,
             "requirement": "The steering system must automatically compensate for temperature-induced variations in steering torque",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
+            "ai_response": "Vector1: [0,0,0,0,1]",
             "pred_vector": "[0,0,0,0,1]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1133,
-                "total_tokens": 1146
+                "completion_tokens": 14,
+                "prompt_tokens": 1111,
+                "total_tokens": 1125
             }
         },
         {
@@ -2082,8 +2160,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -2095,8 +2173,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -2108,8 +2186,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -2121,21 +2199,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1137,
-                "total_tokens": 1150
+                "prompt_tokens": 1115,
+                "total_tokens": 1128
             }
         },
         {
             "idx": 183,
             "requirement": "The power steering system must perform reliably over the vehicle's operational lifetime without degradation that impacts safety or control",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
             }
         },
         {
@@ -2147,21 +2225,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
             "idx": 186,
             "requirement": "The system must limit the steering effort required by the driver to a specified maximum under normal operating conditions",
             "true_vector": "[0,0,0,0,1]",
-            "ai_response": "Vector#: [0,0,0,0,1]",
-            "pred_vector": "[0,0,0,0,1]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -2173,8 +2251,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1140,
-                "total_tokens": 1153
+                "prompt_tokens": 1118,
+                "total_tokens": 1131
+            }
+        },
+        {
+            "idx": 188,
+            "requirement": "The system must adapt the steering torque required in response to vehicle speed and driving conditions",
+            "true_vector": "[0,0,1,0,1]",
+            "ai_response": "Vector#: [0,0,0,0,1]",
+            "pred_vector": "[0,0,0,0,1]",
+            "accuracy": false,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
             }
         },
         {
@@ -2186,8 +2277,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1136,
-                "total_tokens": 1149
+                "prompt_tokens": 1114,
+                "total_tokens": 1127
             }
         },
         {
@@ -2199,8 +2290,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
@@ -2212,21 +2303,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
-            }
-        },
-        {
-            "idx": 193,
-            "requirement": "Steering system assistance must vary proportionally to the vehicle's cornering speed as influenced by the accelerator pedal position to provide optimal driver feedback and contro",
-            "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,1,0,0,0]",
-            "pred_vector": "[1,1,0,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1149,
-                "total_tokens": 1162
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
             }
         },
         {
@@ -2238,8 +2316,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
@@ -2251,34 +2329,47 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
-            "idx": 197,
-            "requirement": "In emergency maneuvers, the system must be capable of overriding the driver's steering and acceleration inputs to prevent skidding or loss of control",
+            "idx": 196,
+            "requirement": "The system must regulate cornering speed by coordinating steering and acceleration inputs, ensuring safe turn speeds according to road conditions",
             "true_vector": "[1,1,0,0,0]",
             "ai_response": "Vector#: [1,1,0,0,0]",
             "pred_vector": "[1,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
-            "idx": 198,
-            "requirement": "The system must compensate for crosswinds by adjusting wheel steering angle and acceleration inputs to maintain the intended cornering path",
+            "idx": 197,
+            "requirement": "In emergency maneuvers, the system must be capable of overriding the driver's steering and acceleration inputs to prevent skidding or loss of control",
             "true_vector": "[1,1,0,0,0]",
             "ai_response": "Vector#: [1,0,0,0,1]",
             "pred_vector": "[1,0,0,0,1]",
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
+            }
+        },
+        {
+            "idx": 198,
+            "requirement": "The system must compensate for crosswinds by adjusting wheel steering angle and acceleration inputs to maintain the intended cornering path",
+            "true_vector": "[1,1,0,0,0]",
+            "ai_response": "Vector#: [1,1,0,0,0]",
+            "pred_vector": "[1,1,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -2290,8 +2381,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1124,
+                "total_tokens": 1137
+            }
+        },
+        {
+            "idx": 200,
+            "requirement": "The steering system must adapt its response based on the vehicle speed and accelerator pedal input to cater to the demands of track racing",
+            "true_vector": "[1,1,0,0,0]",
+            "ai_response": "Vector#: [1,1,0,0,0]",
+            "pred_vector": "[1,1,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 13,
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
@@ -2303,8 +2407,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -2316,8 +2420,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1149,
-                "total_tokens": 1162
+                "prompt_tokens": 1127,
+                "total_tokens": 1140
             }
         },
         {
@@ -2329,8 +2433,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
@@ -2342,21 +2446,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1150,
-                "total_tokens": 1163
+                "prompt_tokens": 1128,
+                "total_tokens": 1141
             }
         },
         {
             "idx": 205,
             "requirement": "The vehicle control system must provide feedback for brake modulation through the acceleration pedal to assist with precise wheel steering angle input",
             "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,0,1,0,0]",
-            "pred_vector": "[1,0,1,0,0]",
+            "ai_response": "Vector#: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -2368,8 +2472,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1139,
-                "total_tokens": 1152
+                "prompt_tokens": 1117,
+                "total_tokens": 1130
             }
         },
         {
@@ -2381,8 +2485,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
@@ -2394,8 +2498,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -2407,8 +2511,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
@@ -2420,60 +2524,73 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1149,
-                "total_tokens": 1162
+                "prompt_tokens": 1127,
+                "total_tokens": 1140
             }
         },
         {
             "idx": 211,
             "requirement": "The steering and throttle systems must allow for precise control inputs, enabling the driver to make fine adjustments as needed for vehicle maneuvering",
             "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,1]",
-            "pred_vector": "[1,0,0,0,1]",
+            "ai_response": "Vector#: [0,1,0,0,1]",
+            "pred_vector": "[0,1,0,0,1]",
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1145,
-                "total_tokens": 1158
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
             }
         },
         {
             "idx": 212,
             "requirement": "The vehicle's control systems must be responsive to the driver's reactions, with minimal latency between input at the steering wheel and acceleration pedal and vehicle reaction",
             "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,1,0,0,0]",
+            "ai_response": "Vector1: [1,1,0,0,0]",
             "pred_vector": "[1,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1149,
-                "total_tokens": 1162
+                "completion_tokens": 14,
+                "prompt_tokens": 1127,
+                "total_tokens": 1141
             }
         },
         {
             "idx": 213,
             "requirement": "The vehicle's stability control system must maintain stability in response to steering inputs, adjusting throttle output as necessary to match the driver's steering actions",
             "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,1,0]",
-            "pred_vector": "[1,0,0,1,0]",
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
-            "idx": 215,
-            "requirement": "The vehicle control systems must have the ability to mitigate the effects of erroneous steering and acceleration inputs by the driver, either through system intervention or by providing corrective feedback to the driver",
+            "idx": 214,
+            "requirement": "The vehicle control system must impose safety limits on acceleration based on steering angle input to prevent unsafe maneuvers beyond the driver's throttle intention",
             "true_vector": "[1,1,0,0,0]",
             "ai_response": "Vector#: [1,1,0,0,0]",
             "pred_vector": "[1,1,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1154,
-                "total_tokens": 1167
+                "prompt_tokens": 1123,
+                "total_tokens": 1136
+            }
+        },
+        {
+            "idx": 215,
+            "requirement": "The vehicle control systems must have the ability to mitigate the effects of erroneous steering and acceleration inputs by the driver, either through system intervention or by providing corrective feedback to the driver",
+            "true_vector": "[1,1,0,0,0]",
+            "ai_response": "Vector1: [1,1,0,0,0]",
+            "pred_vector": "[1,1,0,0,0]",
+            "accuracy": true,
+            "ai_token_usage": {
+                "completion_tokens": 14,
+                "prompt_tokens": 1132,
+                "total_tokens": 1146
             }
         },
         {
@@ -2485,21 +2602,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1152,
-                "total_tokens": 1165
+                "prompt_tokens": 1130,
+                "total_tokens": 1143
             }
         },
         {
             "idx": 217,
             "requirement": "Upon throttle lift-off during a lane change, the vehicle control system must adapt steering assistance to maintain a safe trajectory",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
-            "pred_vector": "[1,0,0,0,0]",
-            "accuracy": false,
+            "ai_response": "Vector#: [0,1,0,0,0]",
+            "pred_vector": "[0,1,0,0,0]",
+            "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -2511,21 +2628,21 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 219,
             "requirement": "The control system must have the capability to perform real-time adjustments to both steering and acceleration during lane change maneuvers to maintain balance and vehicle poise",
             "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,1,0,0,0]",
-            "pred_vector": "[1,1,0,0,0]",
-            "accuracy": true,
+            "ai_response": "Vector#: [1,0,0,0,1]",
+            "pred_vector": "[1,0,0,0,1]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1148,
-                "total_tokens": 1161
+                "prompt_tokens": 1126,
+                "total_tokens": 1139
             }
         },
         {
@@ -2537,8 +2654,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1152,
-                "total_tokens": 1165
+                "prompt_tokens": 1130,
+                "total_tokens": 1143
             }
         },
         {
@@ -2550,8 +2667,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1151,
-                "total_tokens": 1164
+                "prompt_tokens": 1129,
+                "total_tokens": 1142
             }
         },
         {
@@ -2563,8 +2680,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1149,
-                "total_tokens": 1162
+                "prompt_tokens": 1127,
+                "total_tokens": 1140
             }
         },
         {
@@ -2576,8 +2693,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
@@ -2589,8 +2706,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "prompt_tokens": 1125,
+                "total_tokens": 1138
             }
         },
         {
@@ -2602,8 +2719,8 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1142,
-                "total_tokens": 1155
+                "prompt_tokens": 1120,
+                "total_tokens": 1133
             }
         },
         {
@@ -2615,21 +2732,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1151,
-                "total_tokens": 1164
+                "prompt_tokens": 1129,
+                "total_tokens": 1142
             }
         },
         {
             "idx": 227,
             "requirement": "The lane-keeping assist system must take into account lane congestion to provide appropriate steering assistance, reducing driver fatigue and enhancing safety",
             "true_vector": "[0,1,0,0,0]",
-            "ai_response": "Vector#: [0,1,0,0,0]",
-            "pred_vector": "[0,1,0,0,0]",
-            "accuracy": true,
+            "ai_response": "Vector#: [0,0,0,1,0]",
+            "pred_vector": "[0,0,0,1,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1144,
-                "total_tokens": 1157
+                "prompt_tokens": 1122,
+                "total_tokens": 1135
             }
         },
         {
@@ -2641,21 +2758,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1143,
-                "total_tokens": 1156
+                "prompt_tokens": 1121,
+                "total_tokens": 1134
             }
         },
         {
             "idx": 229,
             "requirement": "The acceleration control system must use predictive algorithms to smooth out acceleration and deceleration in heavy traffic, reducing the risk of rear-end collisions",
             "true_vector": "[1,0,0,0,0]",
-            "ai_response": "Vector#: [1,0,0,0,0]",
+            "ai_response": "Vector1: [1,0,0,0,0]",
             "pred_vector": "[1,0,0,0,0]",
             "accuracy": true,
             "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1147,
-                "total_tokens": 1160
+                "completion_tokens": 14,
+                "prompt_tokens": 1125,
+                "total_tokens": 1139
             }
         },
         {
@@ -2667,8 +2784,8 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -2680,21 +2797,21 @@
             "accuracy": true,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
             "idx": 232,
             "requirement": "The vehicle's onboard systems must log steering angle and acceleration patterns during various traffic scenarios to inform future safety enhancements",
             "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,1,0,0,0]",
-            "pred_vector": "[1,1,0,0,0]",
-            "accuracy": true,
+            "ai_response": "Vector#: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
+            "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1141,
-                "total_tokens": 1154
+                "prompt_tokens": 1119,
+                "total_tokens": 1132
             }
         },
         {
@@ -2706,21 +2823,8 @@
             "accuracy": false,
             "ai_token_usage": {
                 "completion_tokens": 13,
-                "prompt_tokens": 1150,
-                "total_tokens": 1163
-            }
-        },
-        {
-            "idx": 234,
-            "requirement": "An automated parking assistance system must utilize coordinated steering angle and accelerator pedal inputs to navigate parking challenges effectively, promoting safety and reducing driver strain",
-            "true_vector": "[1,1,0,0,0]",
-            "ai_response": "Vector#: [1,1,0,0,0]",
-            "pred_vector": "[1,1,0,0,0]",
-            "accuracy": true,
-            "ai_token_usage": {
-                "completion_tokens": 13,
-                "prompt_tokens": 1146,
-                "total_tokens": 1159
+                "prompt_tokens": 1128,
+                "total_tokens": 1141
             }
         }
     ]
