@@ -1,7 +1,7 @@
-from prompts.Sensors import Sensors
+from testgen.prompts.Sensors import Sensors
 from testgen.prompts.SystemPrompt import SystemPrompt
-from prompts.UserPrompt import UserPrompt
-from prompts.UserPromptBulk import UserPromptBulk
+from testgen.prompts.UserPrompt import UserPrompt
+from testgen.prompts.UserPromptBulk import UserPromptBulk
 
 
 Sensors = Sensors

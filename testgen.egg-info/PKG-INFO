@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: testgen
+Version: 0.1.0
+Summary: A Python package for generating test cases from requirement text.
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Dist: langchain-core
+Requires-Dist: langchain-openai
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
