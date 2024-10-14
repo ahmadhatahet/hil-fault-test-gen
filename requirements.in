@@ -1,3 +1,4 @@
+pip-tools
 ipykernel
 langchain-core
 langchain-openai
