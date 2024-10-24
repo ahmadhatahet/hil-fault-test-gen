@@ -40,7 +40,7 @@ def get_examples_from_df(df, n_examples):
         if examples_multiple.get(c) is None:
             examples_multiple[c] = []
         
-        s_l_ = df.columns[1:][e[1:].astype(bool)]
+        s_l_ = df.columns[1:][r[1:].astype(bool)]
         s_l_ = [s_list.get(x, "") for x in s_l_]
         examples_multiple[c].append([r[0], "[" + ",".join(map(str, s_l_)) + "]"])
         
