@@ -1,16 +1,8 @@
 import re
 import numpy as np
-from testgen.prompts.Sensors import SensorList
-
-def get_sensors_short_name():
-    return {s[0].lower().replace(" ", "_"): s[1] for s in SensorList}
-
 
 def get_examples_from_df(df, n_examples):
     
-    # get sensor list short names
-    s_list = get_sensors_short_name()
-
     # collect used examples to exclude from test dataset
     indexes_to_drop = []
 
@@ -23,9 +15,7 @@ def get_examples_from_df(df, n_examples):
         i = df.loc[ (df[c] == 1) & (df[df.columns[1:][df.columns[1:]!=c]].sum(axis=1) == 0) ].sample(n_examples)
         indexes_to_drop.append(i.index)
         for e in i.values:
-            s_l_ = df.columns[1:][e[1:].astype(bool)]
-            s_l_ = [s_list.get(x, "") for x in s_l_]
-            examples[c].append([e[0], "[" + ",".join(map(str, s_l_)) + "]"])
+            examples[c].append([e[0], "[" + ",".join(map(str, e[1:])) + "]"])
             
     # collect examples with multiple faults
     examples_multiple = {}
@@ -39,13 +29,11 @@ def get_examples_from_df(df, n_examples):
         c = "&".join(df.columns[1:][r[1:]==1])
         if examples_multiple.get(c) is None:
             examples_multiple[c] = []
-        
-        s_l_ = df.columns[1:][r[1:].astype(bool)]
-        s_l_ = [s_list.get(x, "") for x in s_l_]
-        examples_multiple[c].append([r[0], "[" + ",".join(map(str, s_l_)) + "]"])
+        examples_multiple[c].append([r[0], "[" + ",".join(map(str, r[1:])) + "]"])
         
     # add both single and multiple into one place
     examples.update(examples_multiple)
+
  
     indexes_to_drop = np.array(indexes_to_drop).flatten()
 
@@ -54,8 +42,6 @@ def get_examples_from_df(df, n_examples):
 
 
 def invoke_instance(llm, df, SystemPrompt, Sensors, examples_txt, UserPrompt,instance):
-    # get sensor list short names
-    s_list = get_sensors_short_name()
     
     # system prompt
     messages = [
@@ -67,9 +53,8 @@ def invoke_instance(llm, df, SystemPrompt, Sensors, examples_txt, UserPrompt,ins
 
     result["idx"] = instance[0]
     result["requirement"] = instance[1].iloc[0]
-    s_l_ = df.columns[1:][instance[1].iloc[1:].astype(bool)]
-    s_l_ = [s_list.get(x, "") for x in s_l_]
-    result["true_vector"] = "[" + ",".join(map(str, s_l_)) + "]"
+    result["true_vector"] = "[" + ",".join(map(str, instance[1].iloc[1:])) + "]"
+
 
     # add user prompt
     messages.append({"role":"user", "content":UserPrompt.format(req=result["requirement"])})
