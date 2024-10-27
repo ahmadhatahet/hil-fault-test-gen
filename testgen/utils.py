@@ -43,7 +43,7 @@ def get_examples_from_df(df, n_examples):
 
 
 
-def invoke_instance(llm, df, SystemPrompt, Sensors, examples_txt, UserPrompt,instance):
+def invoke_instance(llm, SystemPrompt, Sensors, examples_txt, UserPrompt,instance):
 
     # system prompt
     messages = [
