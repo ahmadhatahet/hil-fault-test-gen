@@ -107,7 +107,7 @@ def openai_client(endpoint, api_key, azure_endpoint="", api_version=""):
     if endpoint == "openai":
         return OpenAI(api_key=api_key)
 
-def client_invoke(client, model_name, SystemPrompt, Sensors, examples_txt, UserPrompt,instance):
+def client_invoke(client, model_name, temperature, SystemPrompt, Sensors, examples_txt, UserPrompt,instance):
     """Call client for chat completion"""
 
     # system prompt
@@ -131,7 +131,8 @@ def client_invoke(client, model_name, SystemPrompt, Sensors, examples_txt, UserP
 
     response = client.chat.completions.create(
         model=model_name,
-        messages=messages
+        messages=messages,
+        temperature=temperature,
     )
 
     response_time = round(time.perf_counter() - start_time, 6)
