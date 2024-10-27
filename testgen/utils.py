@@ -1,8 +1,10 @@
 import re
 import numpy as np
+import time
+
 
 def get_examples_from_df(df, n_examples):
-    
+
     # collect used examples to exclude from test dataset
     indexes_to_drop = []
 
@@ -16,7 +18,7 @@ def get_examples_from_df(df, n_examples):
         indexes_to_drop.append(i.index)
         for e in i.values:
             examples[c].append([e[0], "[" + ",".join(map(str, e[1:])) + "]"])
-            
+
     # collect examples with multiple faults
     examples_multiple = {}
 
@@ -30,11 +32,11 @@ def get_examples_from_df(df, n_examples):
         if examples_multiple.get(c) is None:
             examples_multiple[c] = []
         examples_multiple[c].append([r[0], "[" + ",".join(map(str, r[1:])) + "]"])
-        
+
     # add both single and multiple into one place
     examples.update(examples_multiple)
 
- 
+
     indexes_to_drop = np.array(indexes_to_drop).flatten()
 
     return indexes_to_drop, examples
@@ -42,7 +44,7 @@ def get_examples_from_df(df, n_examples):
 
 
 def invoke_instance(llm, df, SystemPrompt, Sensors, examples_txt, UserPrompt,instance):
-    
+
     # system prompt
     messages = [
         {'role': 'system',
@@ -60,9 +62,12 @@ def invoke_instance(llm, df, SystemPrompt, Sensors, examples_txt, UserPrompt,ins
     messages.append({"role":"user", "content":UserPrompt.format(req=result["requirement"])})
 
     # run LLM
+    start_time = time.perf_counter()
     response = llm.invoke(messages)
+    response_time = round(time.perf_counter() - start_time, 6)
     result["ai_response"] = response.content
     result["pred_vector"] = parse_result(result["ai_response"])
+    result["response_time"] = response_time
 
     result["accuracy"] = result["pred_vector"] == result["true_vector"]
 
