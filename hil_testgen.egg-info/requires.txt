@@ -1,9 +1,0 @@
-pip-tools
-ipykernel
-openai
-langchain-core
-langchain-openai
-matplotlib
-numpy
-pandas
-openpyxl
