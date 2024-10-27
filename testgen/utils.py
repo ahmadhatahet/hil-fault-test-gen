@@ -42,40 +42,6 @@ def get_examples_from_df(df, n_examples):
     return indexes_to_drop, examples
 
 
-
-def invoke_instance(llm, SystemPrompt, Sensors, examples_txt, UserPrompt,instance):
-
-    # system prompt
-    messages = [
-        {'role': 'system',
-        'content': SystemPrompt.format(sensors=Sensors,examples=examples_txt)}
-    ]
-
-    result = {}
-
-    result["idx"] = instance[0]
-    result["requirement"] = instance[1].iloc[0]
-    result["true_vector"] = "[" + ",".join(map(str, instance[1].iloc[1:])) + "]"
-
-
-    # add user prompt
-    messages.append({"role":"user", "content":UserPrompt.format(req=result["requirement"])})
-
-    # run LLM
-    start_time = time.perf_counter()
-    response = llm.invoke(messages)
-    response_time = round(time.perf_counter() - start_time, 6)
-    result["ai_response"] = response.content
-    result["pred_vector"] = parse_result(result["ai_response"])
-    result["response_time"] = response_time
-
-    result["accuracy"] = result["pred_vector"] == result["true_vector"]
-
-    result.update(response.response_metadata["token_usage"])
-
-    return result, response
-
-
 def parse_result(res):
     '''Parse the LLM result'''
     pattern = r"\[(.*?)\]"
