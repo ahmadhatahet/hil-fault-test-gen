@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testgen"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+authors = [{ name = "Ahmad Hatahet", email = "ahmad.hatahet@hotmail.com" }]
+license = { text = "Apache 2.0" }
+dependencies = [
+    "pip-tools",
+    "ipykernel",
+    "ipywidgets",
+    "openai",
+    "langchain-core",
+    "langchain-openai",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "openpyxl"
+]
+
+[tool.setuptools]
+packages = ["testgen"]
+
+# [project.urls]
+# "Homepage" = "https://github.com/pypa/sampleproject"
+# "Bug Reports" = "https://github.com/pypa/sampleproject/issues"
+# "Funding" = "https://donate.pypi.org"
+# "Say Thanks!" = "http://saythanks.io/to/example"
+# "Source" = "https://github.com/pypa/sampleproject/"
