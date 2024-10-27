@@ -1,0 +1,63 @@
+{
+    "accuracy": 1.0,
+    "number_of_reqs": 1,
+    "total_tokens": 798,
+    "total_completion_tokens": 13,
+    "avg_token_per_req": 798.0,
+    "avg_completion_token_per_req": 13.0,
+    "avg_time_per_req": 0.4451226340006542,
+    "examples": {
+        "acceleration_pedal": [
+            [
+                "In case of a critical failure in the steering angle sensor, the system must default to a fail-safe mode, limiting accrelaration and disabling advanced functions if necessary",
+                "[1,0,0,0,0]"
+            ]
+        ],
+        "wheel_steering_angle": [
+            [
+                "In case of steering angle failures, the system must ensure the retention of emergency manual steering control",
+                "[0,1,0,0,0]"
+            ]
+        ],
+        "wheel_speed": [
+            [
+                "The system must periodically verify the calibration of each wheel speed sensor and recalibrate if necessary",
+                "[0,0,1,0,0]"
+            ]
+        ],
+        "yaw_rate": [
+            [
+                "Yaw rate control must be fully integrated with vehicle stability control systems to manage understeer or oversteer situations",
+                "[0,0,0,1,0]"
+            ]
+        ],
+        "steering_torque": [
+            [
+                "The system must adjust steering sensitivity in real-time, steering angle, and driver input",
+                "[0,0,0,0,1]"
+            ]
+        ],
+        "acceleration_pedal&wheel_steering_angle": [
+            [
+                "Lane Change Warning systems must warn the driver of unsafe lane-changing maneuvers based on abrupt changes in acceleration pedal position in conjunction with steering angle deviations",
+                "[1,1,0,0,0]"
+            ]
+        ]
+    },
+    "responses": [
+        {
+            "idx": 0,
+            "requirement": "The vehicle control system must respond to driver input from the accelerator pedal within a specified timeframe to ensure timely throttle actuation",
+            "true_vector": "[1,0,0,0,0]",
+            "response_time": 0.4451226340006542,
+            "ai_response": "Vector: [1,0,0,0,0]",
+            "pred_vector": "[1,0,0,0,0]",
+            "accuracy": true,
+            "completion_tokens": 13,
+            "prompt_tokens": 785,
+            "total_tokens": 798,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": null
+        }
+    ]
+}
