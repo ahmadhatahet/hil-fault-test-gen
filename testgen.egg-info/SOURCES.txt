@@ -1,5 +1,5 @@
 README.md
-setup.py
+pyproject.toml
 testgen/__init__.py
 testgen/utils.py
 testgen.egg-info/PKG-INFO
