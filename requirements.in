@@ -1,5 +1,7 @@
 pip-tools
 ipykernel
+ipywidgets
+openai
 langchain-core
 langchain-openai
 matplotlib
