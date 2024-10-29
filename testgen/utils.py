@@ -29,7 +29,7 @@ def get_examples_from_df(df, n_examples):
     t = df.loc[df[df.columns[1:]].sum(axis=1) == 2]
     idx = t.sample(n_examples).index
     indexes_to_drop.append(idx)
-    t = df.iloc[idx, :].values
+    t = df.loc[idx].values
 
     for r in t:
         c = "&".join(df.columns[1:][r[1:] == 1])
