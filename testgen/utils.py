@@ -47,9 +47,11 @@ def get_examples_from_df(df, n_examples):
 
 def parse_result(res):
     """Parse the LLM result"""
-    pattern = r"\[(.*?)\]"
+    # pattern = r"\[.*?,.*?\]"
+    pattern = r"\[[0-9,]*?,.*?\]"
     vec = re.findall(pattern, res)[0]
-    return f"[{vec}]".replace(" ", "")
+    return vec.replace(" ", "")
+    # return f"[{vec}]".replace(" ", "")
 
 
 def openai_client(endpoint, api_key, azure_endpoint="", api_version=""):
