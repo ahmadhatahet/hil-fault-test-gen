@@ -2,6 +2,7 @@ import re
 import numpy as np
 import time
 from openai import AzureOpenAI, OpenAI
+from groq import Groq
 
 
 def get_examples_from_df(df, n_examples):
@@ -54,12 +55,12 @@ def parse_result(res):
     # return f"[{vec}]".replace(" ", "")
 
 
-def openai_client(endpoint, api_key, azure_endpoint="", api_version=""):
+def llm_client(endpoint, api_key, azure_endpoint="", api_version=""):
     """
-    Return OpenAI or Azure client for inference
+    Return OpenAI, Azure, or Groq client for inference
 
     Args:
-        endpoint (str): "openai" or "azure"
+        endpoint (str): "openai" or "azure" or "groq"
         api_key (str): API Key
         azure_endpoint (str): azure endpoint link. Defaults to "".
         api_version (str): azure endpoint api version. Defaults to "".
@@ -78,16 +79,21 @@ def openai_client(endpoint, api_key, azure_endpoint="", api_version=""):
     if endpoint == "openai":
         return OpenAI(api_key=api_key)
 
+    if endpoint == "groq":
+        return Groq(api_key=api_key)
+
 
 def client_invoke(
     client,
     model_name,
-    temperature,
     SystemPrompt,
     Sensors,
     examples_txt,
     UserPrompt,
     instance,
+    temperature=0.0,
+    max_tokens=4096,
+    response_format=None,
 ):
     """Call client for chat completion"""
 
@@ -117,6 +123,8 @@ def client_invoke(
         model=model_name,
         messages=messages,
         temperature=temperature,
+        max_tokens=max_tokens,
+        response_format=response_format
     )
 
     response_time = round(time.perf_counter() - start_time, 6)
