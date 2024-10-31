@@ -1,7 +1,8 @@
-pip-tools
+python-dotenv
 ipykernel
 ipywidgets
 openai
+groq
 matplotlib
 numpy
 pandas
