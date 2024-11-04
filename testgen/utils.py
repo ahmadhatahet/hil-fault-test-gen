@@ -188,7 +188,6 @@ def requirement_text_bulk(batches):
 
 def invoke_bulk(
     model_name,
-    temperature,
     client,
     batch,
     SystemPrompt,
@@ -196,6 +195,7 @@ def invoke_bulk(
     examples_txt,
     UserPromptBulk,
     req_text,
+    temperature=0.0
 ):
     result = {}
 
