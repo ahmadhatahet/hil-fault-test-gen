@@ -28,20 +28,21 @@ def get_examples_from_df(df, n_examples):
     examples_multiple = {}
 
     t = df.loc[df[df.columns[1:]].sum(axis=1) == 2]
-    idx = t.sample(n_examples).index
-    indexes_to_drop.append(idx)
-    t = df.loc[idx].values
+    if t.shape[0] != 0:
+        idx = t.sample(n_examples).index
+        indexes_to_drop.append(idx)
+        t = df.loc[idx].values
 
-    for r in t:
-        c = "&".join(df.columns[1:][r[1:] == 1])
-        if examples_multiple.get(c) is None:
-            examples_multiple[c] = []
-        examples_multiple[c].append([r[0], "[" + ",".join(map(str, r[1:])) + "]"])
+        for r in t:
+            c = "&".join(df.columns[1:][r[1:] == 1])
+            if examples_multiple.get(c) is None:
+                examples_multiple[c] = []
+            examples_multiple[c].append([r[0], "[" + ",".join(map(str, r[1:])) + "]"])
 
-    # add both single and multiple into one place
-    examples.update(examples_multiple)
+        # add both single and multiple into one place
+        examples.update(examples_multiple)
 
-    indexes_to_drop = np.array(indexes_to_drop).flatten()
+        indexes_to_drop = np.array(indexes_to_drop).flatten()
 
     return indexes_to_drop, examples
 
