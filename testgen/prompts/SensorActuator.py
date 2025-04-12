@@ -36,10 +36,6 @@ Is the fault about bad information coming in (Sensor) or about failure to perfor
 4. Finally, classify the requirement as either a sensor or an actuator.
 </Solution Plan>
 
-<Output Format>
-{res_format}
-</Output Format>
-
 ---
 
 <Requirement>
