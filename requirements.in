@@ -8,3 +8,4 @@ numpy
 pandas
 openpyxl
 scikit-learn
+pydantic
