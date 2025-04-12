@@ -14,7 +14,7 @@ def get_sensors_labels():
 
 
 def get_best_results(results_path, file_pattern):
-        
+
     available_results = list(results_path.glob(file_pattern))
 
     # drop file with lower accuracy if multiple are found
@@ -89,21 +89,20 @@ def calc_scores(df):
     return df_scores.set_index("sensor")
 
 
-
 def data_to_df_single(data, model_name, type_, number_examples):
     # split responses and general stats
     responses = pd.DataFrame(data["responses"])
     responses.set_index("idx", inplace=True)
-    
+
     responses.insert(0, "model", model_name)
     responses.insert(1, "type", type_)
     responses.insert(2, "n_examples", number_examples)
-    
+
     return responses
 
 
 def data_to_df_bulk(data, model_name, type_, number_examples):
-    
+
     type_, type_n = type_.split("-")
     type_n = int(type_n)
 
@@ -118,7 +117,6 @@ def data_to_df_bulk(data, model_name, type_, number_examples):
     responses.insert(2, "type_n", type_n)
     responses.insert(3, "n_examples", number_examples)
 
-    
     return responses
 
 
@@ -132,20 +130,22 @@ def result_to_df(labels, filename, results_path):
         data = json.load(f)
 
     # convert responses to df if single or bulk
-    if len(type_.split("-")) == 1: # means single not bulk
+    if len(type_.split("-")) == 1:  # means single not bulk
         responses = data_to_df_single(data, model_name, type_, number_examples)
     else:
         responses = data_to_df_bulk(data, model_name, type_, number_examples)
-    
-    
-    # collect label names for predictions and ground truth
-    responses["true_label"] = responses["true_vector"].map(lambda x: " & ".join(labels[np.array(x[1:-1].split(",")).astype(bool)]) )
-    responses["pred_label"] = responses["pred_vector"].map(lambda x: " & ".join(labels[np.array(x[1:-1].split(",")).astype(bool)]) )
-    
-    del data["responses"]
-    
-    return responses, data
 
+    # collect label names for predictions and ground truth
+    responses["true_label"] = responses["true_vector"].map(
+        lambda x: " & ".join(labels[np.array(x[1:-1].split(",")).astype(bool)])
+    )
+    responses["pred_label"] = responses["pred_vector"].map(
+        lambda x: " & ".join(labels[np.array(x[1:-1].split(",")).astype(bool)])
+    )
+
+    del data["responses"]
+
+    return responses, data
 
 
 def analyze(labels, filename, results_path):
@@ -156,30 +156,26 @@ def analyze(labels, filename, results_path):
     responses.drop(columns=["model", "type", "n_examples"], inplace=True)
 
     # collect stats per experiment
-    stats = pd.DataFrame({k: [v]for k,v in data.items()})
+    stats = pd.DataFrame({k: [v] for k, v in data.items()})
     stats.insert(0, "model_name", model_name)
     stats.insert(1, "number_examples", number_examples)
-    
-    
+
     # accuracy per sensor
-    summarize_ = responses.groupby(["true_label"]).aggregate({
-        "accuracy": "sum",
-        "true_label": "count"
-    })
+    summarize_ = responses.groupby(["true_label"]).aggregate(
+        {"accuracy": "sum", "true_label": "count"}
+    )
 
     summarize_.columns = ["true", "total"]
     summarize_["false"] = summarize_["total"] - summarize_["true"]
-
 
     all_vals = summarize_.sum(axis=0).values.tolist()
     summarize_.loc["All"] = all_vals
 
     summarize_.insert(0, "model_name", model_name)
     summarize_.insert(1, "number_examples", number_examples)
-    
-    
+
     # convert responses to df if single or bulk
-    if len(type_.split("-")) == 1: # means single not bulk
+    if len(type_.split("-")) == 1:  # means single not bulk
         stats.insert(0, "type", type_)
         summarize_.insert(0, "type", type_)
     else:
@@ -192,28 +188,30 @@ def analyze(labels, filename, results_path):
 
     df_scores = calc_scores(responses)
 
-    summarize_ = summarize_.merge(df_scores, left_index=True, right_index=True).reset_index(names="sensors")
-    
+    summarize_ = summarize_.merge(
+        df_scores, left_index=True, right_index=True
+    ).reset_index(names="sensors")
+
     return stats, summarize_
 
 
 def analyze_multiple(labels, results, results_path):
     stats = pd.DataFrame()
     summarize = pd.DataFrame()
-    
+
     for filename in results:
         stats_, summarize_ = analyze(labels, filename, results_path)
-        
+
         stats = pd.concat([stats, stats_])
         summarize = pd.concat([summarize, summarize_])
-        
+
     stats.drop(columns="examples", inplace=True)
     summarize.reset_index(drop=True, inplace=True)
-    
+
     type_, *_ = filename.stem.split("_")
-    if len(type_.split("-")) == 1: # means single not bulk
+    if len(type_.split("-")) == 1:  # means single not bulk
         stats.set_index("number_examples", inplace=True)
     else:
         stats.set_index("type_n", inplace=True)
 
-    return stats, summarize 
+    return stats, summarize

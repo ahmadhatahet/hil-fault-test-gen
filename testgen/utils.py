@@ -125,7 +125,7 @@ def client_invoke(
         messages=messages,
         temperature=temperature,
         max_tokens=max_tokens,
-        response_format=response_format
+        response_format=response_format,
     )
 
     response_time = round(time.perf_counter() - start_time, 6)
@@ -196,7 +196,7 @@ def invoke_bulk(
     examples_txt,
     UserPromptBulk,
     req_text,
-    temperature=0.0
+    temperature=0.0,
 ):
     result = {}
 
