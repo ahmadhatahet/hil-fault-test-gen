@@ -1,0 +1,197 @@
+{
+    "accuracy": 0.1,
+    "number_of_reqs": 10,
+    "total_tokens": 7875,
+    "total_completion_tokens": 110,
+    "avg_token_per_req": 787.5,
+    "avg_completion_token_per_req": 11.0,
+    "avg_time_per_req": 2.083971,
+    "examples": [
+        {
+            "requirement": "The vehicle's control system must adjust braking and acceleration to optimize tire grip during winter driving conditions",
+            "target_actuator": 0
+        },
+        {
+            "requirement": "The system shall be able to distinguish and report issues specifically related to the throttle control system stemming from accelerator pedal malfunctions",
+            "target_actuator": 0
+        },
+        {
+            "requirement": "Data transmission from the steering angle sensor to various safety and assistance systems must be secured against unauthorized access and corruption",
+            "target_actuator": 0
+        },
+        {
+            "requirement": "Automatic realignment and calibration procedures should execute after fault detection to confirm integrity before reactivation.",
+            "target_actuator": 1
+        },
+        {
+            "requirement": "Faults in the engine that result in loss of power shall trigger the system to activate hazard lights and alert nearby vehicles.",
+            "target_actuator": 1
+        },
+        {
+            "requirement": "The system must guide the vehicle to the nearest safe stop zone in the event of a comprehensive failure impacting multiple systems.",
+            "target_actuator": 1
+        }
+    ],
+    "responses": [
+        {
+            "requirement": "The vehicle control system must have the capability to override accelerator pedal inputs in the event of an identified fault that poses a risk to vehicle safety",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 0.556588,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 780,
+            "total_tokens": 791,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.099316975,
+            "queue_time": 0.30245295400000005,
+            "total_time": 0.108483642
+        },
+        {
+            "requirement": "Acceleration requests must be processed through redundant pathways to ensure that no single point of failure results in a loss of throttle control",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 0.363558,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 776,
+            "total_tokens": 787,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.096960105,
+            "queue_time": 0.16048996599999998,
+            "total_time": 0.106126772
+        },
+        {
+            "requirement": "In the event of conflicting signals from the accelerator pedal and the throttle position sensor, the system must prioritize safety by limiting throttle opening",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 0\n}",
+            "ai_answer": 0,
+            "response_time": 0.365489,
+            "accuracy": true,
+            "completion_tokens": 11,
+            "prompt_tokens": 778,
+            "total_tokens": 789,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.097583956,
+            "queue_time": 0.162997056,
+            "total_time": 0.106750623
+        },
+        {
+            "requirement": "Should the primary control system fail, the accelerator pedal must enter a fail-safe mode, allowing for limited but controlled throttle response",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 0.364269,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 777,
+            "total_tokens": 788,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.096721357,
+            "queue_time": 0.162938068,
+            "total_time": 0.105888024
+        },
+        {
+            "requirement": "The control system connected to the accelerator pedal must tolerate faults without causing sudden or unexpected throttle responses",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 0.367436,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 771,
+            "total_tokens": 782,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.096538884,
+            "queue_time": 0.161934213,
+            "total_time": 0.105705551
+        },
+        {
+            "requirement": "The system must limit the rate at which the accelerator pedal can command an increase in throttle position to prevent unintended rapid acceleration",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 0.359972,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 776,
+            "total_tokens": 787,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.096201652,
+            "queue_time": 0.159753936,
+            "total_time": 0.105368319
+        },
+        {
+            "requirement": "The electronic throttle control system must include redundant circuits to ensure continued operation if one circuit fails",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 5.008598,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 770,
+            "total_tokens": 781,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.143478344,
+            "queue_time": 4.809051011,
+            "total_time": 0.152645011
+        },
+        {
+            "requirement": "The Electronic Control Unit (ECU) must initiate a fail-safe response if discrepancies are detected between pedal input and throttle response",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 0.370192,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 777,
+            "total_tokens": 788,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.096889256,
+            "queue_time": 0.16231537799999998,
+            "total_time": 0.106055923
+        },
+        {
+            "requirement": "The vehicle must have a throttle override mechanism that prioritizes brake pedal input over the accelerator pedal when both are pressed simultaneously",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 5.515618,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 776,
+            "total_tokens": 787,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.097260248,
+            "queue_time": 0.16355041200000003,
+            "total_time": 0.106426915
+        },
+        {
+            "requirement": "In the case of unintended acceleration, the vehicle must have a programmed response, such as reducing engine power or engaging safety systems to bring the vehicle to a stop",
+            "target_actuator": 0,
+            "model": "llama3-8b-8192",
+            "ai_response": "{\n   \"target_actuator\": 1\n}",
+            "ai_answer": 1,
+            "response_time": 7.567989,
+            "accuracy": false,
+            "completion_tokens": 11,
+            "prompt_tokens": 784,
+            "total_tokens": 795,
+            "completion_time": 0.009166667,
+            "prompt_time": 0.098188101,
+            "queue_time": 0.160748767,
+            "total_time": 0.107354768
+        }
+    ]
+}
