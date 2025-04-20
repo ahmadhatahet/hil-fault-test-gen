@@ -14,12 +14,10 @@ dependencies = [
     "ipykernel",
     "ipywidgets",
     "openai",
-    "langchain-core",
-    "langchain-openai",
     "matplotlib",
     "numpy",
     "pandas",
-    "openpyxl"
+    "openpyxl",
 ]
 
 [tool.setuptools]
