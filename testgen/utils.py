@@ -56,7 +56,7 @@ def parse_result(res):
     # return f"[{vec}]".replace(" ", "")
 
 
-def llm_client(endpoint, api_key, azure_endpoint="", api_version=""):
+def llm_client(endpoint, api_key, base_url="", api_version=""):
     """
     Return OpenAI, Azure, or Groq client for inference
 
@@ -73,12 +73,15 @@ def llm_client(endpoint, api_key, azure_endpoint="", api_version=""):
     if endpoint == "azure":
         return AzureOpenAI(
             api_key=api_key,
-            azure_endpoint=azure_endpoint,
+            azure_endpoint=base_url,
             api_version=api_version,
         )
 
     if endpoint == "openai":
         return OpenAI(api_key=api_key)
+
+    if endpoint == "ollama":
+        return OpenAI(api_key=api_key, base_url=base_url)
 
     if endpoint == "groq":
         return Groq(api_key=api_key)
