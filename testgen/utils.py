@@ -1,8 +1,11 @@
 import re
 import numpy as np
 import time
+import json
+from datetime import datetime as dt
 from openai import AzureOpenAI, OpenAI
 from groq import Groq
+from tqdm.notebook import tqdm
 
 
 def get_examples_from_df(df, n_examples):
@@ -22,7 +25,7 @@ def get_examples_from_df(df, n_examples):
         ].sample(n_examples)
         indexes_to_drop.append(i.index)
         for e in i.values:
-            examples[c].append([e[0], "[" + ",".join(map(str, e[1:])) + "]"])
+            examples[c].append([e[0], f"[{c}]"])
 
     # collect examples with multiple faults
     examples_multiple = {}
@@ -37,7 +40,7 @@ def get_examples_from_df(df, n_examples):
             c = "&".join(df.columns[1:][r[1:] == 1])
             if examples_multiple.get(c) is None:
                 examples_multiple[c] = []
-            examples_multiple[c].append([r[0], "[" + ",".join(map(str, r[1:])) + "]"])
+            examples_multiple[c].append([r[0], f"[{', '.join(df.columns[1:][r[1:] == 1])}]"])
 
         # add both single and multiple into one place
         examples.update(examples_multiple)
@@ -77,9 +80,6 @@ def llm_client(endpoint, api_key, base_url="", api_version=""):
             api_version=api_version,
         )
 
-    if endpoint == "openai":
-        return OpenAI(api_key=api_key)
-
     if endpoint == "ollama":
         return OpenAI(api_key=api_key, base_url=base_url)
 
@@ -87,65 +87,107 @@ def llm_client(endpoint, api_key, base_url="", api_version=""):
         return Groq(api_key=api_key)
 
 
-def client_invoke(
-    client,
+def client_invoke_sensor(
+    endpoint_name,
     model_name,
+    client,
+    df,
     SystemPrompt,
     Sensors,
     examples_txt,
     UserPrompt,
-    instance,
     temperature=0.0,
     max_tokens=4096,
+    seed=42,
     response_format=None,
 ):
     """Call client for chat completion"""
 
-    # system prompt
-    messages = [
-        {
-            "role": "system",
-            "content": SystemPrompt.format(sensors=Sensors, examples=examples_txt),
-        }
-    ]
+    results = []
+    responses = []
 
-    result = {}
+    for instance in tqdm(df.iterrows(), total=df.shape[0]):
 
-    result["idx"] = instance[0]
-    result["requirement"] = instance[1].iloc[0]
-    result["true_vector"] = "[" + ",".join(map(str, instance[1].iloc[1:])) + "]"
+        # system prompt
+        messages = [
+            {
+                "role": "system",
+                "content": SystemPrompt.format(sensors=Sensors, examples=examples_txt),
+            }
+        ]
 
-    # add user prompt
-    messages.append(
-        {"role": "user", "content": UserPrompt.format(req=result["requirement"])}
-    )
+        result = {}
 
-    # run LLM
-    start_time = time.perf_counter()
+        result["idx"] = instance[0]
+        result["requirement"] = instance[1].iloc[0]
+        result["true_target_sensor"] = (
+            instance[1].iloc[1:][instance[1].iloc[1:] == 1].index.to_list()
+        )
 
-    response = client.chat.completions.create(
-        model=model_name,
-        messages=messages,
-        temperature=temperature,
-        max_tokens=max_tokens,
-        response_format=response_format,
-    )
+        # add user prompt
+        messages.append(
+            {"role": "user", "content": UserPrompt.format(req=result["requirement"])}
+        )
 
-    response_time = round(time.perf_counter() - start_time, 6)
-    result["ai_response"] = response.choices[0].message.content
-    result["pred_vector"] = parse_result(result["ai_response"])
-    result["response_time"] = response_time
+        # run LLM
+        start_time = time.perf_counter()
 
-    result["accuracy"] = result["pred_vector"] == result["true_vector"]
+        if endpoint_name == "azure":
+            response = client.beta.chat.completions.parse(
+                model=model_name,
+                messages=messages,
+                temperature=temperature,
+                seed=seed,
+                max_tokens=max_tokens,
+                response_format=response_format,
+            )
+        else:
 
-    result.update(response.usage.to_dict())
+            # add format response to prompt
+            messages[0]["content"] = messages[0]["content"].replace(
+                "</Solution Plan>",
+                f"""4. Format the response in JSON format.
+</Solution Plan>
 
-    # logprobs = response.choices[0].logprobs
-    # message = response.choices[0].message
-    # message = response.choices[0].message
-    # content_filter_results = response.choices[0].content_filter_results
+<Output Format>
+The JSON object must use the schema: {json.dumps(response_format.model_json_schema(), indent=2)}
+</Output Format>""",
+        )
 
-    return result, response
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                temperature=temperature,
+                seed=seed,
+                max_tokens=max_tokens,
+                response_format={"type": "json_object"},
+            )
+
+        response_time = round(time.perf_counter() - start_time, 6)
+        result["ai_response"] = response.choices[0].message.content
+
+        response_json = json.loads(result["ai_response"])
+
+        result["pred_target_sensor"] = [
+            key for key, value in response_json.items() if value == 1
+        ]
+        result["response_time"] = response_time
+
+        result["accuracy"] = sorted(result["pred_target_sensor"]) == sorted(
+            result["true_target_sensor"]
+        )
+
+        response_usage = response.usage.to_dict()
+        if endpoint_name == "azure":
+            response_usage.pop("completion_tokens_details")
+            response_usage.pop("prompt_tokens_details")
+
+        result.update(response_usage)
+
+        results.append(result)
+        responses.append(response)
+
+    return results, responses
 
 
 def get_batches(df, SAMPLE_TYPE="random", N_REQS=5):
@@ -190,7 +232,7 @@ def requirement_text_bulk(batches):
     return batches, req_texts
 
 
-def invoke_bulk(
+def invoke_bulk_sensor(
     model_name,
     client,
     batch,
@@ -200,6 +242,7 @@ def invoke_bulk(
     UserPromptBulk,
     req_text,
     temperature=0.0,
+    seed=42,
 ):
     result = {}
 
@@ -214,11 +257,14 @@ def invoke_bulk(
     messages.append({"role": "user", "content": UserPromptBulk.format(req=req_text)})
 
     start_time = time.perf_counter()
+
     response = client.chat.completions.create(
         model=model_name,
         messages=messages,
         temperature=temperature,
+        seed=seed,
     )
+
     response_time = round(time.perf_counter() - start_time, 6)
 
     vectors = [parse_result(v) for v in response.choices[0].message.content.split("\n")]
@@ -236,3 +282,165 @@ def invoke_bulk(
     result.update(response.usage.to_dict())
 
     return result
+
+
+def client_invoke_actuator_sensor(
+    endpoint_name,
+    client,
+    df,
+    model_name,
+    SensorActuator,
+    examples_text,
+    response_format,
+    temperature=0.0,
+    seed=42,
+    max_tokens=256,
+):
+    results = []
+    responses = []
+
+    # for instance in tqdm(df.iloc[:5,:].iterrows(), total=df.shape[0]):
+    for instance in tqdm(df.iterrows(), total=df.shape[0]):
+
+        # system prompt
+        messages = [
+            {
+                "role": "system",
+                "content": SensorActuator.format(
+                    examples=examples_text,
+                    requirement=instance[1].iloc[0],
+                ),
+            }
+        ]
+
+        # run LLM
+        result = {
+            "requirement": instance[1].iloc[0],
+            "target_actuator": instance[1].iloc[1],
+            "model": model_name,
+        }
+        start_time = time.perf_counter()
+
+        if endpoint_name == "azure":
+            response = client.beta.chat.completions.parse(
+                model=model_name,
+                messages=messages,
+                temperature=temperature,
+                seed=seed,
+                max_tokens=max_tokens,
+                response_format=response_format,
+            )
+        else:
+
+            # add format response to prompt
+            messages[0]["content"] = messages[0]["content"].replace(
+                "</Solution Plan>",
+                f"""5. Format the response in JSON format.
+</Solution Plan>
+
+<Output Format>
+The JSON object must use the schema: {json.dumps(response_format.model_json_schema(), indent=2)}
+</Output Format>""",
+            )
+
+            response = client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                temperature=temperature,
+                seed=seed,
+                max_tokens=max_tokens,
+                response_format={"type": "json_object"},
+            )
+
+        response_time = round(time.perf_counter() - start_time, 6)
+        result["ai_response"] = response.choices[0].message.content
+        messages.append(
+            {
+                "role": "assistant",
+                "content": result["ai_response"],
+            }
+        )
+
+        result_json = json.loads(result["ai_response"])
+        result["ai_answer"] = result_json["target_actuator"]
+        result["response_time"] = response_time
+        result["accuracy"] = instance[1].iloc[1] == result_json["target_actuator"]
+
+        response_usage = response.usage.to_dict()
+        if endpoint_name == "azure":
+            response_usage.pop("completion_tokens_details")
+            response_usage.pop("prompt_tokens_details")
+
+        result.update(response_usage)
+
+        results.append(result)
+        responses.append(response)
+
+    return results, responses
+
+
+def calc_stats(results):
+    accuracy = 0
+    total_tokens = 0
+    total_completion_tokens = 0
+    total_time = 0
+
+    for r in results:
+        accuracy += r["accuracy"]
+        total_tokens += r["total_tokens"]
+        total_completion_tokens += r["completion_tokens"]
+        total_time += r["response_time"]
+
+    number_of_reqs = len(results)
+    accuracy /= len(results)
+    avg_time_per_req = round(total_time / len(results), 6)
+    avg_token_per_req = total_tokens / len(results)
+    avg_completion_token_per_req = total_completion_tokens / len(results)
+
+    return (
+        number_of_reqs,
+        accuracy,
+        avg_time_per_req,
+        avg_token_per_req,
+        avg_completion_token_per_req,
+        total_tokens,
+        total_completion_tokens,
+        total_time,
+    )
+
+
+def save_responses(base_path, prefix, **kwargs):
+    # save results
+    time = dt.now()
+
+    results_path = "results/{prefix}_{model}_n-{examples}_acc-{accuracy}_{time}.json"
+    results_path = results_path.format(
+        prefix=prefix,
+        model=kwargs["model_name"],
+        examples=kwargs["n_examples"],
+        time=time.strftime("%m.%d.%Y-%H:%M:%S"),
+        accuracy=round(kwargs["accuracy"], 3),
+    )
+
+    results_file = base_path / results_path
+    results_file.parent.mkdir(exist_ok=True)
+    results_file.touch()
+
+    with results_file.open("w") as f:
+        json.dump(
+            {
+                "accuracy": kwargs["accuracy"],
+                "number_of_reqs": kwargs["number_of_reqs"],
+                "total_tokens": kwargs["total_tokens"],
+                "total_completion_tokens": kwargs["total_completion_tokens"],
+                "avg_token_per_req": kwargs["avg_token_per_req"],
+                "avg_completion_token_per_req": kwargs["avg_completion_token_per_req"],
+                "avg_time_per_req": kwargs["avg_time_per_req"],
+                "examples": kwargs["examples"],
+                "responses": kwargs["results"],
+            },
+            f,
+            indent=4,
+        )
+
+    return results_file
