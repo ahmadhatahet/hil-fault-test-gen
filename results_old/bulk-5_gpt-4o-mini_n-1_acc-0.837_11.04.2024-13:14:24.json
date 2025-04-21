@@ -1,0 +1,1183 @@
+{
+    "accuracy": 0.837037037037037,
+    "number_of_reqs": 27,
+    "total_tokens": 26699,
+    "total_completion_tokens": 2160,
+    "avg_token_per_req": 197.77037037037036,
+    "avg_completion_token_per_req": 16.0,
+    "avg_time_per_req": 0.165171,
+    "examples": {
+        "acceleration_pedal": [
+            [
+                "The system must perform periodic performance checks on the accelerator pedal and throttle position sensors to ensure ongoing reliability",
+                "[1,0,0,0,0]"
+            ]
+        ],
+        "wheel_steering_angle": [
+            [
+                "In critical situations, the vehicle must enable an emergency steering assist feature to aid the driver in maintaining control of the vehicle",
+                "[0,1,0,0,0]"
+            ]
+        ],
+        "wheel_speed": [
+            [
+                "The vehicle control system shall include algorithms to validate sensor data from wheel speed sensors before utilizing it for vehicle dynamics control",
+                "[0,0,1,0,0]"
+            ]
+        ],
+        "yaw_rate": [
+            [
+                "Vehicle suspension and steering systems must utilize yaw rate data to enhance road handling, especially in adverse conditions",
+                "[0,0,0,1,0]"
+            ]
+        ],
+        "steering_torque": [
+            [
+                "The power steering system must perform reliably over the vehicle's operational lifetime without degradation that impacts safety or control",
+                "[0,0,0,0,1]"
+            ]
+        ],
+        "acceleration_pedal&wheel_steering_angle": [
+            [
+                "The vehicle\u2019s Driver Assistance Systems must provide accurate assistance features during lane changes by utilizing real-time data from both the steering angle and acceleration pedal",
+                "[1,1,0,0,0]"
+            ]
+        ]
+    },
+    "responses": [
+        {
+            "idx": [
+                56,
+                62,
+                71,
+                76,
+                61
+            ],
+            "requirement": [
+                "The vehicle control system shall adapt brake and power delivery to maintain optimal tire grip based on surface condition data received from wheel speed sensors",
+                "The system must continuously monitor the yaw rate sensor and detect any failures within [specific time] milliseconds, initiating a predefined safe state operation",
+                "Yaw rate control systems must provide steering correction assistance to maintain the intended path during a loss of traction",
+                "Safety systems must continuously monitor yaw rate to identify potential loss of control or rollover risks",
+                "The system must log historical wheel speed data to assist in fault diagnosis and predictive maintenance"
+            ],
+            "true_vector": [
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,1,0]",
+                "[0,0,1,0,0]"
+            ],
+            "ai_response": "Vector 1: [1,0,1,0,0]  \nVector 2: [0,0,1,0,0]  \nVector 3: [0,0,1,0,0]  \nVector 4: [0,0,1,0,0]  \nVector 5: [1,0,0,0,0]  ",
+            "pred_vector": [
+                "[1,0,1,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]",
+                "[1,0,0,0,0]"
+            ],
+            "response_time": 1.248117,
+            "accuracy": [
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 900,
+            "total_tokens": 980
+        },
+        {
+            "idx": [
+                133,
+                19,
+                43,
+                99,
+                30
+            ],
+            "requirement": [
+                "The vehicle's control systems must assist the driver's lane change execution by compensate for crosswinds during lane changes based on the steering angle and acceleration pedal sensitivity",
+                "The system must log data relevant to accelerator pedal operation to assist in troubleshooting and fault analysis",
+                "The system must provide diagnostic functions to identify issues with the steering angle sensor and recommend corrective actions",
+                "The steering system should be capable of providing haptic feedback to alert the driver of potential hazards or system states",
+                "The system must respond to steering input without delay exceeding a specified limit to ensure timely steering response for driver commands"
+            ],
+            "true_vector": [
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [1,1,0,0,0]  \nVector 2: [1,0,0,0,0]  \nVector 3: [0,1,0,0,0]  \nVector 4: [0,1,0,0,0]  \nVector 5: [0,1,0,0,0]  ",
+            "pred_vector": [
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "response_time": 0.69355,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 903,
+            "total_tokens": 983
+        },
+        {
+            "idx": [
+                75,
+                66,
+                79,
+                31,
+                59
+            ],
+            "requirement": [
+                "The system must detect yaw rate with high fidelity to ensure effective input for vehicle dynamics control systems",
+                "The vehicle control system must accurately monitor the yaw rate to ensure responsiveness to vehicle dynamics under various driving conditions",
+                "The vehicle control system must have sufficient computational capacity to handle the demands of processing and integrating yaw rate data",
+                "The vehicle should maintain consistent cornering behavior under various driving conditions, ensuring that steering angle adjustments result in predictable vehicle paths",
+                "The Traction Control System (TCS) must integrate wheel speed data to manage power delivery and maintain vehicle stability"
+            ],
+            "true_vector": [
+                "[0,0,0,1,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,1,0]",
+                "[0,1,0,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,1,0]  \nVector 2: [0,0,0,1,0]  \nVector 3: [0,0,0,1,0]  \nVector 4: [0,1,0,0,0]  \nVector 5: [0,0,1,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,1,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,1,0]",
+                "[0,1,0,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "response_time": 0.739773,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 900,
+            "total_tokens": 980
+        },
+        {
+            "idx": [
+                130,
+                86,
+                80,
+                48,
+                40
+            ],
+            "requirement": [
+                "Adaptive Cruise Control (ACC) must adjust the vehicle's speed based on both the steering angle and acceleration pedal position when a lane change is initiated",
+                "The steering system must continuously monitor for faults in torque measurement and provide immediate notification to the driver through the vehicle's diagnostic system",
+                "The vehicle's control system must maintain operation under a single-point failure within the yaw rate sensing system",
+                "Traction Control System must respond effectively to wheel speed variations to prevent wheel slip under acceleration and maintain traction",
+                "In case of steering system malfunction, an emergency steering control mode should be activated to allow driver control as much as possible"
+            ],
+            "true_vector": [
+                "[1,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[0,0,1,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [1,1,0,0,0]  \nVector 2: [0,0,0,0,1]  \nVector 3: [0,0,0,1,0]  \nVector 4: [0,0,1,0,0]  \nVector 5: [0,1,0,0,0]  ",
+            "pred_vector": [
+                "[1,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[0,0,1,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "response_time": 0.772351,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 911,
+            "total_tokens": 991
+        },
+        {
+            "idx": [
+                58,
+                12,
+                93,
+                131,
+                90
+            ],
+            "requirement": [
+                "The Anti-lock Braking System (ABS) must reliably receive accurate wheel speed information under all environmental conditions",
+                "Continuous signal integrity checks must be conducted between the electronic accelerator pedal and the ECU",
+                "The steering torque system must include an automated calibration feature that adjusts to maintain optimal performance over time and use",
+                "Lane Change Warning systems must warn the driver of unsafe lane-changing maneuvers based on abrupt changes in acceleration pedal position in conjunction with steering angle deviations",
+                "The system must monitor and adjust steering torque to compensate for changes in grip"
+            ],
+            "true_vector": [
+                "[0,0,1,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[0,0,0,0,1]"
+            ],
+            "ai_response": "Vector 1: [0,0,1,0,0]  \nVector 2: [1,0,0,0,0]  \nVector 3: [0,0,0,0,1]  \nVector 4: [1,1,0,0,0]  \nVector 5: [0,0,0,0,1]  ",
+            "pred_vector": [
+                "[0,0,1,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[0,0,0,0,1]"
+            ],
+            "response_time": 0.742274,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 895,
+            "total_tokens": 975
+        },
+        {
+            "idx": [
+                110,
+                55,
+                33,
+                77,
+                84
+            ],
+            "requirement": [
+                "The steering system must automatically compensate for temperature-induced variations in steering torque",
+                "In the event of a wheel speed sensor failure, the system must default to a fail-safe mode that ensures the highest possible level of safety and stability",
+                "The steering angle control must be fully compatible and integrated with other vehicle stability systems, such as Traction Control and Electronic Stability Control",
+                "The system must use yaw rate input to support the execution of emergency maneuvers, enhancing evasive capabilities",
+                "The vehicle's steering response must be consistent with the driver's torque input on the steering wheel, with no uncommanded delays or discrepancies"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,0,1]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [0,0,1,0,0]  \nVector 3: [0,1,0,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [0,1,0,0,1]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[0,1,0,0,1]"
+            ],
+            "response_time": 0.755642,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                false
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 911,
+            "total_tokens": 991
+        },
+        {
+            "idx": [
+                101,
+                8,
+                52,
+                65,
+                42
+            ],
+            "requirement": [
+                "The power steering system should allow drivers to customize steering feedback settings according to personal preference, within safety limits",
+                "The integrity of the communication link between the accelerator pedal sensors and the throttle control system must be ensured at all times",
+                "The braking system must adjust brake force in response to wheel speed sensor data to optimize braking performance and prevent wheel lockup",
+                "The system must alert the driver and engage stability control measures if angular velocity exceeds safe operational limits as defined by vehicle dynamics parameters",
+                "The system must continuously calibrate the steering angle sensor to ensure accuracy despite environmental and operational variations"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [1,0,0,0,0]  \nVector 3: [0,0,1,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [1,0,0,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]"
+            ],
+            "response_time": 0.715876,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                false
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 904,
+            "total_tokens": 984
+        },
+        {
+            "idx": [
+                18,
+                91,
+                125,
+                63,
+                126
+            ],
+            "requirement": [
+                "The system must automatically adjust the throttle response if the pedal sensor indicates out-of-range operation",
+                "The steering torque system must be compatible with the range of tire sizes and types specified for the vehicle",
+                "The vehicle control system must impose safety limits on acceleration and prevent unsafe maneuvers beyond the driver's throttle intention based on steering angle input",
+                "The system shall calculate turn rate consistently using gyroscopic and inertial measurement data, ensuring correlation with actual vehicle behavior",
+                "The vehicle control systems must have the ability to mitigate the effects of erroneous steering and acceleration inputs by the driver, either through system intervention or by providing corrective feedback to the driver"
+            ],
+            "true_vector": [
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[1,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [1,0,0,0,0]  \nVector 2: [0,0,0,0,1]  \nVector 3: [1,1,0,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [1,0,0,0,1]  ",
+            "pred_vector": [
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,1]"
+            ],
+            "response_time": 0.731032,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                false
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 915,
+            "total_tokens": 995
+        },
+        {
+            "idx": [
+                119,
+                92,
+                15,
+                88,
+                25
+            ],
+            "requirement": [
+                "The system must compensate for crosswinds maintain the intended cornering path based on the value of wheel steering angle and acceleration input",
+                "The system must include a failure mode analysis feature that initiates a safe mode operation, minimizing steering torque to a safe level in the event of system failure",
+                "The vehicle must have a throttle override mechanism that prioritizes brake pedal input over the accelerator pedal when both are pressed simultaneously",
+                "In the event of power steering assist failure, the system must ensure that manual steering effort remains within safe limits of torque application for the driver to maintain control",
+                "Free play in the steering system must not exceed specified tolerances to prevent on-road steering imprecision"
+            ],
+            "true_vector": [
+                "[1,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [1,0,0,0,0]  \nVector 2: [0,0,0,0,1]  \nVector 3: [1,0,0,0,0]  \nVector 4: [0,0,0,0,1]  \nVector 5: [0,0,0,0,0]  ",
+            "pred_vector": [
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,0,0]"
+            ],
+            "response_time": 0.81535,
+            "accuracy": [
+                false,
+                true,
+                true,
+                true,
+                false
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 923,
+            "total_tokens": 1003
+        },
+        {
+            "idx": [
+                29,
+                7,
+                22,
+                70,
+                0
+            ],
+            "requirement": [
+                "In the absence of power assist, the manual steering effort required should comply with safety standards to ensure that the vehicle can still be controlled",
+                "Continuous monitoring of the accelerator pedal's displacement shall be conducted to detect any discrepancies indicative of potential faults",
+                "The Throttle Control system must respond to Driver Input through the Accelerator Pedal within a defined time frame to ensure timely acceleration",
+                "Yaw rate control systems must be robust against variations in environmental conditions such as temperature and humidity",
+                "The vehicle control system shall have the capability to override accelerator pedal inputs in case of an identified fault that risks vehicle safety"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [1,0,0,0,0]  \nVector 3: [1,0,0,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [1,0,0,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]"
+            ],
+            "response_time": 0.748169,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 907,
+            "total_tokens": 987
+        },
+        {
+            "idx": [
+                114,
+                132,
+                32,
+                39,
+                73
+            ],
+            "requirement": [
+                "The steering system must include comprehensive diagnostic capabilities to detect and signal any steering wheel malfunction",
+                "The vehicle's steering control system must reflect the driver's lane change timing accurately by synchronize with the acceleration pedal input",
+                "In case of a partial system failure, the vehicle shall maintain limited steering functionality to allow safe deceleration and vehicle stoppage",
+                "Upon detection of a fault condition, the system shall enter a fail-safe mode, maintaining limited operational capabilities to allow the vehicle to be steered to a safe stop",
+                "The vehicle control system must adapt yaw rate control responses based on driving conditions such as road surface, speed, and vehicle load"
+            ],
+            "true_vector": [
+                "[0,1,0,0,0]",
+                "[1,1,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,0,0,1,0]"
+            ],
+            "ai_response": "Vector 1: [0,1,0,0,0]  \nVector 2: [1,1,0,0,0]  \nVector 3: [0,0,0,0,0]  \nVector 4: [0,0,0,0,0]  \nVector 5: [0,0,0,1,0]  ",
+            "pred_vector": [
+                "[0,1,0,0,0]",
+                "[1,1,0,0,0]",
+                "[0,0,0,0,0]",
+                "[0,0,0,0,0]",
+                "[0,0,0,1,0]"
+            ],
+            "response_time": 0.831118,
+            "accuracy": [
+                true,
+                true,
+                false,
+                false,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 914,
+            "total_tokens": 994
+        },
+        {
+            "idx": [
+                23,
+                49,
+                98,
+                122,
+                5
+            ],
+            "requirement": [
+                "In case of wheel steering sensor failure, the system must revert to a fail-safe mode that allows for controlled and safe vehicle operation",
+                "The system shall generate a Diagnostic Trouble Code (DTC) when a wheel speed sensor malfunction is detected",
+                "The steering system must have a redundant mechanism to maintain steering control in the event of a single angle of failure",
+                "The vehicle control system must allow for stable trail braking, minimizing understeer or oversteer by coordinate the steering angle sensor and acceleration pedal sensor",
+                "The system shall limit the rate at which the accelerator pedal can command an increase in throttle position to prevent unintended rapid acceleration"
+            ],
+            "true_vector": [
+                "[0,1,0,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,1,0,0,0]  \nVector 2: [0,0,1,0,0]  \nVector 3: [0,1,0,0,0]  \nVector 4: [1,1,0,0,0]  \nVector 5: [1,0,0,0,0]  ",
+            "pred_vector": [
+                "[0,1,0,0,0]",
+                "[0,0,1,0,0]",
+                "[0,1,0,0,0]",
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]"
+            ],
+            "response_time": 0.883983,
+            "accuracy": [
+                true,
+                true,
+                false,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 915,
+            "total_tokens": 995
+        },
+        {
+            "idx": [
+                136,
+                74,
+                111,
+                68,
+                134
+            ],
+            "requirement": [
+                "An automated parking assistance system must navigate parking challenges effectively, promoting safety and reducing driver strain based on steering angle and accelerator pedal inputs to ",
+                "Lane keeping assist systems must be calibrated to account for yaw rate sensor data to ensure accurate lane positioning",
+                "The steering torque system shall provide consistent feedback through the steering wheel that accurately reflects the vehicle's dynamic state",
+                "Yaw rate control must be fully integrated with vehicle stability control systems to manage understeer or oversteer situations",
+                "The system should  prevent oversteering and loss of control based on limit the steering angle during high-speed lane changes on highways"
+            ],
+            "true_vector": [
+                "[1,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [1,1,0,0,0]  \nVector 2: [0,0,0,1,0]  \nVector 3: [0,0,0,0,1]  \nVector 4: [0,0,0,1,0]  \nVector 5: [0,1,0,0,0]  ",
+            "pred_vector": [
+                "[1,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[0,1,0,0,0]"
+            ],
+            "response_time": 0.764081,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 910,
+            "total_tokens": 990
+        },
+        {
+            "idx": [
+                28,
+                82,
+                60,
+                81,
+                13
+            ],
+            "requirement": [
+                "In the event of steering torque sensor failure, the vehicle must still be steerable by manual means, although increased effort may be required",
+                "Vehicle control systems must respond to yaw rate sensor inputs by adjusting braking, throttle, and steering as necessary to maintain intended vehicle path and stability",
+                "The system must continuously monitor the alignment and mounting status of each wheel speed sensor to ensure accurate readings",
+                "The vehicle dynamics control system must adjust to compensate for discrepancies between actual and expected vehicle yaw rates",
+                "The drive-by-wire system must ensure the integrity and timeliness of communications between the accelerator pedal, ECU, and other relevant systems"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [0,0,0,1,0]  \nVector 3: [0,0,1,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [1,0,0,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]"
+            ],
+            "response_time": 0.800078,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 912,
+            "total_tokens": 992
+        },
+        {
+            "idx": [
+                87,
+                78,
+                14,
+                21,
+                107
+            ],
+            "requirement": [
+                "The system must protect against excessive torque applied to the steering wheel that could lead to mechanical or structural damage",
+                "Vehicle telemetry systems must incorporate yaw rate sensor data to support advanced driver assistance systems (ADAS) and automated driving functions",
+                "In the event of a primary sensor failure, a backup system must be in place to take over pedal position sensing with minimal loss of functionality",
+                "In the event of a system failure, the pedal must fail to a safe position, preventing any increase in engine power",
+                "In case of steering angle failures, the system must ensure the retention of emergency manual steering control"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [0,0,0,1,0]  \nVector 3: [1,0,0,0,0]  \nVector 4: [1,0,0,0,0]  \nVector 5: [0,1,0,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "response_time": 0.809363,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 907,
+            "total_tokens": 987
+        },
+        {
+            "idx": [
+                16,
+                135,
+                9,
+                35,
+                102
+            ],
+            "requirement": [
+                "In the case of unintended acceleration, the vehicle must have a programmed response such as reducing engine power or engaging safety systems to bring the vehicle to a stop",
+                "The vehicle control system shall ensure a stable and predictable vehicle trajectory based on synchronize steering and acceleration behaviors during lane changes",
+                "A system calibration verification process must be performed at regular intervals to ensure the long-term accuracy of the accelerator pedal response",
+                "In case of a critical failure in the steering angle sensor, the system must default to a fail-safe mode, limiting accrelaration and disabling advanced functions if necessary",
+                "The power steering system should provide consistent haptic feedback that does not deteriorate over time or with system aging"
+            ],
+            "true_vector": [
+                "[1,0,0,0,0]",
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]"
+            ],
+            "ai_response": "Vector 1: [1,0,0,0,0]  \nVector 2: [1,1,0,0,0]  \nVector 3: [1,0,0,0,0]  \nVector 4: [0,1,0,0,0]  \nVector 5: [0,0,0,0,1]  ",
+            "pred_vector": [
+                "[1,0,0,0,0]",
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,0,0,0,1]"
+            ],
+            "response_time": 0.807882,
+            "accuracy": [
+                true,
+                true,
+                true,
+                false,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 925,
+            "total_tokens": 1005
+        },
+        {
+            "idx": [
+                38,
+                115,
+                47,
+                54,
+                50
+            ],
+            "requirement": [
+                "The system must detect any Steering Angle Sensor malfunction and report Diagnostic Trouble Codes (DTCs) to the vehicle\u2019s diagnostic system promptly",
+                "The system must be able to identify a fault in the steering torque sensor and transition to a safe state without compromising vehicle control",
+                "The ESC system must utilize wheel speed data to accurately and reliably execute vehicle dynamics corrections",
+                "Communication protocols for transmitting wheel speed data to other vehicle systems must be robust and have error-checking capabilities",
+                "The system must periodically verify the calibration of each wheel speed sensor and recalibrate if necessary"
+            ],
+            "true_vector": [
+                "[0,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,1,0,0,0]  \nVector 2: [0,0,0,0,1]  \nVector 3: [0,0,1,0,0]  \nVector 4: [0,0,1,0,0]  \nVector 5: [0,0,1,0,0]  ",
+            "pred_vector": [
+                "[0,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "response_time": 0.93571,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 900,
+            "total_tokens": 980
+        },
+        {
+            "idx": [
+                94,
+                1,
+                113,
+                96,
+                45
+            ],
+            "requirement": [
+                "The system must alert the driver to safety-critical conditions related to steering torque, such as malfunctions or deviations from expected performance",
+                "The system must process acceleration requests through redundant pathways to ensure no single point of failure leads to a loss of throttle control",
+                "During emergency maneuvers, the system must increase force feedback to inform the driver of potential loss of vehicle control",
+                "The steering system should adapt the steering wheel according to the driving mode selected (e.g., comfort vs. sporty)",
+                "The ABS and ESC systems must detect a wheel speed sensor failure and activate a fail-safe mode, maintaining as much functionality as possible"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,1,0,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [1,0,0,0,0]  \nVector 3: [0,0,0,0,1]  \nVector 4: [0,1,0,0,0]  \nVector 5: [0,0,1,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,1,0,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "response_time": 0.824876,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 913,
+            "total_tokens": 993
+        },
+        {
+            "idx": [
+                124,
+                4,
+                112,
+                67,
+                106
+            ],
+            "requirement": [
+                "The vehicle's stability control system must maintain stability in response to steering inputs,  match the driver's steering actions based on throttle output ",
+                "The control system connected to the accelerator pedal must be capable of tolerating faults without leading to sudden or unexpected throttle responses",
+                "In case of partial steering system failure, the steering assist must either maintain operation at a reduced level or fail-safe",
+                "Vehicle control systems must process yaw rate data in real-time to enable immediate corrective actions",
+                "The steering system must remain operable within safe limits in the event of a torque sensor failure"
+            ],
+            "true_vector": [
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,0,1]"
+            ],
+            "ai_response": "Vector 1: [1,0,0,0,0]  \nVector 2: [1,0,0,0,0]  \nVector 3: [0,1,0,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [0,0,0,0,1]  ",
+            "pred_vector": [
+                "[1,0,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,0,0,1]"
+            ],
+            "response_time": 0.79333,
+            "accuracy": [
+                false,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 901,
+            "total_tokens": 981
+        },
+        {
+            "idx": [
+                10,
+                26,
+                11,
+                95,
+                123
+            ],
+            "requirement": [
+                "The electronic throttle control system must include redundant circuits to ensure continued operation if one circuit fails",
+                "Power steering systems must provide the correct level of assist to the driver, adjusting based on steering torque",
+                "The Electronic Control Unit (ECU) must initiate a fail-safe response if discrepancies are detected between pedal input and throttle response",
+                "The power steering system must provide consistent torque feedback to the driver that corresponds to the actual steering conditions",
+                "The vehicle's control systems must be responsive to the driver's reactions, with minimal latency between input at the steering wheel and acceleration pedal and vehicle reaction"
+            ],
+            "true_vector": [
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,0]  \nVector 2: [0,0,0,0,1]  \nVector 3: [1,0,0,0,0]  \nVector 4: [0,0,0,0,1]  \nVector 5: [1,1,0,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]"
+            ],
+            "response_time": 1.63957,
+            "accuracy": [
+                false,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 904,
+            "total_tokens": 984
+        },
+        {
+            "idx": [
+                41,
+                6,
+                85,
+                69,
+                120
+            ],
+            "requirement": [
+                "The system must log all steering angle sensor errors and issues for diagnostics and maintenance purposes",
+                "The system must continually ensure that the throttle position correlates in real-time with the depressed level of the accelerator pedal",
+                "The system must provide consistent steering effort feedback to the driver, reflecting actual turning force requirements based on wheel speed and driving conditions",
+                "Yaw rate control systems must interact seamlessly with driver assistance systems such as lane keeping assist and predictive steering",
+                "The steering and acceleration systems must provide integrated support for controlled drifting, allowing the driver to maintain a specified drift angle with appropriate throttle inputs"
+            ],
+            "true_vector": [
+                "[0,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[1,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,1,0,0,0]  \nVector 2: [1,0,0,0,0]  \nVector 3: [0,0,1,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [1,0,0,0,1]  ",
+            "pred_vector": [
+                "[0,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,1]"
+            ],
+            "response_time": 0.694155,
+            "accuracy": [
+                true,
+                true,
+                false,
+                true,
+                false
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 905,
+            "total_tokens": 985
+        },
+        {
+            "idx": [
+                17,
+                89,
+                128,
+                20,
+                109
+            ],
+            "requirement": [
+                "The system must continuously monitor the accelerator pedal sensor for failures and respond appropriately when a fault is detected",
+                "The system must detect and respond appropriately to torque inputs outside normal operational thresholds, either by alerting the driver or by taking corrective action",
+                "The control system must maintain balance and vehicle poise  based on real-time adjustments to both steering and acceleration during lane change maneuvers",
+                "Vehicle acceleration must be linear and proportional to the displacement of the accelerator pedal to provide a smooth and controlled driving experience",
+                "The vehicle's onboard diagnostic system must alert the driver or technician to any wear or imminent failure of steering components"
+            ],
+            "true_vector": [
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [1,0,0,0,0]  \nVector 2: [0,0,0,0,1]  \nVector 3: [1,1,0,0,0]  \nVector 4: [1,0,0,0,0]  \nVector 5: [0,1,0,0,0]  ",
+            "pred_vector": [
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,1,0,0,0]"
+            ],
+            "response_time": 0.696257,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 912,
+            "total_tokens": 992
+        },
+        {
+            "idx": [
+                100,
+                103,
+                64,
+                2,
+                118
+            ],
+            "requirement": [
+                "The system must include error correction algorithms to minimize any discrepancy in the steering feedback provided to the driver",
+                "The system must continuously monitor steering torque sensors for faults and report any detected issues to the Driver Assistance Systems for prompt alerting of the driver",
+                "The system\u2019s response to changes in rotation rate around the vertical axis must not exceed [specific value] milliseconds to ensure timely adjustments to vehicle stability",
+                "In the event of conflicting signals from the accelerator pedal and the throttle position sensor, the system shall prioritize safety by limiting throttle opening",
+                "In emergency maneuvers, the system must prevent skidding or loss of control by overriding the driver's steering and acceleration inputs"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]",
+                "[1,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,1,0,0,0]  \nVector 2: [0,0,0,0,1]  \nVector 3: [0,0,0,1,0]  \nVector 4: [1,0,0,0,0]  \nVector 5: [1,1,0,0,0]  ",
+            "pred_vector": [
+                "[0,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,1,0]",
+                "[1,0,0,0,0]",
+                "[1,1,0,0,0]"
+            ],
+            "response_time": 0.870312,
+            "accuracy": [
+                false,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 920,
+            "total_tokens": 1000
+        },
+        {
+            "idx": [
+                37,
+                117,
+                44,
+                72,
+                51
+            ],
+            "requirement": [
+                "In the event of oversteer, the vehicle dynamics control system must initiate corrective actions to stabilize the vehicle without excessive delay",
+                "The system must predict the apex of a turn based on steering angle input and modulate the acceleration accordingly for balanced cornering dynamics",
+                "The traction control system shall respond correctly to wheel speed sensor inputs under all driving conditions to prevent wheel slip",
+                "Yaw rate control must be effectively integrated into autonomous driving systems for accurate vehicle orientation and control",
+                "The system shall analyze historical wheel speed data to predict potential future sensor or system malfunctions and alert the user"
+            ],
+            "true_vector": [
+                "[0,1,0,0,0]",
+                "[1,1,0,0,0]",
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,1,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,1,0]  \nVector 2: [1,0,0,0,1]  \nVector 3: [0,0,1,0,0]  \nVector 4: [0,0,0,1,0]  \nVector 5: [0,0,1,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,1,0]",
+                "[1,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,0,0,1,0]",
+                "[0,0,1,0,0]"
+            ],
+            "response_time": 0.692815,
+            "accuracy": [
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 905,
+            "total_tokens": 985
+        },
+        {
+            "idx": [
+                27,
+                46,
+                121,
+                105,
+                116
+            ],
+            "requirement": [
+                "EPS systems must include fault detection mechanisms that alert the driver to steering torque malfunctions and, where possible, provide a fail-operational mode",
+                "The brake system must be compatible with ABS interventions based on wheel speed data to ensure effective deceleration and stability",
+                "The steering system must adapt its response based on the accelerator pedal input to cater to the demands of high speed tracks",
+                "ESC systems must use steering torque data to effectively compensate for oversteer or understeer, enhancing vehicle stability",
+                "Upon corner exit, the system must ensure smooth power delivery and vehicle stability based on the interplay between the steering angle and the acceleration pedal "
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [0,0,1,0,0]  \nVector 3: [1,0,0,0,0]  \nVector 4: [0,0,0,0,1]  \nVector 5: [1,1,0,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]"
+            ],
+            "response_time": 0.724877,
+            "accuracy": [
+                true,
+                true,
+                false,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 915,
+            "total_tokens": 995
+        },
+        {
+            "idx": [
+                36,
+                3,
+                108,
+                57,
+                53
+            ],
+            "requirement": [
+                "The steering system should dynamically adjust to optimize cornering behavior, providing a balance between responsiveness and stability",
+                "Should the primary control system fail, the accelerator pedal must enter a fail-safe mode, allowing for limited but controlled throttle response",
+                "The steering system must provide consistent torque feedback to the driver under varying driving conditions",
+                "The vehicle stability system shall estimate road friction based on wheel speed sensor data and adjust stability control interventions accordingly",
+                "Traction control systems must dynamically adjust to wheel speed sensor inputs to maintain optimal traction performance under varying conditions"
+            ],
+            "true_vector": [
+                "[0,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "ai_response": "Vector [1]: [0,1,0,0,0]  \nVector [2]: [1,0,0,0,0]  \nVector [3]: [0,0,0,0,1]  \nVector [4]: [0,0,1,0,0]  \nVector [5]: [0,0,1,0,0]  ",
+            "pred_vector": [
+                "[0,1,0,0,0]",
+                "[1,0,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,0,1,0,0]",
+                "[0,0,1,0,0]"
+            ],
+            "response_time": 0.831747,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 895,
+            "total_tokens": 975
+        },
+        {
+            "idx": [
+                104,
+                83,
+                129,
+                97,
+                34
+            ],
+            "requirement": [
+                "Steering torque systems should have the ability to self-calibrate to compensate for sensor drift or degradation over time",
+                "The steering system must perform automatic calibration and self-testing at startup to ensure the torque sensors are operating within specified parameters",
+                "The Lane Keeping Assist system must maintain the vehicle's lane position within the road markings without driver input based on correlate inputs from both the steering angle sensor and the acceleration pedal ",
+                "The power steering system must vary the steering torque to facilitate maneuverability at low speeds and stability at high speeds",
+                "steering system assistance should be consistent across different steering angles and not impair the driver's ability to perform smooth cornering maneuvers"
+            ],
+            "true_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,1,0,0,0]"
+            ],
+            "ai_response": "Vector 1: [0,0,0,0,1]  \nVector 2: [0,0,0,0,1]  \nVector 3: [1,1,0,0,0]  \nVector 4: [0,0,0,0,1]  \nVector 5: [0,1,0,0,0]  ",
+            "pred_vector": [
+                "[0,0,0,0,1]",
+                "[0,0,0,0,1]",
+                "[1,1,0,0,0]",
+                "[0,0,0,0,1]",
+                "[0,1,0,0,0]"
+            ],
+            "response_time": 0.735738,
+            "accuracy": [
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "completion_tokens": 80,
+            "prompt_tokens": 917,
+            "total_tokens": 997
+        }
+    ]
+}
