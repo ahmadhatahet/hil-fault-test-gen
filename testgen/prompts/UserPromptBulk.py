@@ -1,6 +1,4 @@
-UserPromptBulk="""Here is the requirement texts:
+UserPromptBulk="""<Requirement Texts>
 {req}
-
-# Return strictly the following format:
-Vector [Requirement number]: [vector result]
+</Requirement Texts>
 """
