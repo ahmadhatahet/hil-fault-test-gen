@@ -2,7 +2,7 @@ import numpy as np
 import time
 import json
 from datetime import datetime as dt
-from openai import AzureOpenAI
+from openai import AzureOpenAI, OpenAI
 from tqdm.notebook import tqdm
 
 
@@ -128,13 +128,17 @@ def invoke_client(
 
     elif endpoint_name == "novita":
 
+        response_format_json = response_format.model_json_schema()
+        response_format_novita = {"type": "json_schema", "json_schema": {"name": response_format_json.pop("title")}}
+        response_format_novita["json_schema"]["schema"] = response_format_json
+
         response = client.chat.completions.create(
             model=model_name,
             messages=messages,
             temperature=temperature,
             seed=seed,
             max_tokens=max_tokens,
-            response_format=json.dumps(response_format.model_json_schema(), indent=2),
+            response_format=response_format_novita,
         )
 
     else:
@@ -233,16 +237,23 @@ def client_invoke_sensor(
 
         result["ai_response"] = response.choices[0].message.content
 
-        response_json = json.loads(result["ai_response"])
+        try:
+            response_json = json.loads(result["ai_response"])
+            result["is_parsed"] = True
 
-        result["pred_target_sensor"] = [
-            key for key, value in response_json.items() if value == 1
-        ]
+            result["pred_target_sensor"] = [
+                key for key, value in response_json.items() if value == 1
+            ]
+
+            result["accuracy"] = sorted(result["pred_target_sensor"]) == sorted(
+                result["true_target_sensor"]
+            )
+        except:
+            result["pred_target_sensor"] = []
+            result["is_parsed"] = False
+            result["accuracy"] = False
+
         result["response_time"] = response_time
-
-        result["accuracy"] = sorted(result["pred_target_sensor"]) == sorted(
-            result["true_target_sensor"]
-        )
 
         response_usage = response.usage.to_dict()
         if endpoint_name == "azure":
@@ -317,9 +328,9 @@ def invoke_bulk_sensor(
     results = []
 
     if limit_batch_size > 0:
-        batch_iter = enumerate(zip(batches[:limit_batch_size], req_texts))
+        batch_iter = zip(batches[:limit_batch_size], req_texts)
     else:
-        batch_iter = enumerate(zip(batches, req_texts))
+        batch_iter = zip(batches, req_texts)
 
     total_time = 0
 
