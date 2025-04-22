@@ -1,6 +1,6 @@
 {
     "accuracy": 0.9381443298969072,
-    "number_of_reqs": 97,
+    "number_of_requests": 97,
     "total_tokens": 105217,
     "total_completion_tokens": 4753,
     "avg_token_per_req": 1084.7113402061855,
