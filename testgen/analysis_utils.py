@@ -14,22 +14,26 @@ def get_sensors_labels():
 
 
 def get_best_results(results_path, file_pattern):
-
     available_results = list(results_path.glob(file_pattern))
 
     # drop file with lower accuracy if multiple are found
     available_results_dict = {}
 
     for i, f in enumerate(available_results):
-        t_ = f.name.split("_acc-")
-        if available_results_dict.get(t_[0]) is None:
-            available_results_dict[t_[0]] = (i, float(t_[1].split("_")[0]))
-        else:
-            if available_results_dict[t_[0]][1] < float(t_[1].split("_")[0]):
-                del available_results[available_results_dict[t_[0]][0]]
-                available_results_dict[t_[0]] = (i, float(t_[1].split("_")[0]))
+        _, _, model_name, n, acc, time_ = f.name.split("_")
 
-    return available_results
+        n = int(n.split("-")[1])
+        acc = float(acc.split("-")[1])
+        time_ = time_[:-5]
+
+        if available_results_dict.get(model_name) is None:
+            available_results_dict[(model_name, n)] = acc
+        else:
+            if available_results_dict[(model_name, n)] < acc:
+                del available_results[available_results_dict[(model_name, n)][0]]
+                available_results_dict[(model_name, n)] = acc
+
+    return available_results_dict
 
 
 def calc_scores(df):
