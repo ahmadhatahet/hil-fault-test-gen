@@ -26,13 +26,16 @@ def get_best_results(results_path, file_pattern):
         acc = float(acc.split("-")[1])
         time_ = time_[:-5]
 
-        if available_results_dict.get(model_name) is None:
-            available_results_dict[(model_name, n)] = acc
-        else:
-            if available_results_dict[(model_name, n)] < acc:
-                del available_results[available_results_dict[(model_name, n)][0]]
-                available_results_dict[(model_name, n)] = acc
+        model_name = f"{model_name}_{n}"
 
+        if available_results_dict.get(model_name) is None:
+            available_results_dict[model_name] = [n, acc]
+        else:
+            if (available_results_dict[model_name][0] == n) and (
+                available_results_dict[model_name][1] < acc
+            ):
+                del available_results[available_results_dict[model_name][0]]
+                available_results_dict[model_name] = [n, acc]
     return available_results_dict
 
 
