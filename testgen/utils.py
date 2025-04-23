@@ -469,11 +469,18 @@ def client_invoke_actuator_sensor(
                 "content": result["ai_response"],
             }
         )
-
-        result_json = json.loads(result["ai_response"])
-        result["ai_answer"] = result_json["target_actuator"]
         result["response_time"] = response_time
-        result["accuracy"] = instance[1].iloc[1] == result_json["target_actuator"]
+        # try exception for parsing
+        try:
+            result_json = json.loads(result["ai_response"])
+            result["ai_answer"] = result_json["target_actuator"]
+            result["accuracy"] = instance[1].iloc[1] == result_json["target_actuator"]
+            result["is_parsed"] = True
+        except:
+            print(result["ai_response"])
+            result["ai_answer"] = ""
+            result["accuracy"] = False
+            result["is_parsed"] = False
 
         response_usage = response.usage.to_dict()
         if endpoint_name == "azure":
