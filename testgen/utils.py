@@ -129,7 +129,10 @@ def invoke_client(
     elif endpoint_name == "novita":
 
         response_format_json = response_format.model_json_schema()
-        response_format_novita = {"type": "json_schema", "json_schema": {"name": response_format_json.pop("title")}}
+        response_format_novita = {
+            "type": "json_schema",
+            "json_schema": {"name": response_format_json.pop("title")},
+        }
         response_format_novita["json_schema"]["schema"] = response_format_json
 
         response = client.chat.completions.create(
@@ -268,20 +271,22 @@ def client_invoke_sensor(
 
 
 def get_batches(df, SAMPLE_TYPE="random", N_REQS=5):
+    df_t = df.copy()
+
     batches = []
 
-    while df.shape[0] > N_REQS:
+    while df_t.shape[0] > N_REQS:
         if SAMPLE_TYPE == "random":
-            instances = df.sample(N_REQS)
-            df.drop(index=instances.index, inplace=True)
+            instances = df_t.sample(N_REQS)
+            df_t.drop(index=instances.index, inplace=True)
         else:
-            instances = df.iloc[:N_REQS, :]
-            df.drop(index=instances.index, inplace=True)
+            instances = df_t.iloc[:N_REQS, :]
+            df_t.drop(index=instances.index, inplace=True)
 
         batches.append(instances)
 
     print("Number of Batches:", len(batches))
-    print("Number of Instances left:", df.shape[0])
+    print("Number of Instances left:", df_t.shape[0])
 
     return batches
 
@@ -368,35 +373,61 @@ def invoke_bulk_sensor(
             response_format,
         )
 
-        response_json = json.loads(response.choices[0].message.content)
+        try:
+            response_json = json.loads(response.choices[0].message.content)
 
-        for ix in range(len(batch[0])):
-            result = {"batch_id": batch_id}
+            for ix in range(len(batch[0])):
+                result = {"batch_id": batch_id}
 
-            for resp_req in response_json["requirements"]:
-                if resp_req["req_id"] == batch[0][ix]:
-                    result["id"] = resp_req["req_id"]
-                    result["requirement"] = resp_req["text"]
-                    result["true_vector"] = batch[2][ix]
-                    result["pred_vector"] = [
-                        key
-                        for key, value in resp_req["target_sensor"].items()
-                        if value == 1
-                    ]
-                    result["accuracy"] = result["true_vector"] == result["pred_vector"]
-                    result["ai_response"] = response.choices[0].message.content
-                    result["response_time"] = response_time
+                for resp_req in response_json["requirements"]:
+                    if resp_req["req_id"] == batch[0][ix]:
+                        result["id"] = resp_req["req_id"]
+                        result["requirement"] = resp_req["text"]
+                        result["true_vector"] = batch[2][ix]
+                        result["pred_vector"] = [
+                            key
+                            for key, value in resp_req["target_sensor"].items()
+                            if value == 1
+                        ]
+                        result["accuracy"] = result["true_vector"] == result["pred_vector"]
+                        result["ai_response"] = response.choices[0].message.content
+                        result["response_time"] = response_time
 
-                    usage_dict = response.usage.to_dict().copy()
-                    if endpoint_name == "azure":
-                        usage_dict.pop("prompt_tokens_details")
-                        usage_dict.pop("completion_tokens_details")
+                        usage_dict = response.usage.to_dict().copy()
+                        if endpoint_name == "azure":
+                            usage_dict.pop("prompt_tokens_details")
+                            usage_dict.pop("completion_tokens_details")
 
-                    result.update(usage_dict)
+                        result.update(usage_dict)
 
-                    results.append(result)
+                        results.append(result)
 
-            total_time += response_time
+                total_time += response_time
+        except:
+            for ix in range(len(batch[0])):
+                result = {"batch_id": batch_id}
+
+                for resp_req in batch[1]:
+                    if resp_req["req_id"] == batch[0][ix]:
+                        result["id"] = batch[0][ix]
+                        result["requirement"] = batch[1][ix]
+                        result["true_vector"] = batch[2][ix]
+                        result["pred_vector"] = []
+                        result["accuracy"] = False
+                        result["is_parsed"] = False
+                        result["ai_response"] = response.choices[0].message.content
+                        result["response_time"] = response_time
+
+                        usage_dict = response.usage.to_dict().copy()
+                        if endpoint_name == "azure":
+                            usage_dict.pop("prompt_tokens_details")
+                            usage_dict.pop("completion_tokens_details")
+
+                        result.update(usage_dict)
+
+                        results.append(result)
+
+                total_time += response_time
 
     return results
 
@@ -533,6 +564,7 @@ def save_responses(base_path, prefix, **kwargs):
     time = dt.now()
 
     results_path = "results/{prefix}_{model}_n-{examples}_acc-{accuracy}_{time}.json"
+
     results_path = results_path.format(
         prefix=prefix,
         model=kwargs["model_name"],
@@ -540,6 +572,12 @@ def save_responses(base_path, prefix, **kwargs):
         time=time.strftime("%m.%d.%Y-%H:%M:%S"),
         accuracy=round(kwargs["accuracy"], 3),
     )
+
+
+    if kwargs.get("batch_size") is not None:
+        results_path = results_path.replace(
+            f"n-{kwargs['n_examples']}", f"n-{kwargs['n_examples']}_b-{kwargs['batch_size']}"
+        )
 
     results_file = base_path / results_path
     results_file.parent.mkdir(exist_ok=True)
