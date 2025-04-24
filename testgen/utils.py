@@ -408,24 +408,23 @@ def invoke_bulk_sensor(
                 result = {"batch_id": batch_id}
 
                 for resp_req in batch[1]:
-                    if resp_req["req_id"] == batch[0][ix]:
-                        result["id"] = batch[0][ix]
-                        result["requirement"] = batch[1][ix]
-                        result["true_vector"] = batch[2][ix]
-                        result["pred_vector"] = []
-                        result["accuracy"] = False
-                        result["is_parsed"] = False
-                        result["ai_response"] = response.choices[0].message.content
-                        result["response_time"] = response_time
+                    result["id"] = batch[0][ix]
+                    result["requirement"] = batch[1][ix]
+                    result["true_vector"] = batch[2][ix]
+                    result["pred_vector"] = []
+                    result["accuracy"] = False
+                    result["is_parsed"] = False
+                    result["ai_response"] = response.choices[0].message.content
+                    result["response_time"] = response_time
 
-                        usage_dict = response.usage.to_dict().copy()
-                        if endpoint_name == "azure":
-                            usage_dict.pop("prompt_tokens_details")
-                            usage_dict.pop("completion_tokens_details")
+                    usage_dict = response.usage.to_dict().copy()
+                    if endpoint_name == "azure":
+                        usage_dict.pop("prompt_tokens_details")
+                        usage_dict.pop("completion_tokens_details")
 
-                        result.update(usage_dict)
+                    result.update(usage_dict)
 
-                        results.append(result)
+                    results.append(result)
 
                 total_time += response_time
 
