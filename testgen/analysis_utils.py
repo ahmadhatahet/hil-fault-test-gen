@@ -4,13 +4,21 @@ import json
 from testgen.prompts import Sensors
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
+import warnings
+
+warnings.filterwarnings("ignore")
+
 
 def get_sensors_labels():
-    labels = Sensors.split("\n")
-    for i, sensor in enumerate(labels):
-        labels[i] = sensor[sensor.find("(") + 1 : sensor.find(")")].strip()
+    labels_t = Sensors.split("\n")
+    labels = {}
+    for i, sensor in enumerate(labels_t):
+        pos_1 = sensor.find("(")
+        labels[sensor[: pos_1 - 1].strip().replace(" ", "_").lower()] = sensor[
+            pos_1 + 1 : sensor.find(")")
+        ].strip()
 
-    return np.array(labels)
+    return labels
 
 
 def get_best_results(results_path, file_pattern):
@@ -32,80 +40,105 @@ def get_best_results(results_path, file_pattern):
             available_results_dict[model_name] = [n, acc]
         else:
             if (available_results_dict[model_name][0] == n) and (
-                available_results_dict[model_name][1] < acc
+                available_results_dict[model_name][1] <= acc
             ):
-                del available_results[available_results_dict[model_name][0]]
+                available_results.pop(i)
                 available_results_dict[model_name] = [n, acc]
-    return available_results_dict
+    return available_results, available_results_dict
 
 
-def calc_scores(df):
-    df_scores = pd.DataFrame(
-        columns=["sensor", "accuracy", "precision", "recall", "f1"]
-    )
+def calc_scores(responses_df):
 
-    y_true = df["true_label"]
-    y_pred = df["pred_label"]
-    unique_labels = np.unique(y_true)
-    unique_labels.sort()
+    df_scores = pd.DataFrame()
 
-    accuracy_score_ = round(accuracy_score(y_true, y_pred), 2)
-    precision_score_ = round(
-        precision_score(y_true, y_pred, average="weighted", labels=unique_labels), 2
-    )
-    recall_score_ = round(
-        recall_score(y_true, y_pred, average="weighted", labels=unique_labels), 2
-    )
-    f1_score_ = round(
-        f1_score(y_true, y_pred, average="weighted", labels=unique_labels), 2
-    )
+    for model in responses_df["model"].unique():
+        for n_e in responses_df[(responses_df["model"] == model)][
+            "number_of_examples"
+        ].unique():
 
-    df_scores.loc[df_scores.shape[0] + 1] = [
-        "All",
-        accuracy_score_,
-        precision_score_,
-        recall_score_,
-        f1_score_,
-    ]
+            df_t = responses_df[
+                (responses_df["model"] == model)
+                & (responses_df["number_of_examples"] == n_e)
+            ]
 
-    for label in unique_labels:
-        t_ = df[df["true_label"] == label]
+            df_scores_t = pd.DataFrame(
+                columns=["sensor", "accuracy", "precision", "recall", "f1"]
+            )
 
-        y_true_ = t_["true_label"]
-        y_pred_ = t_["pred_label"]
+            y_true = df_t["pred_target_sensor_str"]
+            y_pred = df_t["true_target_sensor_str"]
+            unique_labels = np.unique(y_true)
+            unique_labels.sort()
 
-        accuracy_score_ = round(accuracy_score(y_true_, y_pred_), 2)
-        precision_score_ = round(
-            precision_score(y_true_, y_pred_, average="weighted", labels=[label]), 2
-        )
-        recall_score_ = round(
-            recall_score(y_true_, y_pred_, average="weighted", labels=[label]), 2
-        )
-        f1_score_ = round(
-            f1_score(y_true_, y_pred_, average="weighted", labels=[label]), 2
-        )
+            # remove from unique_labels the labels that are empty
+            unique_labels = unique_labels[unique_labels != ""]
 
-        df_scores.loc[df_scores.shape[0] + 1] = [
-            label,
-            accuracy_score_,
-            precision_score_,
-            recall_score_,
-            f1_score_,
-        ]
+            accuracy_score_ = round(accuracy_score(y_true, y_pred), 2)
+            precision_score_ = round(
+                precision_score(
+                    y_true, y_pred, average="weighted", labels=unique_labels
+                ),
+                2,
+            )
+            recall_score_ = round(
+                recall_score(y_true, y_pred, average="weighted", labels=unique_labels),
+                2,
+            )
+            f1_score_ = round(
+                f1_score(y_true, y_pred, average="weighted", labels=unique_labels), 2
+            )
 
-    return df_scores.set_index("sensor")
+            df_scores_t.loc[df_scores_t.shape[0] + 1] = [
+                "All",
+                accuracy_score_,
+                precision_score_,
+                recall_score_,
+                f1_score_,
+            ]
 
+            for label in unique_labels:
+                t_ = df_t[df_t["pred_target_sensor_str"] == label]
 
-def data_to_df_single(data, model_name, type_, number_examples):
-    # split responses and general stats
-    responses = pd.DataFrame(data["responses"])
-    responses.set_index("idx", inplace=True)
+                y_true_ = t_["pred_target_sensor_str"]
+                y_pred_ = t_["true_target_sensor_str"]
 
-    responses.insert(0, "model", model_name)
-    responses.insert(1, "type", type_)
-    responses.insert(2, "n_examples", number_examples)
+                accuracy_score_ = round(accuracy_score(y_true_, y_pred_), 2)
+                precision_score_ = round(
+                    precision_score(
+                        y_true_,
+                        y_pred_,
+                        average="weighted",
+                        labels=[label],
+                    ),
+                    2,
+                )
+                recall_score_ = round(
+                    recall_score(
+                        y_true_,
+                        y_pred_,
+                        average="weighted",
+                        labels=[label],
+                    ),
+                    2,
+                )
+                f1_score_ = round(
+                    f1_score(y_true_, y_pred_, average="weighted", labels=[label]), 2
+                )
 
-    return responses
+                df_scores_t.loc[df_scores_t.shape[0] + 1] = [
+                    label,
+                    accuracy_score_,
+                    precision_score_,
+                    recall_score_,
+                    f1_score_,
+                ]
+
+            df_scores_t.insert(0, "model", model)
+            df_scores_t.insert(1, "number_of_examples", n_e)
+
+            df_scores = pd.concat([df_scores, df_scores_t.set_index("sensor")])
+
+    return df_scores
 
 
 def data_to_df_bulk(data, model_name, type_, number_examples):
@@ -127,32 +160,72 @@ def data_to_df_bulk(data, model_name, type_, number_examples):
     return responses
 
 
-def result_to_df(labels, filename, results_path):
+def result_to_df(results):
 
-    type_, model_name, number_examples, *_ = filename.stem.split("_")
-    number_examples = int(number_examples.split("-")[-1])
+    stats_df = pd.DataFrame()
+    mismatch_stats_df = pd.DataFrame()
+    responses_df = pd.DataFrame()
 
-    file_under_investigation = results_path / filename
-    with file_under_investigation.open("r") as f:
-        data = json.load(f)
+    for res in results:
 
-    # convert responses to df if single or bulk
-    if len(type_.split("-")) == 1:  # means single not bulk
-        responses = data_to_df_single(data, model_name, type_, number_examples)
-    else:
-        responses = data_to_df_bulk(data, model_name, type_, number_examples)
+        stats = json.loads(res.read_text())
+        filename = res.stem
+        is_bulk = filename.find("_b-") > -1
 
-    # collect label names for predictions and ground truth
-    responses["true_label"] = responses["true_vector"].map(
-        lambda x: " & ".join(labels[np.array(x[1:-1].split(",")).astype(bool)])
-    )
-    responses["pred_label"] = responses["pred_vector"].map(
-        lambda x: " & ".join(labels[np.array(x[1:-1].split(",")).astype(bool)])
-    )
+        if is_bulk:
+            _, category, model_name, n, b, acc, time_ = filename.split("_")
+            b = int(b.split("-")[1])
+        else:
+            _, category, model_name, n, acc, time_ = filename.split("_")
 
-    del data["responses"]
+        n = int(n.split("-")[1])
+        acc = float(acc.split("-")[1])
+        time_ = time_[:-5]
 
-    return responses, data
+        del stats["examples"]
+
+        responses = stats.pop("responses")
+        responses = pd.DataFrame(responses).set_index("idx")
+        responses.insert(0, "model", model_name)
+        responses.insert(1, "number_of_examples", n)
+
+        stats.pop("", n)
+
+        stats = pd.DataFrame.from_dict(stats, orient="index").T
+        # drop "number_of_examples" if exists
+        if "number_of_examples" in stats.columns:
+            stats.drop(columns="number_of_examples", inplace=True)
+        stats.insert(0, "model", model_name)
+        stats.insert(1, "number_of_examples", n)
+        stats["time"] = time_
+
+        exploded_responses = (
+            responses[responses["accuracy"] == False]
+            .explode("true_target_sensor")
+            .explode("pred_target_sensor")
+        )
+        mismatch_stats = (
+            exploded_responses.groupby("true_target_sensor")["pred_target_sensor"]
+            .value_counts(dropna=False)
+            .unstack(fill_value=0)
+        )
+        mismatch_stats.reset_index(drop=False, inplace=True)
+        mismatch_stats.columns.name = ""
+        mismatch_stats.insert(0, "model", model_name)
+        mismatch_stats.insert(1, "number_of_examples", n)
+
+        if is_bulk:
+            stats.insert(2, "batch_size", b)
+            responses.insert(2, "batch_size", b)
+            mismatch_stats.insert(2, "batch_size", b)
+
+        stats_df = pd.concat([stats_df, stats], ignore_index=True)
+        mismatch_stats_df = pd.concat(
+            [mismatch_stats_df, mismatch_stats], ignore_index=True
+        )
+        responses_df = pd.concat([responses_df, responses], ignore_index=True)
+
+    return stats_df, responses_df, mismatch_stats_df
 
 
 def analyze(labels, filename, results_path):
