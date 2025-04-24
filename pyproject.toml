@@ -19,6 +19,7 @@ dependencies = [
     "pandas",
     "openpyxl",
     "groq>=0.22.0",
+    "seaborn>=0.13.2",
 ]
 
 [tool.setuptools]
