@@ -28,22 +28,39 @@ def get_best_results(results_path, file_pattern):
     available_results_dict = {}
 
     for i, f in enumerate(available_results):
-        _, _, model_name, n, acc, time_ = f.name.split("_")
+
+        is_bulk = f.stem.find("_b-") > -1
+
+        if is_bulk:
+            _, _, model_name, n, b, acc, time_ = f.name.split("_")
+            b = int(b.split("-")[1])
+        else:
+            _, _, model_name, n, acc, time_ = f.name.split("_")
 
         n = int(n.split("-")[1])
         acc = float(acc.split("-")[1])
         time_ = time_[:-5]
 
-        model_name = f"{model_name}_{n}"
+        if is_bulk:
+            model_name = f"{model_name}_{n}_{b}"
+        else:
+            model_name = f"{model_name}_{n}"
 
         if available_results_dict.get(model_name) is None:
             available_results_dict[model_name] = [n, acc]
+            if is_bulk:
+                available_results_dict[model_name].insert(1, b)
         else:
             if (available_results_dict[model_name][0] == n) and (
-                available_results_dict[model_name][1] <= acc
+                available_results_dict[model_name][-1] <= acc
             ):
-                available_results.pop(i)
-                available_results_dict[model_name] = [n, acc]
+                if is_bulk:
+                    if available_results_dict[model_name][1] == b:
+                        available_results.pop(i)
+                        available_results_dict[model_name] = [n, b, acc]
+                else:
+                    available_results.pop(i)
+                    available_results_dict[model_name] = [n, acc]
     return available_results, available_results_dict
 
 
@@ -160,7 +177,7 @@ def data_to_df_bulk(data, model_name, type_, number_examples):
     return responses
 
 
-def result_to_df(results):
+def result_to_sensor_df(results):
 
     stats_df = pd.DataFrame()
     mismatch_stats_df = pd.DataFrame()
@@ -185,7 +202,10 @@ def result_to_df(results):
         del stats["examples"]
 
         responses = stats.pop("responses")
-        responses = pd.DataFrame(responses).set_index("idx")
+        responses = pd.DataFrame(responses)
+        # if idx in responses, drop it
+        if "idx" in responses.columns:
+            responses.drop(columns="idx", inplace=True)
         responses.insert(0, "model", model_name)
         responses.insert(1, "number_of_examples", n)
 
@@ -199,11 +219,21 @@ def result_to_df(results):
         stats.insert(1, "number_of_examples", n)
         stats["time"] = time_
 
+        if is_bulk:
+            responses.rename(
+                columns={
+                    "pred_vector": "pred_target_sensor",
+                    "true_vector": "true_target_sensor",
+                },
+                inplace=True,
+            )
+
         exploded_responses = (
             responses[responses["accuracy"] == False]
             .explode("true_target_sensor")
             .explode("pred_target_sensor")
         )
+
         mismatch_stats = (
             exploded_responses.groupby("true_target_sensor")["pred_target_sensor"]
             .value_counts(dropna=False)
@@ -215,7 +245,6 @@ def result_to_df(results):
         mismatch_stats.insert(1, "number_of_examples", n)
 
         if is_bulk:
-            stats.insert(2, "batch_size", b)
             responses.insert(2, "batch_size", b)
             mismatch_stats.insert(2, "batch_size", b)
 
@@ -225,7 +254,80 @@ def result_to_df(results):
         )
         responses_df = pd.concat([responses_df, responses], ignore_index=True)
 
+    stats_df["model"] = correct_model_name(stats_df["model"])
+    responses_df["model"] = correct_model_name(responses_df["model"])
+    mismatch_stats_df["model"] = correct_model_name(mismatch_stats_df["model"])
+
     return stats_df, responses_df, mismatch_stats_df
+
+
+def result_to_actuator_df(results):
+
+    stats_df = pd.DataFrame()
+    responses_df = pd.DataFrame()
+
+    for res in results:
+
+        stats = json.loads(res.read_text())
+        filename = res.stem
+
+        _, category, model_name, n, acc, time_ = filename.split("_")
+
+        n = int(n.split("-")[1])
+        acc = float(acc.split("-")[1])
+        time_ = time_[:-5]
+
+        del stats["examples"]
+
+        responses = stats.pop("responses")
+        responses = pd.DataFrame(responses)
+
+        if "model" in responses.columns:
+            responses.drop(columns="model", inplace=True)
+
+        if (
+            "completion_tokens" in responses.columns
+            and "completion_tokens_details" in responses.columns
+        ):
+            responses.drop(columns="completion_tokens_details", inplace=True)
+            responses.drop(columns="prompt_tokens_details", inplace=True)
+        elif "completion_tokens" not in responses.columns:
+            responses.columns = [
+                col.replace("_details", "") for col in responses.columns
+            ]
+
+        responses.insert(0, "model", model_name)
+        responses.insert(1, "number_of_examples", n)
+
+        responses.rename(
+            columns={
+                "target_actuator": "true_target_sensor",
+                "ai_answer": "pred_target_sensor",
+            },
+            inplace=True,
+        )
+
+        stats = pd.DataFrame.from_dict(stats, orient="index").T
+        # drop "number_of_examples" if exists
+        if "number_of_examples" in stats.columns:
+            stats.drop(columns="number_of_examples", inplace=True)
+        stats.insert(0, "model", model_name)
+        stats.insert(1, "number_of_examples", n)
+        stats["time"] = time_
+
+        stats_df = pd.concat([stats_df, stats], ignore_index=True)
+        responses_df = pd.concat([responses_df, responses], ignore_index=True)
+
+    stats_df["model"] = correct_model_name(stats_df["model"])
+    responses_df["model"] = correct_model_name(responses_df["model"])
+
+    return stats_df, responses_df
+
+
+def correct_model_name(model_name):
+    model_name = model_name.str.replace("-instruct", "")
+    model_name = model_name.str.replace("phi4:latest", "phi4-14b")
+    return model_name
 
 
 def analyze(labels, filename, results_path):
